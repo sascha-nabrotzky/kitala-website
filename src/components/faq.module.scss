@@ -1,0 +1,35 @@
+@import './variables.module.scss';
+
+section {
+
+    .question {
+        background-color: $colviolettransp;
+        color: $colwhite;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $colviolet;
+        }
+
+        h3 {
+            padding: $paddingfaq;
+            margin: .5em;
+        }
+    }
+
+    .texthidden {
+        max-height: 0px;
+        overflow: hidden;
+        transition: 1s ease;
+    }
+
+    .active {
+        overflow: hidden;
+        transition: 1s ease;
+    }
+
+    .rotate {
+        transform: rotate(90deg);
+    }
+}

@@ -1,0 +1,66 @@
+@import './variables.module.scss';
+
+@media ( min-width:768px ) {
+   
+    header {
+
+        .logo {
+
+            margin-top: 6em;
+
+            img {
+                width: 25%;
+            }
+        }
+    }
+    
+    main {
+        max-width: 70vw;
+        margin: 0 auto;
+
+        aside {
+            a {
+                img{
+                    width: 25%;
+                    margin-top: 3em;
+                }
+            }
+        }
+    }
+
+}
+
+@media ( min-width:1024px ) {
+    header {
+
+        .gradient {
+
+            img {
+                transform-origin: top;
+                transform: scaleY(.3);
+            }
+        }
+
+        .navigation {
+            width:40vw;
+            right: 0;
+
+            .navList {
+                padding: $mainpadding;
+                right: 0;
+
+                .liItem {
+                    margin-left: 1em;
+                }
+            }
+        }
+
+        .logo {
+            margin-top: 4em;
+
+            img {
+                width: 15%;
+            }
+        }
+    }
+}

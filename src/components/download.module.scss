@@ -1,0 +1,20 @@
+@import './variables.module.scss';
+
+main {
+    a {
+        display: flex;
+        align-items: center;
+        @include Linknostyle;
+        color: $colblack;
+
+        &:visited {
+            color: $colblack;
+        }
+
+        .pdficon {
+            max-width: 35px;
+            height: auto;
+            margin-right: .5em;
+        }
+    }
+}
