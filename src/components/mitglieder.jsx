@@ -1,14 +1,59 @@
 import React from 'react';
-import * as homeStyles from '../components/mitglieder.module.scss';
+import * as mitgliederStyles from '../components/mitglieder.module.scss';
+import Mitglied from './mitglied';
+import HuewelmannImg from '../images/huewelmann300px.jpg';
+import NabrotzkyImg from '../images/nabrotzky300px.jpg';
+import WelkImg from '../images/welk300px.jpg';
+import RichterImg from '../images/richter300px.jpg';
 
 function Mitglieder() {
 
     return (
   
-      <main className={homeStyles.main}>
-      <h1>Mitglieder des Vereins</h1>
-      <h2>Wir stellen uns vor</h2>
-      <p>Hier werden demnächst die Mitglieder aufgelistet.</p>
+      <main>
+        <h1>Vorstand des Vereins</h1>
+        <h2>Wir stellen uns vor</h2>
+        <section className={mitgliederStyles.mitgliederRow}>
+          <Mitglied 
+            title="1. Vorsitzende"
+            name="Ramona Hüwelmann"
+            kita="&bdquo;Zwergenland&rdquo;"
+            adress="Westerweg 12"
+            tel="+49 5485 2261"
+            imgSrc={HuewelmannImg}
+            imgAlt="Profilbild von Ramona Hüwelmann"
+          />
+          <Mitglied 
+            title="2. Vorsitzende"
+            name="Tatjana Nabrotzky"
+            kita="&bdquo;Löwenzähnchen&rdquo;"
+            adress="Koldefeld 11"
+            tel="+49 5485 207979"
+            imgSrc={NabrotzkyImg}
+            imgAlt="Profilbild von Tatjana Nabrotzky"
+          />
+        </section>
+
+        <section className={mitgliederStyles.mitgliederRow}>
+          <Mitglied 
+            title="Kassenwart"
+            name="Oksana Welk"
+            kita="&bdquo;Gänseblümchen&rdquo;"
+            adress="Koldefeld 5"
+            tel="+49 5485 834954"
+            imgSrc={WelkImg}
+            imgAlt="Profilbild von Oksana Welk"
+          />
+          <Mitglied 
+            title="Schriftführerin"
+            name="Daniela Richter"
+            kita="&bdquo;Das Mäusenest&rdquo;"
+            adress="Kramerstraße 11"
+            tel="+49 5485 9539827"
+            imgSrc={RichterImg}
+            imgAlt="Profilbild von Daniela Richter"
+          />
+        </section>
           
       </main>
      

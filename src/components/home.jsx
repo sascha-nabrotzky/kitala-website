@@ -1,19 +1,36 @@
 import React from 'react';
 import * as homeStyles from '../components/home.module.scss';
-import stepLogo from '../images/StepLogo.svg'
+import Blockquote from './blockquote';
+import stepLogo from '../images/StepLogo.svg';
+import emailIcon from '../images/email.svg';
 
 function Home() {
 
     return (
   
-      <main className={homeStyles.main}>
-        <h1>Kindertagespflege in Ladbergen</h1>
-        <h2>Was der Verein macht</h2>
-        <p>Die Kindertagespflege ist der erste offizielle Bildungsort den Ihr Kind besucht und somit ein wichtiger erster Baustein. Die ersten drei Lebensjahre sind eine besonders wichtige Zeit für die Entwicklung Eurer Kinder, da in diesem Lebensabschnitt die Grundbausteine für Lern- und Beziehungsfähigkeiten gelegt werden. Durch Ausprobieren und Nachahmen lernen sie die Welt kennen und zu begreifen. Dafür benötigen sie vor allem eine sichere Bindungsbeziehung, die ihnen Geborgenheit, Akzeptanz und Sicherheit gibt. Dieses steht für uns an erster Stelle. Auch der Zusammenschluss der Kindertagespflegepersonen als Verein ist hierfür ein wichtiger Punkt. Denn nur gemeinsam können wir viel erreichen und das Beste für unsere Schützlinge und auch für uns herausholen. Zusätzlich möchten wir auch die Zusammenarbeit mit der Gemeinde Ladbergen und dem Jugendamt weiterentwickeln und bedarfsgerecht ausbauen.</p>
+      <main className={homeStyles.homeMain}>
+        <h1>KiTaLa e.V. &ndash;</h1>
+        <h2>Kindertagespflege Ladbergen</h2>
+        <h3>Was machen wir als Verein</h3>
+        <p>Die Kindertagespflege ist der erste offizielle Bildungsort den Ihr Kind besucht und somit ein wichtiger erster Baustein. Die ersten drei Lebensjahre sind eine besonders wichtige Zeit für die Entwicklung Eurer Kinder, da in diesem Lebensabschnitt die Grundbausteine für Lern- und Beziehungsfähigkeiten gelegt werden. Durch Ausprobieren und Nachahmen lernen sie die Welt kennen und zu begreifen. Dafür benötigen sie vor allem eine sichere Bindungsbeziehung, die ihnen Geborgenheit, Akzeptanz und Sicherheit gibt. Dieses steht für uns an erster Stelle.</p> 
+
+        <Blockquote content='Geborgenheit, Akzeptanz und Sicherheit stehen für uns an erster Stelle'/>
+        
+        <p>Auch der Zusammenschluss der Kindertagespflegepersonen als Verein ist hierfür ein wichtiger Punkt. Denn nur gemeinsam können wir viel erreichen und das Beste für unsere Schützlinge und auch für uns herausholen. Zusätzlich möchten wir auch die Zusammenarbeit mit der Gemeinde Ladbergen und dem Jugendamt weiterentwickeln und bedarfsgerecht ausbauen.</p>
+
         <aside>
-          <a href="https://step.kreis-steinfurt.de/de/einrichtungen/liste?amt=Ladbergen&p=1" target="_blank" rel="noreferrer noopener">
-            <img src={stepLogo} alt="Logo von Step Steinfurt"/>
-          </a>
+          <h3>Anmeldungen</h3>
+          <p>Anmeldungen erfolgen online über das Elternportal &bdquo;Step&rdquo;.
+          Sie können uns aber auch direkt per E-Mail oder telefonisch kontaktieren.</p>
+
+          <div className={homeStyles.iconWrapper}>
+            <a href="https://step.kreis-steinfurt.de/de/einrichtungen/liste?amt=Ladbergen&p=1" target="_blank" rel="noreferrer noopener">
+              <img className={homeStyles.homeIcon} src={stepLogo} alt="Logo von Step Steinfurt"/>
+            </a>
+            <a href="mailto:kontakt@kitala-ladbergen.de">
+              <img className={homeStyles.homeIcon} src={emailIcon} alt="Logo von Step Steinfurt"/>
+            </a>
+          </div>
         </aside>
       </main>
      

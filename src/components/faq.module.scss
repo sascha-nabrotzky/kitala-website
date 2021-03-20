@@ -1,35 +1,42 @@
 @import './variables.module.scss';
 
-section {
+.question {
+    background-color: $colviolettransp;
+    color: $colwhite;
+    border-radius: 10px;
+    cursor: pointer;
 
-    .question {
-        background-color: $colviolettransp;
-        color: $colwhite;
-        border-radius: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $colviolet;
-        }
-
-        h3 {
-            padding: $paddingfaq;
-            margin: .5em;
-        }
+    &:hover {
+        background-color: $colviolet;
     }
 
-    .texthidden {
-        max-height: 0px;
-        overflow: hidden;
-        transition: 1s ease;
+    h3 {
+        padding: $paddingfaq;
+        margin: .5em;
     }
+}
 
-    .active {
-        overflow: hidden;
-        transition: 1s ease;
-    }
+.texthidden {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s ease;
 
-    .rotate {
-        transform: rotate(90deg);
+    p {
+        padding-left: .5em; 
+        margin: 0px;
     }
+}
+
+.active {
+    overflow: hidden;
+    transition: 1s ease; 
+
+    p {
+        padding-left: .5em; 
+        margin: 0px;
+    }
+}
+
+.rotate {
+    transform: rotate(90deg);
 }

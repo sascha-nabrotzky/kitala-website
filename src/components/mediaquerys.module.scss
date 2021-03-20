@@ -5,7 +5,6 @@
     header {
 
         .logo {
-
             margin-top: 6em;
 
             img {
@@ -13,13 +12,18 @@
             }
         }
     }
-    
-    main {
-        max-width: 70vw;
-        margin: 0 auto;
 
+    main {
+        max-width: 50em;
+    }
+    
+    .homeMain {
+        
         aside {
+
             a {
+                display: flex;
+                justify-content: center;
                 img{
                     width: 25%;
                     margin-top: 3em;
@@ -28,9 +32,24 @@
         }
     }
 
+    .quotewrapper {
+        width: 20em;
+        margin: 0 auto;
+    }
+
+    .anfoverflow {
+        width: 6em;
+    }
+
+    .mitgliederRow {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
 
 @media ( min-width:1024px ) {
+
     header {
 
         .gradient {
@@ -57,10 +76,14 @@
 
         .logo {
             margin-top: 4em;
-
-            img {
-                width: 15%;
-            }
         }
+    }
+
+    .quotewrapper {
+        width: 30vw;
+    }
+
+    .anfoverflow {
+        width: 9em;
     }
 }

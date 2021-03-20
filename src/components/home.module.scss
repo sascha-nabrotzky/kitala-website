@@ -1,21 +1,21 @@
 @import './variables.module.scss';
 
-main {
+.homeMain {
     
     aside {
-        
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
-            img {
-                max-width: 100px;
-                height: auto;
-                margin-top: 1em;
+        .iconWrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2em;
+
+            .homeIcon {
+                height: 2.5em;
             }
+        
         }
     }
 }
 
-@import './mediaquerys.module.scss';
+@import './mediaquerys.module.scss'; 

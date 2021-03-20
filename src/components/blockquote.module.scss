@@ -1,0 +1,25 @@
+@import './variables.module.scss';
+
+.quotewrapper {
+    display: flex;
+    color: $colviolet;
+}
+
+.anfoverflow {
+    overflow: hidden;
+    width: 9em;
+}
+
+.anfuehrung {
+    font-size: 8em;
+    margin-top: -.85em;
+    margin-bottom: 0;
+}
+
+blockquote {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@import './mediaquerys.module.scss';

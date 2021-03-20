@@ -42,8 +42,11 @@
     font-size: 1.2em;
 }
 
-@mixin Linknostyle {
+@mixin TelefonLink {
   text-decoration: none;
+  font-style: normal;
+  color: $colblack;
+  font-weight: 700;
 }
 
 $mainpadding: 0 24px;

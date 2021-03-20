@@ -48,7 +48,7 @@ function Faq() {
 
             <Accordion
                 title="Was kostet die Kindertagespflege?"
-                content="<p>Der Kostenbeitrag errechnet sich nach dem gemeinsamen Jahresbruttoeinkommen und ist mit dem Kostenbeitrag im Kindergarten identisch. Auch für die Kindertagespflege gilt der Freibetrag für die Betreuung eines Geschwisterkindes. Die Elternbeitragstabelle finden sie unter www.KreisSteinfurtKindertagespflege.de
+                content="<p>Der Kostenbeitrag errechnet sich nach dem gemeinsamen Jahresbruttoeinkommen und ist mit dem Kostenbeitrag im Kindergarten identisch. Auch für die Kindertagespflege gilt der Freibetrag für die Betreuung eines Geschwisterkindes. Die Elternbeitragstabelle finden sie in unserem Download-Bereich.
                 </p>">
             </Accordion>
     </main>

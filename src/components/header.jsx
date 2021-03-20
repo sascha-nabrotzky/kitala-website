@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/kitala_logo.jpg';
+import Logo from '../images/kitala_logo.svg';
 import * as headerStyles from '../components/header.module.scss';
 import iconHome from '../images/home_neg.svg';
 import iconCalendarGallery from '../images/calendar_gallery.svg';

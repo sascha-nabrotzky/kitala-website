@@ -7,13 +7,16 @@ function Impressum() {
       <main>
           <h1>Impressum</h1>
             <h2>Angaben gemäß § 5 TMG:</h2>
-            <p>KiTaLa e.V. - Kindertagespflege Ladbergen</p>
-            <p>Westerweg 29</p>
-            <p>49549 Ladbergen</p>
+            <p>KiTaLa e.V. - Kindertagespflege Ladbergen<br />
+            Westerweg 29<br />
+            49549 Ladbergen</p>
             
             <h2>Kontakt:</h2>
-            <p> Mobil +49 5485 2261</p>
-            <p> E-Mail:	kontakt[at]kitala-ladbergen.de</p>
+            <p>Mobil +49 5485 2261<br />
+            E-Mail:	kontakt[at]kitala-ladbergen.de</p>
+
+            <h2>Webdesign:</h2>
+            <p><a href="https://sascha-nabrotzky.github.io" target="_blank" rel="noreferrer noopener" >Frontend-Entwicklung & UX-Design | Sascha Nabrotzky</a></p>
 
             <h2>Haftungsausschluss Disclaimer</h2>
             <h2>Haftung für Inhalte</h2> 
