@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import * as mitgliederStyles from '../components/mitglieder.module.scss';
-import Mitglied from './mitglied';
 import HuewelmannImg from '../images/huewelmann300px.jpg';
 import NabrotzkyImg from '../images/nabrotzky300px.jpg';
 import WelkImg from '../images/welk300px.jpg';
 import RichterImg from '../images/richter300px.jpg';
+
+const Mitglied = lazy(() => import('./mitglied')); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
+const renderLoader = () => <p>Loading ...</p>;
 
 function Mitglieder() {
 
@@ -14,15 +16,20 @@ function Mitglieder() {
         <h1>Vorstand des Vereins</h1>
         <h2>Wir stellen uns vor</h2>
         <section className={mitgliederStyles.mitgliederRow}>
+
+        <Suspense fallback={renderLoader()}>
           <Mitglied 
             title="1. Vorsitzende"
             name="Ramona Hüwelmann"
             kita="&bdquo;Zwergenland&rdquo;"
-            adress="Westerweg 12"
+            adress="Westerweg 29"
             tel="+49 5485 2261"
             imgSrc={HuewelmannImg}
             imgAlt="Profilbild von Ramona Hüwelmann"
           />
+        </Suspense>
+
+        <Suspense fallback={renderLoader()}>
           <Mitglied 
             title="2. Vorsitzende"
             name="Tatjana Nabrotzky"
@@ -32,9 +39,11 @@ function Mitglieder() {
             imgSrc={NabrotzkyImg}
             imgAlt="Profilbild von Tatjana Nabrotzky"
           />
+        </Suspense>
         </section>
 
         <section className={mitgliederStyles.mitgliederRow}>
+        <Suspense fallback={renderLoader()}>
           <Mitglied 
             title="Kassenwart"
             name="Oksana Welk"
@@ -44,6 +53,9 @@ function Mitglieder() {
             imgSrc={WelkImg}
             imgAlt="Profilbild von Oksana Welk"
           />
+        </Suspense>
+
+        <Suspense fallback={renderLoader()}>
           <Mitglied 
             title="Schriftführerin"
             name="Daniela Richter"
@@ -53,6 +65,7 @@ function Mitglieder() {
             imgSrc={RichterImg}
             imgAlt="Profilbild von Daniela Richter"
           />
+        </Suspense>
         </section>
           
       </main>
