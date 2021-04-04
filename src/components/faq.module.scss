@@ -1,19 +1,36 @@
 @import './variables.module.scss';
 
 .question {
-    background-color: $colviolettransp;
-    color: $colwhite;
-    border-radius: 10px;
+    color: $colviolet;
+    border-bottom: 2px dotted $colblack;
     cursor: pointer;
-
-    &:hover {
-        background-color: $colviolet;
-    }
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
 
     h3 {
-        padding: $paddingfaq;
-        margin: .5em;
+        margin: .7em 0;
     }
+
+    .titleChevronWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.faqImage {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.accordionIcon  {
+    transition: transform .4s ease;
+}
+
+.rotate {
+    transition: transform .4s ease;
+    transform: rotate(90deg);
 }
 
 .texthidden {
@@ -22,8 +39,7 @@
     transition: 1s ease;
 
     p {
-        padding-left: .5em; 
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -32,8 +48,7 @@
     transition: 1s ease; 
 
     p {
-        padding-left: .5em; 
-        margin: 0px;
+        margin: 0;
     }
 }
 

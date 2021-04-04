@@ -24,10 +24,6 @@
             a {
                 display: flex;
                 justify-content: center;
-                img{
-                    width: 25%;
-                    margin-top: 3em;
-                }
             }
         }
     }
@@ -53,6 +49,8 @@
     header {
 
         .gradient {
+
+            height: 70px;
 
             img {
                 transform-origin: top;

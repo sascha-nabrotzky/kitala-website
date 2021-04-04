@@ -1,5 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
+import image1 from '../images/bbc-creative-1w20Cysy1cg-unsplash.jpg';
+import image2 from '../images/ben-wicks-iDCtsz-INHI-unsplash.jpg';
+import image3 from '../images/marisa-howenstine-Cq9slNxV8YU-unsplash.jpg';
+import image4 from '../images/krakenimages-OroUwAwLs-8-unsplash.jpg';
 
 const Accordion = lazy(() => import('./accordion'));
 const renderLoader = () => <p>Loading ...</p>;
@@ -19,6 +23,7 @@ function Faq() {
 
         <Suspense fallback={renderLoader()}>
             <Accordion
+                image={image1}
                 title="Was ist Kindertagespflege?"
                 content="<p>In der Kindertagespflege werden Kinder im Alter von 0-3 Jahren  in einer kleinen Gruppe von maximal 5 Kindern in einer familiären Atmosphäre professionell betreut. Dieses zeichnet die Kindertagespflege aus. Die Kinder werden in der Regel im Haushalt der Kindertagespflegeperson oder in dafür angemieteten Räumen betreut. Jede Kindertagespflegeperson benötigt eine Pflegeerlaubnis durch das zuständige Jugendamt. Eine Kindertagespflegeperson darf mit der Pflegeerlaubnis 8 Kinder betreuen jedoch nur 5 Kinder gleichzeitig.</p>
                 <p>Frühkindliche Bildung und Pädagogik ist ein fester Bestandteil der Kindertagespflege. Die Kindertagespflegepersonen begleiten die Kinder in ihrer Entwicklung. Sie planen pädagogische Angebote, fördern die Bildung und die Entwicklung der Kinder und ermöglichen ihnen eigene Erfahrungen zu sammeln.</p>
@@ -28,6 +33,7 @@ function Faq() {
 
         <Suspense fallback={renderLoader()}>
            <Accordion
+                image={image2}
                 title="Qualitätsaspekte der Kindertagespflege"
                 content="<h4>Kleine, überschaubare Gruppe</h4>
                 <p>Die kleine Gruppengröße erleichtert es den Kindern, untereinander Beziehungen aufzubauen und soziale Erfahrungen zu machen. Gerade für Einzelkinder ist die enge geschwister ähnliche Konstellation mit den anderen Kindern besonders bereichernd
@@ -55,6 +61,7 @@ function Faq() {
 
         <Suspense fallback={renderLoader()}>
            <Accordion
+                image={image3}
                 title="Bildungsdokumentation/ Portfolio"
                 content="<p>Die Bildungsdokumentation, auch genannt Portfolio beinhaltet für den Bildungsprozess relevante Projekte, Fotos, Bilder oder andere Produkte des Kindes. Geäußerte Gedanken u.v.m. finden ihren Platz im Portfolio des Kindes.</p>
                 <p>Mit dem Führen eines Portfolios für jedes Bezugskind schärft sich der Blick sowohl für die Persönlichkeit des Kindes als auch für seine Interessen, Vorlieben und Stärken. Eine ständige Reflektion über die Bildungsprozesse eines Kindes ist so möglich. Mit dem Portfolio reflektieren Erwachsene und Kinder gemeinsam Vergangenes. Das Kind spürt die Wertschätzung für Erlebtes und Gelerntes.</p>
@@ -65,6 +72,7 @@ function Faq() {
 
         <Suspense fallback={renderLoader()}>
             <Accordion
+                image={image4}
                 title="Was kostet die Kindertagespflege?"
                 content="<p>Der Kostenbeitrag errechnet sich nach dem gemeinsamen Jahresbruttoeinkommen und ist mit dem Kostenbeitrag im Kindergarten identisch. Auch für die Kindertagespflege gilt der Freibetrag für die Betreuung eines Geschwisterkindes. Die Elternbeitragstabelle finden sie in unserem Download-Bereich.
                 </p>">
