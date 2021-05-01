@@ -1,0 +1,39 @@
+{
+  "aktion1": [
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Plakat_aufhaengen.jpg",
+      "imgAlt": "Plakate aufhängen",
+      "imgFigCaption": "Plakate aufhängen"
+    },
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Luftballons_aufpumpen.jpg",
+      "imgAlt": "Luftballons aufpumpen",
+      "imgFigCaption": "Luftballons aufpumpen"
+    },
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Oksana.jpg",
+      "imgAlt": "Oksana",
+      "imgFigCaption": "Alles festbinden"
+    },
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Oks_Tanj_Ram_1.jpg",
+      "imgAlt": "Oksana, Tatjana und Ramona",
+      "imgFigCaption": "Gruppenfoto nicht vergessen"
+    },
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Zaun.jpg",
+      "imgAlt": "Zaun1",
+      "imgFigCaption": "Das erste Plakat hängt"
+    },
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Zaun_2.jpg",
+      "imgAlt": "Dritter Spielplatz wird angegangen",
+      "imgFigCaption": "Dritter Spielplatz wird geschmückt"
+    },
+    {
+      "imgSrc": "./images/gallerien/Aktion1_Oks_Tanj_Ram_2.jpg",
+      "imgAlt": "Oksana, Tatjana und Ramona",
+      "imgFigCaption": "\"Max&Moritz-Spielplatz\" ist auch fertig."
+    }
+  ]
+}

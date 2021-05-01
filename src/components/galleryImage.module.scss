@@ -1,0 +1,12 @@
+@import './variables.module.scss';
+
+figure {
+  margin: 0 .3em;
+  padding: .5em;
+  border: 1px solid $colormuted;
+  border-radius: .3em;
+
+  img {
+    width: 375px;
+  }
+}

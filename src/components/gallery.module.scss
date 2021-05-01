@@ -1,0 +1,15 @@
+@import './variables.module.scss';
+
+.imagesWrapper {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 1em;
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $colviolet;
+  }
+  &::-webkit-scrollbar {
+    background-color: $colwhitetansp;
+  }
+}

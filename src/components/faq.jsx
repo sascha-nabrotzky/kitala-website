@@ -36,25 +36,27 @@ function Faq() {
                 image={image2}
                 title="Qualitätsaspekte der Kindertagespflege"
                 content="<h4>Kleine, überschaubare Gruppe</h4>
-                <p>Die kleine Gruppengröße erleichtert es den Kindern, untereinander Beziehungen aufzubauen und soziale Erfahrungen zu machen. Gerade für Einzelkinder ist die enge geschwister ähnliche Konstellation mit den anderen Kindern besonders bereichernd
-                Feste und konstante Bezugsperson
-                Die Kinder haben mit der Kindertagespflegeperson eine konstante und feste Bezugsperson. Diese intensive Betreuung und enge Bindung sind wichtige Grundlagen frühkindlicher Bildungs- und Entwicklungsprozesse. Die enge Bindung zur Bezugsperson gibt den Kindern Sicherheit und Orientierung.
-                
+                <p>Die kleine Gruppengröße erleichtert es den Kindern, untereinander Beziehungen aufzubauen und soziale Erfahrungen zu machen. Gerade für Einzelkinder ist die enge geschwister ähnliche Konstellation mit den anderen Kindern besonders bereichernd.</p>
+
+                <h4>Feste und konstante Bezugsperson</h4>
+                Die Kinder haben mit der Kindertagespflegeperson eine konstante und feste Bezugsperson. Diese intensive Betreuung und enge Bindung sind wichtige Grundlagen frühkindlicher Bildungs- und Entwicklungsprozesse. Die enge Bindung zur Bezugsperson gibt den Kindern Sicherheit und Orientierung.</p>
                 
                 <h4>Individuelle Betreuung</h4>
-                Die Kindertagespflegeperson kann individuell auf das jeweilige Kind eingehen und seine Entwicklung begleiten. Das betrifft nicht nur die Betreuungszeiten, sondern natürlich auch Förderangebote. Aber auch auf Unverträglichkeiten, Allergien, religiöse Besonderheiten und vieles mehr kann sie leichter Rücksicht nehmen. Außerdem kann sie den Tagesablauf mit allen Kindern sehr flexibel gestalten. 
-                Familiennahe Strukturen</h4>
-                Insbesondere Eltern mit kleinen Kindern legen Wert auf familiennahe Strukturen, kleine Kindergruppen und feste Bezugspersonen - genau das kann die Kindertagespflege besonders gut bieten.
+                <p>Die Kindertagespflegeperson kann individuell auf das jeweilige Kind eingehen und seine Entwicklung begleiten. Das betrifft nicht nur die Betreuungszeiten, sondern natürlich auch Förderangebote. Aber auch auf Unverträglichkeiten, Allergien, religiöse Besonderheiten und vieles mehr kann sie leichter Rücksicht nehmen. Außerdem kann sie den Tagesablauf mit allen Kindern sehr flexibel gestalten.</p> 
+
+                <h4>Familiennahe Strukturen</h4>
+                <p>Insbesondere Eltern mit kleinen Kindern legen Wert auf familiennahe Strukturen, kleine Kindergruppen und feste Bezugspersonen - genau das kann die Kindertagespflege besonders gut bieten.</p>
+
                 <h4>Flexible Betreuungszeiten</h4>
-                Kindertagespflegepersonen können nicht nur flexibel auf die Bedürfnisse der Kinder eingehen, oft sind sie auch flexibler, wenn Eltern ungewöhnliche oder wechselnde Arbeitszeiten haben oder der Familienalltag kurzfristig mehr Betreuung notwendig macht.
+                <p>Kindertagespflegepersonen können nicht nur flexibel auf die Bedürfnisse der Kinder eingehen, oft sind sie auch flexibler, wenn Eltern ungewöhnliche oder wechselnde Arbeitszeiten haben oder der Familienalltag kurzfristig mehr Betreuung notwendig macht.</p>
                 <h4>Vielfältige Betreuungslösungen</h4>
-                Die Kindertagespflege bietet vielfältige Betreuungslösungen: Ob im Haushalt der Kindertagespflegeperson oder in angemieteten Räumen, ob von einer Betreuungsperson allein oder in einer Großtagespflege - es gibt viele verschiedene Möglichkeiten, ihr  Kind gut betreuen zu lassen. Häufig kommen die Kinder dadurch auch einen guten Einblick in den täglichen Haushaltsablauf.
+                <p>Die Kindertagespflege bietet vielfältige Betreuungslösungen: Ob im Haushalt der Kindertagespflegeperson oder in angemieteten Räumen, ob von einer Betreuungsperson allein oder in einer Großtagespflege - es gibt viele verschiedene Möglichkeiten, ihr  Kind gut betreuen zu lassen. Häufig kommen die Kinder dadurch auch einen guten Einblick in den täglichen Haushaltsablauf.</p>
                 <h4>Kein Wechsel</h4>
-                Die Kinder bei der Kindertagespflegeperson haben nicht nur eine feste Bezugsperson, sondern müssen auch nicht Gruppen wechseln oder sich, bedingt durch Schichtwechsel oder Ausfall, an andere Ansprechpartner/innen gewöhnen.
+                <p>Die Kinder bei der Kindertagespflegeperson haben nicht nur eine feste Bezugsperson, sondern müssen auch nicht Gruppen wechseln oder sich, bedingt durch Schichtwechsel oder Ausfall, an andere Ansprechpartner/innen gewöhnen.</p>
                 <h4>Wenig Lärm</h4>
-                Bei der Betreuung  durch eine Kindertagespflegeperson sind die Kinder weniger der lauten Geräuschkulisse anderer Kindergruppen ausgesetzt, was gerade für geräuschempfindliche Kinder hilfreich sein kann.
+                <p>Bei der Betreuung  durch eine Kindertagespflegeperson sind die Kinder weniger der lauten Geräuschkulisse anderer Kindergruppen ausgesetzt, was gerade für geräuschempfindliche Kinder hilfreich sein kann.</p>
                 <h4>Einbezug der Eltern</h4>
-                Zwar gibt es in einer Kita häufig einen Elternvertreter, bei einer Kindertagespflegeperson lässt sich aber aufgrund der wenigen Eltern oftmals schneller eine Einigung erzielen, als in einer Kita. Das schont nicht nur die Nerven der Eltern, sondern auch der Kinder.</p>
+                <p>Zwar gibt es in einer Kita häufig einen Elternvertreter, bei einer Kindertagespflegeperson lässt sich aber aufgrund der wenigen Eltern oftmals schneller eine Einigung erzielen, als in einer Kita. Das schont nicht nur die Nerven der Eltern, sondern auch der Kinder.</p>
                 ">
             </Accordion>
         </Suspense>
