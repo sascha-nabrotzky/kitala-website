@@ -31,9 +31,24 @@
       "imgFigCaption": "Dritter Spielplatz wird geschmückt"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Oks_Tanj_Ram_2.jpg",
-      "imgAlt": "Oksana, Tatjana und Ramona",
-      "imgFigCaption": "\"Max&Moritz-Spielplatz\" ist auch fertig."
+      "imgSrc": "./images/gallerien/Aktion1_Ramona.jpg",
+      "imgAlt": "Alles fest im Griff",
+      "imgFigCaption": "Alles fest im Griff"
+    },
+    {
+      "imgSrc": "./images/gallerien/Marina_Saskia.jpg",
+      "imgAlt": "Königsland ist geschmückt",
+      "imgFigCaption": "Königsland ist auch fertig"
+    },
+    {
+      "imgSrc": "./images/gallerien/Meike_Anne_Moor.jpg",
+      "imgAlt": "Auf dem Moor hängen alle Ballons",
+      "imgFigCaption": "\"Auf dem Moor\" hängen alle Ballons"
+    },
+    {
+      "imgSrc": "./images/gallerien/Anne_Birte.jpg",
+      "imgAlt": "Königsland ist geschmückt",
+      "imgFigCaption": "... und fertig."
     }
   ]
 }
