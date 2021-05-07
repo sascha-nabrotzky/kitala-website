@@ -32,6 +32,11 @@ header {
                 list-style-type: none;
                 background-color: $colgreen;
 
+                &:hover {
+                    background-color:  $colviolet;
+                    transition: .2s ease;
+                }
+
                 a {
                     display: flex;
                     justify-content: center;
