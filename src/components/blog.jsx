@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 
 const GalleryAktion1 = lazy(() => import('./gallery_aktion1'));
+const ArtikelGemeinsam = lazy(() => import('./artikel_gemeinsam'));
 const renderLoader = () => <p>Loading ...</p>;
 
 // Images for Gallery loaded from JSON-Path always put in public folder
@@ -23,6 +24,10 @@ function Blog() {
           <Suspense fallback={renderLoader}>
             <GalleryAktion1 /> 
           </Suspense>
+          <Suspense fallback={renderLoader}>
+            <ArtikelGemeinsam />
+          </Suspense>
+
         </main>
       </>
      

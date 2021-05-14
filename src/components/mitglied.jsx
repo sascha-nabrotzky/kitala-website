@@ -1,16 +1,9 @@
 import React from 'react';
 import * as mitgliedStyles from '../components/mitglied.module.scss';
-import { Helmet } from 'react-helmet';
 
 function Mitglied(props) {
 
     return (
-
-        <>
-        <Helmet>
-            <title>Mitglieder | KiTaLa e.V.</title>
-            <meta name='description' content='Die Mitglieder von KiTaLa e.V. stellen sind vor' />
-        </Helmet>
 
         <div className={mitgliedStyles.mitgliedwrapper}>
             <img className={mitgliedStyles.profilbild} src={props.imgSrc} alt={props.imgAlt}/>
@@ -22,7 +15,7 @@ function Mitglied(props) {
                 <a href={`tel: ${props.tel}`} dangerouslySetInnerHTML={{ __html: props.tel }}></a>
             </address>
         </div>
-        </>
+        
     );
   }
   

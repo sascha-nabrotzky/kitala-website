@@ -4,6 +4,7 @@ import HuewelmannImg from '../images/huewelmann300px.jpg';
 import NabrotzkyImg from '../images/nabrotzky300px.jpg';
 import WelkImg from '../images/welk300px.jpg';
 import RichterImg from '../images/richter300px.jpg';
+import { Helmet } from 'react-helmet';
 
 const Mitglied = lazy(() => import('./mitglied')); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
 const renderLoader = () => <p>Loading ...</p>;
@@ -11,6 +12,12 @@ const renderLoader = () => <p>Loading ...</p>;
 function Mitglieder() {
 
     return (
+
+      <>
+      <Helmet>
+            <title>Mitglieder | KiTaLa e.V.</title>
+            <meta name='description' content='Die Mitglieder von KiTaLa e.V. stellen sind vor' />
+      </Helmet>
   
       <main>
         <h1>Vorstand des Vereins</h1>
@@ -69,7 +76,7 @@ function Mitglieder() {
         </section>
           
       </main>
-     
+      </>
     );
   }
   

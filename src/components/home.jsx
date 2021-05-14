@@ -4,6 +4,7 @@ import Blockquote from './blockquote';
 import stepLogo from '../images/StepLogo.svg';
 import emailIcon from '../images/email.svg';
 import socialMediaImg from '../images/SocialmediaImg.jpg';
+import dreiKinder from '../images/dreiKinder.svg';
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -20,8 +21,10 @@ function Home() {
       </Helmet>
 
       <main className={homeStyles.homeMain}>
-        <h1>KiTaLa e.V. &ndash;</h1>
-        <h2>Kindertagespflege Ladbergen</h2>
+        <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
+
+        <img src={dreiKinder} alt="Illustration dreier Kinder"/>
+
         <h3>Was machen wir als Verein?</h3>
         <p>Die Kindertagespflege ist der erste offizielle Bildungsort den Ihr Kind besucht und somit ein wichtiger erster Baustein. Die ersten drei Lebensjahre sind eine besonders wichtige Zeit für die Entwicklung Eurer Kinder, da in diesem Lebensabschnitt die Grundbausteine für Lern- und Beziehungsfähigkeiten gelegt werden. Durch Ausprobieren und Nachahmen lernen sie die Welt kennen und zu begreifen. Dafür benötigen sie vor allem eine sichere Bindungsbeziehung, die ihnen Geborgenheit, Akzeptanz und Sicherheit gibt. Dieses steht für uns an erster Stelle.</p> 
 

@@ -8,6 +8,7 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Impressum from './components/impressum'
 import Datenschutz from './components/datenschutz'
+import Inklusion from "./components/inklusion";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/mitglieder" component={Mitglieder} />
+        <Route exact path="/inklusion" component={Inklusion} />
         <Route exact path="/faq" component={Wissen} />
         <Route exact path="/download" component={Download} />
         <Route path="/impressum" component={Impressum} />
