@@ -28,9 +28,9 @@ function Accordion(props) {
             <div className={currentClass} ref={content} style={{ maxHeight: `${setHeight}` }}>
               <div dangerouslySetInnerHTML={{ __html: props.content }}></div>
             </div>
-            </section>
+          </section>
     )
     
   }
   
-  export default Accordion;
+export default Accordion;
