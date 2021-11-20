@@ -1,0 +1,34 @@
+@import "./variables.module.scss";
+
+.totopbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5.5rem;
+  right: 0.9rem;
+  background-color: transparent;
+  color: $colgreen;
+  border: none;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.buttonHidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5.5rem;
+  right: 0.9rem;
+  background-color: transparent;
+  color: $colgreen;
+  border: none;
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0;
+}
+
+@import "./mediaquerys.module.scss";

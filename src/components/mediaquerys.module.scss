@@ -1,100 +1,97 @@
-@import './variables.module.scss';
+@import "./variables.module.scss";
 
-@media ( min-width:768px ) {
-   
-    header {
+@media (min-width: 768px) {
+  header {
+    .logo {
+      margin-top: 6em;
 
-        .logo {
-            margin-top: 6em;
-
-            img {
-                width: 25%;
-            }
-        }
+      img {
+        width: 25%;
+      }
     }
+  }
 
-    main {
-        max-width: 50em;
-    }
-    
-    .homeMain {
-        
-        aside {
+  main {
+    max-width: 50em;
+  }
 
-            a {
-                display: flex;
-                justify-content: center;
-            }
-        }
-    }
-
-    .quotewrapper {
-        width: 20em;
-        margin: 0 auto;
-    }
-
-    .anfoverflow {
-        width: 6em;
-    }
-
-    .mitgliederRow {
+  .homeMain {
+    aside {
+      a {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+      }
     }
+  }
 
+  .quotewrapper {
+    width: 20em;
+    margin: 0 auto;
+  }
+
+  .anfoverflow {
+    width: 6em;
+  }
+
+  .mitgliederRow {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
-@media ( min-width:1024px ) {
+@media (min-width: 1024px) {
+  header {
+    .gradient {
+      height: 70px;
 
-    header {
+      img {
+        transform-origin: top;
+        transform: scaleY(0.3);
+      }
+    }
 
-        .gradient {
+    .navigation {
+      width: 7vw;
+      right: 0;
 
-            height: 70px;
+      .navList {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: $mainpadding;
+        right: 0;
 
-            img {
-                transform-origin: top;
-                transform: scaleY(.3);
-            }
+        .liItem {
+          margin-left: 1em;
+          margin-bottom: 0.8em;
         }
-
-        .navigation {
-            width:7vw;
-            right: 0;
-
-            .navList {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                padding: $mainpadding;
-                right: 0;
-
-                .liItem {
-                    margin-left: 1em;
-                    margin-bottom: .8em;
-                }
-            }
-        }
-
-        .logo {
-            margin-top: 6em;
-        }
+      }
     }
 
-    .quotewrapper {
-        width: 30vw;
+    .logo {
+      margin-top: 6em;
     }
+  }
 
-    .anfoverflow {
-        width: 9em;
-    }
+  .quotewrapper {
+    width: 30vw;
+  }
 
-    .footerListItems {
-        margin: 2em 0;
-    }
+  .anfoverflow {
+    width: 9em;
+  }
 
-    .article .maintext{
-        columns: 2;
-        column-gap: 2em;
-    }
+  .footerListItems {
+    margin: 2em 0;
+  }
+
+  .article .maintext {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  .totopbutton {
+    bottom: 24.5rem;
+    right: 1.7rem;
+  }
 }
