@@ -8,12 +8,13 @@
   bottom: 5.5rem;
   right: 0.9rem;
   background-color: transparent;
-  color: $colgreen;
+  color: $colblack;
   border: none;
   font-size: 3rem;
   font-weight: 700;
   transition: 0.5s ease-in-out;
   opacity: 1;
+  transform: rotate(90deg);
 }
 
 .buttonHidden {
@@ -24,11 +25,12 @@
   bottom: 5.5rem;
   right: 0.9rem;
   background-color: transparent;
-  color: $colgreen;
+  color: $colblack;
   border: none;
   font-size: 3rem;
   font-weight: 700;
   opacity: 0;
+  transform: rotate(90deg);
 }
 
 @import "./mediaquerys.module.scss";
