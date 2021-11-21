@@ -25,7 +25,7 @@ function Inklusion() {
 
         {InklusionJSON.inkulsionInterview.map((item) => {
           return (
-            <section>
+            <section key={item.index}>
               <h3>{item.inklusionFrage}</h3>
               <p>
                 <strong>{item.inklusionTagesmutter}:</strong>{" "}
