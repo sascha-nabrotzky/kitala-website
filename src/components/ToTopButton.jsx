@@ -22,7 +22,7 @@ function ToTopButton() {
 
   return (
     <button className={currentClass} ref={button} onClick={toTop}>
-      ^
+      &lsaquo;
     </button>
   );
 }
