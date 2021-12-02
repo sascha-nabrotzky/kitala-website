@@ -2,7 +2,6 @@ import React from "react";
 import InklusionJSON from "./json/inklusion.json";
 import inklusionStyles from "./inklusion.module.scss";
 import { Helmet } from "react-helmet";
-import ToTopButton from "./ToTopButton";
 
 function Inklusion() {
   return (
@@ -35,8 +34,6 @@ function Inklusion() {
           );
         })}
       </main>
-
-      <ToTopButton />
     </>
   );
 }

@@ -4,7 +4,6 @@ import image1 from "../images/bbc-creative-1w20Cysy1cg-unsplash.jpg";
 import image2 from "../images/ben-wicks-iDCtsz-INHI-unsplash.jpg";
 import image3 from "../images/marisa-howenstine-Cq9slNxV8YU-unsplash.jpg";
 import image4 from "../images/krakenimages-OroUwAwLs-8-unsplash.jpg";
-import ToTopButton from "./ToTopButton";
 
 const Accordion = lazy(() => import("./accordion"));
 const renderLoader = () => <p>Loading ...</p>;
@@ -83,8 +82,6 @@ function Faq() {
           ></Accordion>
         </Suspense>
       </main>
-
-      <ToTopButton />
     </>
   );
 }
