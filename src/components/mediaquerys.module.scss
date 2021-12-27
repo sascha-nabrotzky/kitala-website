@@ -42,12 +42,7 @@
 @media (min-width: 1024px) {
   header {
     .gradient {
-      height: 70px;
-
-      img {
-        transform-origin: top;
-        transform: scaleY(0.3);
-      }
+      top: -7em;
     }
 
     .navigation {
@@ -93,5 +88,13 @@
   .totopbutton {
     bottom: 25rem;
     right: 1.95rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  header {
+    .gradient {
+      top: -11em;
+    }
   }
 }

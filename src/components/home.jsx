@@ -1,5 +1,5 @@
 import React from "react";
-import * as homeStyles from "../components/home.module.scss";
+import homeStyles from "../components/home.module.scss";
 import Blockquote from "./blockquote";
 import stepLogo from "../images/StepLogo.svg";
 import emailIcon from "../images/email.svg";
@@ -75,13 +75,15 @@ function Home() {
                 alt="Logo von Step Steinfurt"
               />
             </a>
-            <a href="mailto:kontakt@kitala-ladbergen.de">
-              <img
-                className={homeStyles.homeIcon}
-                src={emailIcon}
-                alt="Logo von Step Steinfurt"
-              />
-            </a>
+            {
+              <a href="mailto:kontakt@kitala-ladbergen.de">
+                <img
+                  className={homeStyles.homeIcon}
+                  src={emailIcon}
+                  alt="Eine E-Mail schreiben"
+                />
+              </a>
+            }
           </div>
         </aside>
       </main>

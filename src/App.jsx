@@ -1,4 +1,4 @@
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import Blog from "./components/blog";
 import Mitglieder from "./components/mitglieder";
@@ -15,16 +15,16 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/blog" component={Blog} />
-        <Route exact path="/mitglieder" component={Mitglieder} />
-        <Route exact path="/inklusion" component={Inklusion} />
-        <Route exact path="/faq" component={Wissen} />
-        <Route exact path="/download" component={Download} />
-        <Route path="/impressum" component={Impressum} />
-        <Route path="/datenschutz" component={Datenschutz} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/mitglieder" element={<Mitglieder />} />
+        <Route exact path="/inklusion" element={<Inklusion />} />
+        <Route exact path="/faq" element={<Wissen />} />
+        <Route exact path="/download" element={<Download />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+      </Routes>
       <ToTopButton />
       <Footer />
     </Router>
