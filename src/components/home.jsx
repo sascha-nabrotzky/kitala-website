@@ -6,13 +6,10 @@ import emailIcon from "../images/email.svg";
 import socialMediaImg from "../images/SocialmediaImg.jpg";
 import dreiKinder from "../images/dreiKinder.svg";
 import { Helmet } from "react-helmet";
-import Snowflakes from "./snowflakes";
 
 function Home() {
   return (
     <>
-      <Snowflakes />
-
       <Helmet>
         <title>
           Über den Verein | KiTaLa e.V. - Kindertagespflege Ladbergen

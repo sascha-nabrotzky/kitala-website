@@ -8,7 +8,7 @@ import iconBook from "../images/book_neg.svg";
 import iconUsers from "../images/users_neg.svg";
 import iconDownload from "../images/download_neg.svg";
 import iconInklusion from "../images/inklusion.svg";
-import gradient from "../images/gradient_snow.svg";
+import gradient from "../images/gradient.svg";
 
 function Header() {
   return (
