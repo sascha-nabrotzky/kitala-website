@@ -2,6 +2,7 @@ import React from "react";
 import InklusionJSON from "./json/inklusion.json";
 import inklusionStyles from "../styling/inklusion.module.scss";
 import { Helmet } from "react-helmet";
+import InterviewQA from "./interviewQA";
 
 function Inklusion() {
   return (
@@ -24,13 +25,12 @@ function Inklusion() {
 
         {InklusionJSON.inkulsionInterview.map((item) => {
           return (
-            <section key={item.index}>
-              <h3>{item.inklusionFrage}</h3>
-              <p>
-                <strong>{item.inklusionTagesmutter}:</strong>{" "}
-                {item.inklusionAntwort}
-              </p>
-            </section>
+            <InterviewQA
+              key={item.index}
+              question={item.inklusionFrage}
+              person={item.inklusionTagesmutter}
+              answer={item.inklusionAntwort}
+            />
           );
         })}
       </main>

@@ -1,0 +1,21 @@
+@import "variables.module.scss";
+
+.textHidden {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.7s ease;
+}
+
+.textVisible {
+  overflow: hidden;
+  transition: 0.7s ease;
+  margin-bottom: 3rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.interviewVisible {
+  color: $colviolet;
+}
