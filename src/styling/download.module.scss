@@ -1,0 +1,22 @@
+@import "variables.module.scss";
+
+.downMain {
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $colblack;
+    margin-bottom: 1em;
+    font-weight: 700;
+
+    &:visited {
+      color: $colblack;
+    }
+
+    .pdficon {
+      max-width: 35px;
+      height: auto;
+      margin-right: 0.5em;
+    }
+  }
+}

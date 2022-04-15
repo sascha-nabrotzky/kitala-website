@@ -1,5 +1,5 @@
 import React from "react";
-import homeStyles from "../components/home.module.scss";
+import homeStyles from "../styling/home.module.scss";
 import Blockquote from "./blockquote";
 import stepLogo from "../images/StepLogo.svg";
 import emailIcon from "../images/email.svg";

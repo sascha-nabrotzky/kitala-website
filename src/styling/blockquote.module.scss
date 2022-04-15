@@ -1,0 +1,44 @@
+@import "variables.module.scss";
+
+.quotewrapper {
+  display: flex;
+  color: $colviolet;
+}
+
+.anfoverflow {
+  overflow: hidden;
+  width: 9em;
+}
+
+.anfuehrung {
+  font-size: 8em;
+  margin-top: -0.85em;
+  margin-bottom: 0;
+}
+
+blockquote {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .quotewrapper {
+    width: 20em;
+    margin: 0 auto;
+  }
+
+  .anfoverflow {
+    width: 6em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quotewrapper {
+    width: 30vw;
+  }
+
+  .anfoverflow {
+    width: 9em;
+  }
+}

@@ -1,0 +1,26 @@
+@import "variables.module.scss";
+
+.mitgliedwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .profilbild {
+    border-radius: 50%;
+    max-width: 9em;
+    margin: 1.5em auto 0.5em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  address {
+    font-style: normal;
+
+    a {
+      @include TelefonLink;
+    }
+  }
+}

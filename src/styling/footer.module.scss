@@ -1,10 +1,16 @@
-@import "../components/variables.module.scss";
+@import "variables.module.scss";
 
 .footerListItems {
   display: flex;
   flex-flow: wrap;
   margin: 2em 0 5em;
   padding: $mainpadding;
+}
+
+@media (min-width: 1024px) {
+  .footerListItems {
+    margin: 2em 0 1rem;
+  }
 }
 
 .footerLink {
@@ -20,5 +26,3 @@
     margin-right: 1em;
   }
 }
-
-@import "../components/mediaquerys.module.scss";

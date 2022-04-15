@@ -1,0 +1,57 @@
+@import "variables.module.scss";
+
+.question {
+  color: $colviolet;
+  border-bottom: 2px dotted $colblack;
+  cursor: pointer;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0.7em 0;
+  }
+
+  .titleChevronWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.faqImage {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.accordionIcon {
+  transition: transform 0.4s ease;
+}
+
+.rotate {
+  transition: transform 0.4s ease;
+  transform: rotate(90deg);
+}
+
+.texthidden {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s ease;
+
+  p {
+    margin: 0;
+  }
+}
+
+.active {
+  overflow: hidden;
+  transition: 1s ease;
+
+  p {
+    margin: 0;
+  }
+}
+
+.rotate {
+  transform: rotate(90deg);
+}

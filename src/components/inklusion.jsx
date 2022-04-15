@@ -1,6 +1,6 @@
 import React from "react";
 import InklusionJSON from "./json/inklusion.json";
-import inklusionStyles from "./inklusion.module.scss";
+import inklusionStyles from "../styling/inklusion.module.scss";
 import { Helmet } from "react-helmet";
 
 function Inklusion() {

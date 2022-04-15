@@ -1,0 +1,31 @@
+@import "variables.module.scss";
+
+.homeMain {
+  aside {
+    .iconWrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2em;
+
+      .homeIcon {
+        height: 2.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 50em;
+  }
+
+  .homeMain {
+    aside {
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

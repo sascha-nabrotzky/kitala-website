@@ -1,4 +1,4 @@
-@import "./variables.module.scss";
+@import "variables.module.scss";
 
 .totopbutton {
   display: flex;
@@ -32,6 +32,12 @@
   font-weight: 700;
   opacity: 0;
   transform: rotate(90deg);
+  z-index: -1;
 }
 
-@import "./mediaquerys.module.scss";
+@media (min-width: 1024px) {
+  .totopbutton {
+    bottom: 25rem;
+    right: 1.95rem;
+  }
+}
