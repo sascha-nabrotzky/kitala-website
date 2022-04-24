@@ -32,7 +32,7 @@ export default function InterviewQA(props) {
   }
 
   return (
-    <section className={style.clickable} onClick={changeClass}>
+    <section className={style.question} onClick={changeClass}>
       <h3 className={setColor}>{props.question}</h3>
       <p
         className={currentClass}
