@@ -15,6 +15,7 @@ header {
     display: inline-block;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 
     .navList {
       display: flex;
