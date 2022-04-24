@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
+import Chevron from "../components/chevron";
 import style from "../styling/interviewQA.module.scss";
 
 export default function InterviewQA(props) {
   const [currentClass, setClass] = useState(`${style.textHidden}`);
   const [setHeight, setHeightState] = useState("");
   const [setColor, setColorState] = useState("");
+  const [setRotate, setRotateState] = useState(`${style.chevronIcon}`);
 
   const content = useRef(null);
 
@@ -22,6 +24,11 @@ export default function InterviewQA(props) {
     setColorState(
       currentClass === `${style.textHidden}` ? `${style.interviewVisible}` : ""
     );
+    setRotateState(
+      currentClass === `${style.textHidden}`
+        ? `${style.rotate}`
+        : `${style.chevronIcon}`
+    );
   }
 
   return (
@@ -35,6 +42,9 @@ export default function InterviewQA(props) {
         <strong>{props.person}: </strong>
         {props.answer}
       </p>
+      <div className={style.chevronWrapper}>
+        <Chevron className={`${setRotate}`} width={30} fill={"#999"} />
+      </div>
     </section>
   );
 }
