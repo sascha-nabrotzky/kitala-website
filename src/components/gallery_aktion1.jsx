@@ -10,6 +10,7 @@ function Gallery() {
         {Aktion1JSON.aktion1.map((item) => {
           return (
             <GalleryImage
+              key={item.imgAlt}
               imgSrc={item.imgSrc}
               imgAlt={item.imgAlt}
               imgFigCaption={item.imgFigCaption}
