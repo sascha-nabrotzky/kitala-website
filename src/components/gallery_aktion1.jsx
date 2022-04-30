@@ -6,6 +6,7 @@ import Aktion1JSON from "./json/aktion1.json";
 function Gallery() {
   return (
     <>
+      <h3>Aktion "Gut betreut in der Kindertagespflege"</h3>
       <section className={galleryStyle.imagesWrapper}>
         {Aktion1JSON.aktion1.map((item) => {
           return (

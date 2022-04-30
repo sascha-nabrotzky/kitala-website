@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 const GalleryAktion1 = lazy(() => import("./gallery_aktion1"));
 const ArtikelGemeinsam = lazy(() => import("./artikel_gemeinsam"));
-const renderLoader = () => <p>Loading ...</p>;
+const RenderLoader = <p>Loading ...</p>;
 
 // Images for Gallery loaded from JSON-Path always put in public folder
 
@@ -18,11 +18,11 @@ function Blog() {
       <main>
         <h1>Termine / Veranstaltungen / Blog</h1>
         <h2>Was im Verein so passiert</h2>
-        <h3>Aktion "Gut betreut in der Kindertagespflege"</h3>
-        <Suspense fallback={renderLoader}>
+
+        <Suspense fallback={RenderLoader}>
           <GalleryAktion1 />
         </Suspense>
-        <Suspense fallback={renderLoader}>
+        <Suspense fallback={RenderLoader}>
           <ArtikelGemeinsam />
         </Suspense>
       </main>
