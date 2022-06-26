@@ -1,7 +1,6 @@
 @import "variables.module.scss";
 
 .question {
-  color: $colviolet;
   border-bottom: 2px dotted $colblack;
   cursor: pointer;
   margin-bottom: 1em;
@@ -9,14 +8,15 @@
   flex-direction: column;
 
   h3 {
+    color: $colviolet;
     margin: 0.7em 0;
   }
+}
 
-  .titleChevronWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.titleChevronWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .faqImage {
@@ -38,8 +38,8 @@
   overflow: hidden;
   transition: 1s ease;
 
-  p {
-    margin: 0;
+  p:first-of-type {
+    margin-top: 0;
   }
 }
 
@@ -47,7 +47,7 @@
   overflow: hidden;
   transition: 1s ease;
 
-  p {
-    margin: 0;
+  p:first-of-type {
+    margin-top: 0;
   }
 }

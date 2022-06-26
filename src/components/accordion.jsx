@@ -29,23 +29,35 @@ function Accordion(props) {
 
   return (
     <section>
-      <div className={faqStyles.question} onClick={changeClass}>
+      <div
+        itemscope=""
+        itemprop="mainEntity"
+        itemtype="https://schema.org/Question"
+        className={faqStyles.question}
+        onClick={changeClass}
+      >
         <img
           src={`${props.image}`}
           className={`${faqStyles.faqImage}`}
           alt="Random from unsplash"
         />
         <div className={faqStyles.titleChevronWrapper}>
-          <h3>{props.title}</h3>
+          <h3 itemprop="name">{props.title}</h3>
           <Chevron className={`${setRotate}`} width={30} fill={"#999"} />
         </div>
-      </div>
-      <div
-        className={currentClass}
-        ref={content}
-        style={{ maxHeight: `${setHeight}` }}
-      >
-        <div dangerouslySetInnerHTML={{ __html: props.content }}></div>
+        <div
+          itemscope=""
+          itemprop="acceptedAnswer"
+          itemtype="https://schema.org/Answer"
+          className={currentClass}
+          ref={content}
+          style={{ maxHeight: `${setHeight}` }}
+        >
+          <div
+            dangerouslySetInnerHTML={{ __html: props.content }}
+            itemprop="text"
+          ></div>
+        </div>
       </div>
     </section>
   );
