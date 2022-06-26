@@ -32,16 +32,29 @@ export default function InterviewQA(props) {
   }
 
   return (
-    <section className={style.question} onClick={changeClass}>
-      <h3 className={setColor}>{props.question}</h3>
-      <p
+    <section
+      className={style.question}
+      onClick={changeClass}
+      itemscope=""
+      itemprop="mainEntity"
+      itemtype="https://schema.org/Question"
+    >
+      <h3 className={setColor} itemprop="name">
+        {props.question}
+      </h3>
+      <div
         className={currentClass}
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
+        itemscope=""
+        itemprop="acceptedAnswer"
+        itemtype="https://schema.org/Answer"
       >
-        <strong>{props.person}: </strong>
-        {props.answer}
-      </p>
+        <p itemprop="text">
+          <strong>{props.person}: </strong>
+          {props.answer}
+        </p>
+      </div>
       <div className={style.chevronWrapper}>
         <Chevron className={`${setRotate}`} width={30} fill={"#999"} />
       </div>

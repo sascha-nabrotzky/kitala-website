@@ -19,7 +19,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              Web-Entwicklung | Sascha Nabrotzky
+              Web-Entwickler | Sascha Nabrotzky
             </a>
           </li>
         </ul>
