@@ -22,7 +22,11 @@ function Home() {
       <main className={homeStyles.homeMain}>
         <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
 
-        <img src={dreiKinder} alt="Illustration dreier Kinder" />
+        <img
+          src={dreiKinder}
+          className={homeStyles.illustration}
+          alt="Illustration dreier Kinder"
+        />
 
         <h3>Was machen wir als Verein?</h3>
         <p>

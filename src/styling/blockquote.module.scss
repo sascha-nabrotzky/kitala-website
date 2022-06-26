@@ -1,44 +1,17 @@
 @import "variables.module.scss";
 
-.quotewrapper {
+.blockquote {
   display: flex;
-  color: $colviolet;
-}
-
-.anfoverflow {
-  overflow: hidden;
-  width: 9em;
-}
-
-.anfuehrung {
-  font-size: 8em;
-  margin-top: -0.85em;
-  margin-bottom: 0;
-}
-
-blockquote {
+  align-items: center;
+  width: clamp(min(5rem, 100%), 14rem, 17rem);
+  aspect-ratio: 1/1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: $colviolet;
+  color: $colwhite;
+  border-radius: 50%;
   font-weight: 700;
   font-size: 1.2em;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  .quotewrapper {
-    width: 20em;
-    margin: 0 auto;
-  }
-
-  .anfoverflow {
-    width: 6em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .quotewrapper {
-    width: 30vw;
-  }
-
-  .anfoverflow {
-    width: 9em;
-  }
 }
