@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $colblack;
-  background-image: linear-gradient($colgreentransp, $colviolettransp);
+  background-image: linear-gradient($colviolettransp, $colgreentransp);
 
   & > div {
     display: flex;
