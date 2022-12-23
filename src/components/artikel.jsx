@@ -7,7 +7,7 @@ function Artikel(props) {
       <h3>{props.titel2}</h3>
       <h2>{props.titel1}</h2>
       <p>
-        {props.autor} <date>{props.date}</date>
+        {props.autor} <span>{props.date}</span>
       </p>
       <p>
         <strong>{props.vorspann}</strong>
