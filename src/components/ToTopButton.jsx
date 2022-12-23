@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import styles from "../styling/ToTopButton.module.scss";
 
 function ToTopButton() {
-  const [currentClass, setClass] = useState(`${styles.totopbutton}`);
+  const [currentClass, setClass] = useState(`${styles.buttonHidden}`);
 
   const button = useRef(null);
 
