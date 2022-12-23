@@ -1,52 +1,52 @@
 {
   "aktion1": [
     {
-      "imgSrc": "./images/gallerien/Aktion1_Plakat_aufhaengen.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Plakat_aufhaengen.jpg",
       "imgAlt": "Plakate aufhängen",
       "imgFigCaption": "Plakate aufhängen"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Luftballons_aufpumpen.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Luftballons_aufpumpen.jpg",
       "imgAlt": "Luftballons aufpumpen",
       "imgFigCaption": "Luftballons aufpumpen"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Oksana.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Oksana.jpg",
       "imgAlt": "Oksana",
       "imgFigCaption": "Alles festbinden"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Oks_Tanj_Ram_1.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Oks_Tanj_Ram_1.jpg",
       "imgAlt": "Oksana, Tatjana und Ramona",
       "imgFigCaption": "Gruppenfoto nicht vergessen"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Zaun.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Zaun.jpg",
       "imgAlt": "Zaun1",
       "imgFigCaption": "Das erste Plakat hängt"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Zaun_2.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Zaun_2.jpg",
       "imgAlt": "Dritter Spielplatz wird angegangen",
       "imgFigCaption": "Dritter Spielplatz wird geschmückt"
     },
     {
-      "imgSrc": "./images/gallerien/Aktion1_Ramona.jpg",
+      "imgSrc": "../images/gallerien/Aktion1_Ramona.jpg",
       "imgAlt": "Alles fest im Griff",
       "imgFigCaption": "Alles fest im Griff"
     },
     {
-      "imgSrc": "./images/gallerien/Marina_Saskia.jpg",
+      "imgSrc": "../images/gallerien/Marina_Saskia.jpg",
       "imgAlt": "Königsland ist geschmückt",
       "imgFigCaption": "Königsland ist auch fertig"
     },
     {
-      "imgSrc": "./images/gallerien/Meike_Anne_Moor.jpg",
+      "imgSrc": "../images/gallerien/Meike_Anne_Moor.jpg",
       "imgAlt": "Auf dem Moor hängen alle Ballons",
       "imgFigCaption": "\"Auf dem Moor\" hängen alle Ballons"
     },
     {
-      "imgSrc": "./images/gallerien/Anne_Birte.jpg",
+      "imgSrc": "../images/gallerien/Anne_Birte.jpg",
       "imgAlt": "Königsland ist geschmückt.",
       "imgFigCaption": "... und fertig."
     }
