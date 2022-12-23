@@ -1,0 +1,16 @@
+@import "variables.module.scss";
+
+body {
+  @include MainFont;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $colblack;
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $mainwidth;
+    padding: $mainpadding;
+  }
+}

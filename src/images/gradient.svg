@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1125 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlnsSerif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="ArtBoard1" transform="matrix(1,0,0,0.0860495,0,0)">
-        <rect x="0" y="0" width="1125" height="2436" style="fill:none;"/>
-        <clipPath id="_clip1">
-            <rect x="0" y="0" width="1125" height="2436"/>
-        </clipPath>
-        <g clip-path="url(#_clip1)">
-            <g transform="matrix(-0.449292,0,0,5.22132,1119.69,61.6692)">
-                <path d="M2492.13,-11.811L-11.811,-11.811L-11.811,428.948C-11.811,428.948 502.679,96.82 1049.82,295.5C1839.15,582.128 2492.13,345.76 2492.13,345.76L2492.13,-11.811Z" style="fill:url(#_Linear2);"/>
-            </g>
-        </g>
-    </g>
-    <defs>
-        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-2456,0,0,2456,2456,316.861)"><stop offset="0" style="stop-color:rgb(73,41,118);stop-opacity:1"/><stop offset="0.44" style="stop-color:rgb(63,63,96);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(41,114,43);stop-opacity:1"/></linearGradient>
-    </defs>
-</svg>
+<svg viewBox="0 0 1125 210" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path fill="none" d="M0 0h1125v209.617H0z"/><path d="M-.007-.523h1125.004v198.03S893.84 48.284 648.013 137.55C293.373 266.33-.007 160.13-.007 160.13Z" fill="url(#a)"/><path d="M1124.996 197.507S893.839 48.284 648.013 137.55C388.241 231.88 161.34 200.133 58.545 176.4c107.588 24.404 317.556 46.169 565.274-84.99 239.468-126.794 501.177 15.764 501.177 15.764z" fill="#fff" fill-opacity=".4"/><path d="M1124.996 161.752S891.328 12.26 647.114 115.534c-260.702 110.25-485.775 84.6-588.569 60.866 107.588 24.404 331.596 44.827 580.078-71.953 247.205-116.182 485.924 32.569 485.924 32.569z" fill="#fff"/><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1103.4636 0 0 1103.4632 16.226 147.147)"><stop offset="0" stop-color="#492976"/><stop offset=".44" stop-color="#3f3f60"/><stop offset="1" stop-color="#29722b"/></linearGradient></defs></svg>

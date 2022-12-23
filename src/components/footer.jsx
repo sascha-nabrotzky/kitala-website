@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerStyles from "../components/footer.module.scss";
+import footerStyles from "../styling/footer.module.scss";
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              Web-Entwicklung | Sascha Nabrotzky
+              Web-Entwickler | Sascha Nabrotzky
             </a>
           </li>
         </ul>

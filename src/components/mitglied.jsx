@@ -1,5 +1,5 @@
 import React from "react";
-import mitgliedStyles from "../components/mitglied.module.scss";
+import mitgliedStyles from "../styling/mitglied.module.scss";
 
 function Mitglied(props) {
   return (

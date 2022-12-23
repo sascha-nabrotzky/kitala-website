@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import mitgliederStyles from "../components/mitglieder.module.scss";
+import mitgliederStyles from "../styling/mitglieder.module.scss";
 import HuewelmannImg from "../images/huewelmann300px.jpg";
 import NabrotzkyImg from "../images/nabrotzky300px.jpg";
 import WelkImg from "../images/welk300px.jpg";

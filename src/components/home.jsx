@@ -1,18 +1,15 @@
 import React from "react";
-import homeStyles from "../components/home.module.scss";
+import homeStyles from "../styling/home.module.scss";
 import Blockquote from "./blockquote";
 import stepLogo from "../images/StepLogo.svg";
 import emailIcon from "../images/email.svg";
 import socialMediaImg from "../images/SocialmediaImg.jpg";
 import dreiKinder from "../images/dreiKinder.svg";
 import { Helmet } from "react-helmet";
-import Snowflakes from "./snowflakes";
 
 function Home() {
   return (
     <>
-      <Snowflakes />
-
       <Helmet>
         <title>
           Über den Verein | KiTaLa e.V. - Kindertagespflege Ladbergen
@@ -25,7 +22,11 @@ function Home() {
       <main className={homeStyles.homeMain}>
         <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
 
-        <img src={dreiKinder} alt="Illustration dreier Kinder" />
+        <img
+          src={dreiKinder}
+          className={homeStyles.illustration}
+          alt="Illustration dreier Kinder"
+        />
 
         <h3>Was machen wir als Verein?</h3>
         <p>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/kitala_logo.svg";
-import headerStyles from "../components/header.module.scss";
+import headerStyles from "../styling/header.module.scss";
 import iconHome from "../images/home_neg.svg";
 import iconCalendarGallery from "../images/calendar_gallery.svg";
 import iconBook from "../images/book_neg.svg";
 import iconUsers from "../images/users_neg.svg";
 import iconDownload from "../images/download_neg.svg";
 import iconInklusion from "../images/inklusion.svg";
-import gradient from "../images/gradient_snow.svg";
+import gradient from "../images/gradient.svg";
 
 function Header() {
   return (

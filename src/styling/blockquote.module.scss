@@ -1,0 +1,17 @@
+@import "variables.module.scss";
+
+.blockquote {
+  display: flex;
+  align-items: center;
+  width: clamp(min(5rem, 100%), 14rem, 17rem);
+  aspect-ratio: 1/1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: $colviolet;
+  color: $colwhite;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.2em;
+}

@@ -1,30 +1,26 @@
-import React from 'react';
-import galleryStyle from './gallery.module.scss';
-import GalleryImage from './galleryImage';
-import Aktion1JSON from './json/aktion1.json';
+import React from "react";
+import galleryStyle from "../styling/gallery.module.scss";
+import GalleryImage from "./galleryImage";
+import Aktion1JSON from "./json/aktion1.json";
 
-function Gallery()  {
-
+function Gallery() {
   return (
-  <>
+    <>
+      <h3>Aktion "Gut betreut in der Kindertagespflege"</h3>
       <section className={galleryStyle.imagesWrapper}>
-
-        {Aktion1JSON.aktion1.map ( (item) => {
-
+        {Aktion1JSON.aktion1.map((item) => {
           return (
-              <GalleryImage 
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
-                imgFigCaption={item.imgFigCaption}
-              /> 
-            )
-          })
-        }
-
+            <GalleryImage
+              key={item.imgAlt}
+              imgSrc={item.imgSrc}
+              imgAlt={item.imgAlt}
+              imgFigCaption={item.imgFigCaption}
+            />
+          );
+        })}
       </section>
-  </>
-  )
-  
+    </>
+  );
 }
 
 export default Gallery;
