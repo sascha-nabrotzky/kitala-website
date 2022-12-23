@@ -1,5 +1,9 @@
 @import "variables.module.scss";
 
+footer {
+  margin-top: auto;
+}
+
 .footerListItems {
   display: flex;
   flex-flow: wrap;
