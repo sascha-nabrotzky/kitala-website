@@ -35,22 +35,22 @@ export default function InterviewQA(props) {
     <section
       className={style.question}
       onClick={changeClass}
-      itemscope=""
-      itemprop="mainEntity"
-      itemtype="https://schema.org/Question"
+      itemScope=""
+      itemProp="mainEntity"
+      itemType="https://schema.org/Question"
     >
-      <h3 className={setColor} itemprop="name">
+      <h3 className={setColor} itemProp="name">
         {props.question}
       </h3>
       <div
         className={currentClass}
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
-        itemscope=""
-        itemprop="acceptedAnswer"
-        itemtype="https://schema.org/Answer"
+        itemScope=""
+        itemProp="acceptedAnswer"
+        itemType="https://schema.org/Answer"
       >
-        <p itemprop="text">
+        <p itemProp="text">
           <strong>{props.person}: </strong>
           {props.answer}
         </p>

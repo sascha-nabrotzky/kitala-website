@@ -19,7 +19,7 @@ function Faq() {
         />
       </Helmet>
 
-      <main itemscope="" itemtype="https://schema.org/FAQPage">
+      <main itemScope="" itemType="https://schema.org/FAQPage">
         <h1>Fragen & Antworten</h1>
 
         <Suspense fallback={renderLoader()}>
