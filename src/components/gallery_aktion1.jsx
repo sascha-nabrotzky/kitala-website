@@ -1,7 +1,7 @@
 import React from "react";
 import galleryStyle from "../styling/gallery.module.scss";
 import GalleryImage from "./galleryImage";
-import Aktion1JSON from "./json/aktion1.json";
+import Aktion1JSON from "../text/aktion1.json";
 
 function Gallery() {
   return (
