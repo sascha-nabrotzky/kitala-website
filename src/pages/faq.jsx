@@ -5,7 +5,7 @@ import image2 from "../images/ben-wicks-iDCtsz-INHI-unsplash.jpg";
 import image3 from "../images/marisa-howenstine-Cq9slNxV8YU-unsplash.jpg";
 import image4 from "../images/krakenimages-OroUwAwLs-8-unsplash.jpg";
 
-const Accordion = lazy(() => import("./accordion"));
+const Accordion = lazy(() => import("../components/accordion"));
 const renderLoader = () => <p>Loading ...</p>;
 
 function Faq() {

@@ -1,14 +1,14 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/home";
-import Blog from "./components/blog";
-import Mitglieder from "./components/mitglieder";
-import Wissen from "./components/faq";
+import Home from "./pages/home";
+import Blog from "./pages/blog";
+import Mitglieder from "./pages/mitglieder";
+import Wissen from "./pages/faq";
 import Download from "./components/download";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Impressum from "./components/impressum";
-import Datenschutz from "./components/datenschutz";
-import Inklusion from "./components/inklusion";
+import Impressum from "./pages/impressum";
+import Datenschutz from "./pages/datenschutz";
+import Inklusion from "./pages/inklusion";
 import ToTopButton from "./components/ToTopButton";
 
 function App() {

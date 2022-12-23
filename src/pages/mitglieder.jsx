@@ -6,7 +6,7 @@ import WelkImg from "../images/welk300px.jpg";
 import RichterImg from "../images/richter300px.jpg";
 import { Helmet } from "react-helmet";
 
-const Mitglied = lazy(() => import("./mitglied")); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
+const Mitglied = lazy(() => import("../components/mitglied")); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
 const renderLoader = () => <p>Loading ...</p>;
 
 function Mitglieder() {
