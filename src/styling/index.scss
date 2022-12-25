@@ -17,7 +17,21 @@ body {
   main {
     margin-left: auto;
     margin-right: auto;
-    width: $mainwidth;
+    max-width: 45rem;
     padding: $mainpadding;
+  }
+
+  .tns-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    button {
+      min-width: 3.5rem;
+      margin-inline: 0.5rem;
+      min-height: 2rem;
+      border-radius: 0;
+      border: none;
+    }
   }
 }

@@ -1,8 +1,14 @@
 @import "variables.module.scss";
 
-@media (min-width: 768px) {
+.mitgliederRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* @media (min-width: 768px) {
   .mitgliederRow {
     display: flex;
     justify-content: space-evenly;
   }
-}
+} */

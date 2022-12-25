@@ -2,14 +2,17 @@
 
 .mitgliedwrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  flex-basis: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 
   .profilbild {
     border-radius: 50%;
     max-width: 9em;
-    margin: 1.5em auto 0.5em;
+    margin: 0 auto 0.5em;
   }
 
   p {

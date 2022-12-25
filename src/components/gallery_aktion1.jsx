@@ -1,25 +1,40 @@
-import React from "react";
-import galleryStyle from "../styling/gallery.module.scss";
-import GalleryImage from "./galleryImage";
+import React, { useEffect } from "react";
+import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
+import "../../node_modules/tiny-slider/src/tiny-slider.scss";
 import Aktion1JSON from "../text/aktion1.json";
 
 function Gallery() {
+  useEffect(() => {
+    tns({
+      container: `.sliderImages`,
+      items: 1,
+      slideBy: "page",
+      nav: false,
+      controlsPosition: "bottom",
+      controlsText: ["Zurück", "Vor"],
+      autoplay: true,
+      autoplayButtonOutput: false,
+      gutter: 10,
+      responsive: {
+        640: {
+          items: 1,
+        },
+        900: {
+          items: 2,
+        },
+      },
+    });
+  });
+
   return (
-    <>
+    <section className="sliderWrapper">
       <h3>Aktion "Gut betreut in der Kindertagespflege"</h3>
-      <section className={galleryStyle.imagesWrapper}>
+      <div className="sliderImages">
         {Aktion1JSON.aktion1.map((item) => {
-          return (
-            <GalleryImage
-              key={item.imgAlt}
-              imgSrc={item.imgSrc}
-              imgAlt={item.imgAlt}
-              imgFigCaption={item.imgFigCaption}
-            />
-          );
+          return <img key={item.imgAlt} src={item.imgSrc} alt={item.imgAlt} />;
         })}
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
