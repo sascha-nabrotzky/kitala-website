@@ -1,9 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
-import image1 from "../images/bbc-creative-1w20Cysy1cg-unsplash.jpg";
-import image2 from "../images/ben-wicks-iDCtsz-INHI-unsplash.jpg";
-import image3 from "../images/marisa-howenstine-Cq9slNxV8YU-unsplash.jpg";
-import image4 from "../images/krakenimages-OroUwAwLs-8-unsplash.jpg";
+import image1 from "../images/Küche.jpg";
+import image2 from "../images/Qualitätsaspekte.jpg";
+import image3 from "../images/Dokumentation.jpg";
+import image4 from "../images/Kosten.jpg";
 
 const Accordion = lazy(() => import("../components/accordion"));
 const renderLoader = () => <p>Loading ...</p>;

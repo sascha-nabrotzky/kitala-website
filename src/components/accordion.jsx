@@ -39,7 +39,7 @@ function Accordion(props) {
         <img
           src={`${props.image}`}
           className={`${faqStyles.faqImage}`}
-          alt="Random from unsplash"
+          alt="Illustration Sascha Nabrotzky"
         />
         <div className={faqStyles.titleChevronWrapper}>
           <h3 itemProp="name">{props.title}</h3>
