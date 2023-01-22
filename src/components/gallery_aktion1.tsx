@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider";
 import "../../node_modules/tiny-slider/src/tiny-slider.scss";
 import Aktion1JSON from "../text/aktion1.json";
 
-function Gallery() {
+const Gallery = () => {
   useEffect(() => {
     tns({
       container: `.sliderImages`,
@@ -28,7 +28,7 @@ function Gallery() {
 
   return (
     <section className="sliderWrapper">
-      <h3>Aktion "Gut betreut in der Kindertagespflege"</h3>
+      <h3>Aktion &quot;Gut betreut in der Kindertagespflege&quot;</h3>
       <div className="sliderImages">
         {Aktion1JSON.aktion1.map((item) => {
           return <img key={item.imgAlt} src={item.imgSrc} alt={item.imgAlt} />;
@@ -36,6 +36,6 @@ function Gallery() {
       </div>
     </section>
   );
-}
+};
 
 export default Gallery;

@@ -12,7 +12,7 @@ function Inklusion() {
         <meta name="description" content="Was Inklusion dem Verein bedeutet" />
       </Helmet>
 
-      <main itemScope="" itemType="https://schema.org/FAQPage">
+      <main>
         <h1>Inklusion</h1>
         <h2>Interview des SKF mit unseren Tagesmüttern</h2>
         <div className={inklusionStyles.imgInklusion}>

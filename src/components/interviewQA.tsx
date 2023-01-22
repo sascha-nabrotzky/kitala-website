@@ -1,14 +1,20 @@
 import React, { useState, useRef } from "react";
-import Chevron from "../components/chevron";
+import Chevron from "./chevron";
 import style from "../styling/interviewQA.module.scss";
 
-export default function InterviewQA(props) {
+type InterviewProps = {
+  question: string;
+  person: string;
+  answer: string;
+};
+
+const InterviewQA = ({ question, person, answer }: InterviewProps) => {
   const [currentClass, setClass] = useState(`${style.textHidden}`);
   const [setHeight, setHeightState] = useState("");
   const [setColor, setColorState] = useState("");
   const [setRotate, setRotateState] = useState(`${style.chevronIcon}`);
 
-  const content = useRef(null);
+  const content = useRef("0");
 
   function changeClass() {
     setClass(
@@ -32,32 +38,25 @@ export default function InterviewQA(props) {
   }
 
   return (
-    <section
-      className={style.question}
-      onClick={changeClass}
-      itemScope=""
-      itemProp="mainEntity"
-      itemType="https://schema.org/Question"
-    >
+    <section className={style.question} onClick={changeClass}>
       <h3 className={setColor} itemProp="name">
-        {props.question}
+        {question}
       </h3>
       <div
         className={currentClass}
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
-        itemScope=""
-        itemProp="acceptedAnswer"
-        itemType="https://schema.org/Answer"
       >
         <p itemProp="text">
-          <strong>{props.person}: </strong>
-          {props.answer}
+          <strong>{person}: </strong>
+          {answer}
         </p>
       </div>
       <div className={style.chevronWrapper}>
-        <Chevron className={`${setRotate}`} width={30} fill={"#999"} />
+        <Chevron className={`${setRotate}`} width={"30"} fill={"#999"} />
       </div>
     </section>
   );
-}
+};
+
+export default InterviewQA;

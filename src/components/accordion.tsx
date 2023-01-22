@@ -1,13 +1,19 @@
 import React, { useState, useRef } from "react";
-import Chevron from "../components/chevron";
+import Chevron from "./chevron";
 import faqStyles from "../styling/faq.module.scss";
 
-function Accordion(props) {
+interface AccordionProps {
+  image: string;
+  title: string;
+  text: string;
+}
+
+const Accordion = ({ image, title, text }: AccordionProps) => {
   const [currentClass, setClass] = useState(`${faqStyles.texthidden}`);
   const [setHeight, setHeightState] = useState("");
   const [setRotate, setRotateState] = useState(`${faqStyles.accordionIcon}`);
 
-  const content = useRef(null);
+  const content = useRef("0");
 
   function changeClass() {
     setClass(
@@ -29,38 +35,26 @@ function Accordion(props) {
 
   return (
     <section>
-      <div
-        itemScope=""
-        itemProp="mainEntity"
-        itemType="https://schema.org/Question"
-        className={faqStyles.question}
-        onClick={changeClass}
-      >
+      <div className={faqStyles.question} onClick={changeClass}>
         <img
-          src={`${props.image}`}
+          src={`${image}`}
           className={`${faqStyles.faqImage}`}
           alt="Illustration Sascha Nabrotzky"
         />
         <div className={faqStyles.titleChevronWrapper}>
-          <h3 itemProp="name">{props.title}</h3>
-          <Chevron className={`${setRotate}`} width={30} fill={"#999"} />
+          <h3 itemProp="name">{title}</h3>
+          <Chevron className={`${setRotate}`} width={"30"} fill={"#999"} />
         </div>
         <div
-          itemScope=""
-          itemProp="acceptedAnswer"
-          itemType="https://schema.org/Answer"
           className={currentClass}
           ref={content}
           style={{ maxHeight: `${setHeight}` }}
         >
-          <div
-            dangerouslySetInnerHTML={{ __html: props.content }}
-            itemProp="text"
-          ></div>
+          <div dangerouslySetInnerHTML={{ __html: text }} itemProp="text"></div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Accordion;

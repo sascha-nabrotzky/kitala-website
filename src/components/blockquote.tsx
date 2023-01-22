@@ -1,13 +1,17 @@
 import React from "react";
 import styles from "../styling/blockquote.module.scss";
 
-function Blockquote(props) {
+type BlockquoteProps = {
+  content: string,
+};
+
+const Blockquote = ({ content }: BlockquoteProps) => {
   return (
     <blockquote
       className={styles.blockquote}
-      dangerouslySetInnerHTML={{ __html: props.content }}
+      dangerouslySetInnerHTML={{ __html: content }}
     ></blockquote>
   );
-}
+};
 
 export default Blockquote;
