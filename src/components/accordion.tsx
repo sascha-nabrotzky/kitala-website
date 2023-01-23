@@ -13,7 +13,7 @@ const Accordion = ({ image, title, text }: AccordionProps) => {
   const [setHeight, setHeightState] = useState("");
   const [setRotate, setRotateState] = useState(`${faqStyles.accordionIcon}`);
 
-  const content = useRef("0");
+  const content = useRef<HTMLDivElement>(null);
 
   function changeClass() {
     setClass(
@@ -21,11 +21,14 @@ const Accordion = ({ image, title, text }: AccordionProps) => {
         ? `${faqStyles.active}`
         : `${faqStyles.texthidden}`
     );
-    setHeightState(
-      currentClass === `${faqStyles.texthidden}`
-        ? `${content.current.scrollHeight}px`
-        : "0px"
-    );
+    // Typescript braucht die Condition für useRef
+    if (content.current) {
+      setHeightState(
+        currentClass === `${faqStyles.texthidden}`
+          ? `${content.current.scrollHeight}px`
+          : "0px"
+      );
+    }
     setRotateState(
       currentClass === `${faqStyles.texthidden}`
         ? `${faqStyles.rotate}`
@@ -42,7 +45,7 @@ const Accordion = ({ image, title, text }: AccordionProps) => {
           alt="Illustration Sascha Nabrotzky"
         />
         <div className={faqStyles.titleChevronWrapper}>
-          <h3 itemProp="name">{title}</h3>
+          <h3>{title}</h3>
           <Chevron className={`${setRotate}`} width={"30"} fill={"#999"} />
         </div>
         <div
@@ -50,7 +53,7 @@ const Accordion = ({ image, title, text }: AccordionProps) => {
           ref={content}
           style={{ maxHeight: `${setHeight}` }}
         >
-          <div dangerouslySetInnerHTML={{ __html: text }} itemProp="text"></div>
+          <div dangerouslySetInnerHTML={{ __html: text }}></div>
         </div>
       </div>
     </section>

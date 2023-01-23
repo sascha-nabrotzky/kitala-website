@@ -14,7 +14,7 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
   const [setColor, setColorState] = useState("");
   const [setRotate, setRotateState] = useState(`${style.chevronIcon}`);
 
-  const content = useRef("0");
+  const content = useRef<HTMLDivElement>(null);
 
   function changeClass() {
     setClass(
@@ -22,11 +22,14 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
         ? `${style.textVisible}`
         : `${style.textHidden}`
     );
-    setHeightState(
-      currentClass === `${style.textHidden}`
-        ? `${content.current.scrollHeight}px`
-        : "0px"
-    );
+    // Typescript braucht die Condition für useRef
+    if (content.current) {
+      setHeightState(
+        currentClass === `${style.textHidden}`
+          ? `${content.current.scrollHeight}px`
+          : "0px"
+      );
+    }
     setColorState(
       currentClass === `${style.textHidden}` ? `${style.interviewVisible}` : ""
     );
@@ -39,15 +42,13 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
 
   return (
     <section className={style.question} onClick={changeClass}>
-      <h3 className={setColor} itemProp="name">
-        {question}
-      </h3>
+      <h3 className={setColor}>{question}</h3>
       <div
         className={currentClass}
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
       >
-        <p itemProp="text">
+        <p>
           <strong>{person}: </strong>
           {answer}
         </p>
