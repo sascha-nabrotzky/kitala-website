@@ -1,5 +1,5 @@
 import React from "react";
-import artikelStyles from "../styling/artikel.module.scss";
+import artikelStyles from "../styles/artikel.module.scss";
 
 type ArtikelProps = {
   titel1: string;

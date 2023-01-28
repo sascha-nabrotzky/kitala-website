@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../styling/blockquote.module.scss";
+import styles from "../styles/blockquote.module.scss";
 
 type BlockquoteProps = {
-  content: string,
+  content: string;
 };
 
 const Blockquote = ({ content }: BlockquoteProps) => {

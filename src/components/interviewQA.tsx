@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Chevron from "./chevron";
-import style from "../styling/interviewQA.module.scss";
+import style from "../styles/interviewQA.module.scss";
 
 type InterviewProps = {
   question: string;

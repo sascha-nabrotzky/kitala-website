@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Chevron from "./chevron";
-import faqStyles from "../styling/faq.module.scss";
+import faqStyles from "../styles/faq.module.scss";
 
 interface AccordionProps {
   image: string;

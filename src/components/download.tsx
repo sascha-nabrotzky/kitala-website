@@ -1,5 +1,5 @@
 import React from "react";
-import downloadStyles from "../styling/download.module.scss";
+import downloadStyles from "../styles/download.module.scss";
 import MitgliedsantragPDF from "../images/Mitgliedsantrag_interaktiv.pdf";
 import MitgliedsantragFoerderPDF from "../images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";
 import iconPDF from "../images/pdf.svg";

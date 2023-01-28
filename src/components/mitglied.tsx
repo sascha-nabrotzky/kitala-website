@@ -1,5 +1,5 @@
 import React from "react";
-import mitgliedStyles from "../styling/mitglied.module.scss";
+import mitgliedStyles from "../styles/mitglied.module.scss";
 
 type MitgliedProps = {
   imgSrc: string;

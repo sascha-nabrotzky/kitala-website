@@ -1,6 +1,6 @@
 import React from "react";
 import InklusionJSON from "../text/inklusion.json";
-import inklusionStyles from "../styling/inklusion.module.scss";
+import inklusionStyles from "../styles/inklusion.module.scss";
 import { Helmet } from "react-helmet";
 import InterviewQA from "../components/interviewQA";
 
