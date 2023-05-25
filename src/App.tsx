@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import Blog from "./pages/blog";
 import Mitglieder from "./pages/mitglieder";
 import Wissen from "./pages/faq";
-import Download from "./components/download";
+import Download from "./pages/download";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Impressum from "./pages/impressum";

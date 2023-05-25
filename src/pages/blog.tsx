@@ -2,9 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 
 const GalleryAktion1 = lazy(() => import("../components/gallery_aktion1"));
-const ArtikelGemeinsam = lazy(() =>
-  import("../components/artikel_gemeinsam.tsx")
-);
+const ArtikelGemeinsam = lazy(() => import("../components/artikel_gemeinsam"));
 const RenderLoader = <p>Loading ...</p>;
 
 // Images for Gallery loaded from JSON-Path always put in public folder

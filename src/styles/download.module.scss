@@ -4,10 +4,15 @@
   a {
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
+    padding-inline: 1rem;
+    padding-block: 0.8rem;
     text-decoration: none;
     color: $colblack;
-    margin-bottom: 1em;
     font-weight: 700;
+    background-color: $colwhite;
+    box-shadow: $shadow-default;
+    border-radius: 4px;
 
     &:visited {
       color: $colblack;
@@ -16,7 +21,7 @@
     .pdficon {
       max-width: 35px;
       height: auto;
-      margin-right: 0.5em;
+      margin-right: 0.8em;
     }
   }
 }
