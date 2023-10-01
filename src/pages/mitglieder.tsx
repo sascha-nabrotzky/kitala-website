@@ -1,6 +1,6 @@
 import React from "react";
 import Mitglied from "../components/mitglied";
-import styles from "../styles/mitglieder.module.scss";
+import { Helmet } from "react-helmet";
 import HuewelmannImg from "../images/huewelmann300px.jpg";
 import NabrotzkyImg from "../images/nabrotzky300px.jpg";
 import WelkImg from "../images/welk300px.jpg";
@@ -12,7 +12,7 @@ import LutterbeiImg from "../images/Lutterbei_300px.jpg";
 import OeleschImg from "../images/Olesch_300px.jpg";
 import TuschewitzkiImg from "../images/Tuschewitzki_300px.jpg";
 import SchroerlueckeImg from "../images/Schroeerluecke_300px.jpg";
-import { Helmet } from "react-helmet";
+import styles from "../styles/mitglieder.module.scss";
 
 const Mitglieder = () => {
   return (
@@ -26,7 +26,7 @@ const Mitglieder = () => {
       </Helmet>
 
       <main>
-        <h1>Vorstand des Vereins</h1>
+        <h1>Vorstand und Mitglieder des Vereins</h1>
         <h2>Wir stellen uns vor</h2>
         <section className={styles.mitgliederWrapper}>
           <Mitglied
