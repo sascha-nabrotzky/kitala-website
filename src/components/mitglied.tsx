@@ -1,5 +1,5 @@
 import React from "react";
-import mitgliedStyles from "../styles/mitglied.module.scss";
+import styles from "../styles/mitglied.module.scss";
 
 type MitgliedProps = {
   imgSrc: string;
@@ -9,6 +9,8 @@ type MitgliedProps = {
   kita: string;
   adress: string;
   tel: string;
+  tel2?: string;
+  website?: string;
 };
 
 const Mitglied = ({
@@ -18,17 +20,38 @@ const Mitglied = ({
   kita,
   adress,
   tel,
+  tel2,
   title,
+  website,
 }: MitgliedProps) => {
   return (
-    <div className={mitgliedStyles.mitgliedwrapper}>
-      <img className={mitgliedStyles.profilbild} src={imgSrc} alt={imgAlt} />
-      <strong dangerouslySetInnerHTML={{ __html: title }}></strong>
-      <p dangerouslySetInnerHTML={{ __html: name }}></p>
-      <p dangerouslySetInnerHTML={{ __html: kita }}></p>
-      <address>
+    <div className={styles.mitgliedwrapper}>
+      <img className={styles.profilbild} src={imgSrc} alt={imgAlt} />
+      <address className={styles.textWrapper}>
+        <p dangerouslySetInnerHTML={{ __html: title }}></p>
+        <strong dangerouslySetInnerHTML={{ __html: name }}></strong>
+        <strong
+          dangerouslySetInnerHTML={{ __html: kita }}
+          className={styles.kita}
+        ></strong>
         <p dangerouslySetInnerHTML={{ __html: adress }}></p>
         <a href={`tel: ${tel}`} dangerouslySetInnerHTML={{ __html: tel }}></a>
+        {tel2 && (
+          <a
+            href={`tel: ${tel2}`}
+            dangerouslySetInnerHTML={{ __html: tel2 }}
+          ></a>
+        )}
+        {website && (
+          <a
+            href={`https://www.${website}`}
+            className={styles.btnWebsite}
+            target="__blank"
+            rel="noreferrer"
+          >
+            Website
+          </a>
+        )}
       </address>
     </div>
   );

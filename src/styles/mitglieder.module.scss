@@ -1,14 +1,23 @@
 @import "variables.module.scss";
 
-.mitgliederRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.mitgliederWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-/* @media (min-width: 768px) {
-  .mitgliederRow {
-    display: flex;
-    justify-content: space-evenly;
+@media screen and (max-width: 640px) {
+  .mitgliederWrapper {
+    grid-template-columns: 1fr;
   }
-} */
+}
+@media screen and (min-width: 641px) {
+  .mitgliederWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mitgliederWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

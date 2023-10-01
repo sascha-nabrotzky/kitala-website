@@ -3,22 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^13.0.1",
-    "@testing-library/user-event": "^14.1.0",
-    "@types/jest": "^29.2.6",
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@types/react-helmet": "^6.1.6",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^18.18.1",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "@types/react-helmet": "^6.1.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.2.1",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.0",
-    "sass": "^1.41.1",
+    "sass": "^1.68.0",
     "tiny-slider": "^2.9.4",
-    "web-vitals": "^3.1.0"
+    "web-vitals": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,10 +46,10 @@
   },
   "devDependencies": {
     "@tsconfig/create-react-app": "^1.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@typescript-eslint/parser": "^5.48.2",
-    "eslint": "^8.32.0",
-    "eslint-plugin-react": "^7.32.1",
-    "typescript": "^4.9.4"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "^5.2.2"
   }
 }

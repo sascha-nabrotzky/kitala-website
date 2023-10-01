@@ -18,8 +18,6 @@ footer {
 }
 
 .footerLink {
-  list-style-type: none;
-
   &:not(:last-child) {
     margin-bottom: 0.5rem;
   }
@@ -28,5 +26,13 @@ footer {
     text-decoration: none;
     color: $colormuted;
     margin-right: 1em;
+  }
+}
+
+.footerLinkSelfPromo {
+  color: $colormuted;
+
+  a:visited {
+    color: $colormuted;
   }
 }
