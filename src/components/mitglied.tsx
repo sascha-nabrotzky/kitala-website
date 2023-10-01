@@ -29,11 +29,12 @@ const Mitglied = ({
       <img className={styles.profilbild} src={imgSrc} alt={imgAlt} />
       <address className={styles.textWrapper}>
         <p dangerouslySetInnerHTML={{ __html: title }}></p>
-        <strong dangerouslySetInnerHTML={{ __html: name }}></strong>
-        <strong
-          dangerouslySetInnerHTML={{ __html: kita }}
-          className={styles.kita}
-        ></strong>
+        <p>
+          <strong dangerouslySetInnerHTML={{ __html: name }}></strong>
+        </p>
+        <p className={styles.kita}>
+          <strong dangerouslySetInnerHTML={{ __html: kita }}></strong>
+        </p>
         <p dangerouslySetInnerHTML={{ __html: adress }}></p>
         <a href={`tel: ${tel}`} dangerouslySetInnerHTML={{ __html: tel }}></a>
         {tel2 && (

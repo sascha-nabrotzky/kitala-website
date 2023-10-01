@@ -1,14 +1,18 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import Mitglied from "../components/mitglied";
 import styles from "../styles/mitglieder.module.scss";
 import HuewelmannImg from "../images/huewelmann300px.jpg";
 import NabrotzkyImg from "../images/nabrotzky300px.jpg";
 import WelkImg from "../images/welk300px.jpg";
 import RichterImg from "../images/richter300px.jpg";
+import KochImg from "../images/Koch_300px.jpg";
+import KoenigImg from "../images/Koenig_300px.jpg";
+import LindemannImg from "../images/Lindemann_300px.jpg";
+import LutterbeiImg from "../images/Lutterbei_300px.jpg";
+import OeleschImg from "../images/Olesch_300px.jpg";
+import TuschewitzkiImg from "../images/Tuschewitzki_300px.jpg";
+import SchroerlueckeImg from "../images/Schroeerluecke_300px.jpg";
 import { Helmet } from "react-helmet";
-
-// const Mitglied = lazy(() => import("../components/mitglied")); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
-// const renderLoader = () => <p>Loading ...</p>;
 
 const Mitglieder = () => {
   return (
@@ -74,8 +78,8 @@ const Mitglieder = () => {
             kita="&bdquo;Schatzkiste&rdquo;"
             adress="Sandkamp 1b"
             tel="+49 5485 1406"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={OeleschImg}
+            imgAlt="Foto von Stephanie Olesch"
           />
 
           <Mitglied
@@ -85,8 +89,8 @@ const Mitglieder = () => {
             adress="Auf Stieneckers 58"
             tel="+49 5485 833560"
             tel2="+49 176 92255280"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={SchroerlueckeImg}
+            imgAlt="Foto von Saskia Schröerlücke"
           />
 
           <Mitglied
@@ -96,8 +100,8 @@ const Mitglieder = () => {
             adress="Im Alpenbrock 5"
             tel="+49 1573 4262072"
             tel2="+49 5484 1402"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={LindemannImg}
+            imgAlt="Foto von Anee Lindemann"
           />
 
           <Mitglied
@@ -107,8 +111,8 @@ const Mitglieder = () => {
             adress="Im Alpenbrock 5"
             tel="+49 1577 4668562"
             tel2="+49 5485 834160"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={LutterbeiImg}
+            imgAlt="Foto von Birte Lutterbei"
           />
 
           <Mitglied
@@ -118,8 +122,8 @@ const Mitglieder = () => {
             adress="Stieneckers Esch 20"
             tel="+49 5485 8334407"
             tel2="+49 157 34236164"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={TuschewitzkiImg}
+            imgAlt="Foto von Melanie Tuschewitzki"
           />
 
           <Mitglied
@@ -128,8 +132,8 @@ const Mitglieder = () => {
             kita="&bdquo;Die Kichererbsen&rdquo;"
             adress="Stieneckers Esch 40"
             tel="+49 1575 6287339"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={KochImg}
+            imgAlt="Foto von Marina Koch"
           />
 
           <Mitglied
@@ -138,8 +142,8 @@ const Mitglieder = () => {
             kita="&bdquo;Moorpiraten&rdquo;"
             adress="Moorstraße 40"
             tel="+49 5484 962821"
-            imgSrc="https://via.placeholder.com/300"
-            imgAlt="Placeholder"
+            imgSrc={KoenigImg}
+            imgAlt="Foto von Meike König"
           />
         </section>
       </main>
