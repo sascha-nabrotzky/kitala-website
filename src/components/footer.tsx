@@ -11,14 +11,15 @@ function Footer() {
         </li>
         <li className={styles.footerLink}>
           <Link to="/datenschutz">Datenschutz</Link>
-        </li>
+        </li>{" "}
+        |{" "}
         <li className={styles.footerLinkSelfPromo}>
           <a
             href="https://sascha-nabrotzky.github.io"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Webdesign
+            Webentwicklung
           </a>{" "}
           &{" "}
           <a
@@ -27,8 +28,8 @@ function Footer() {
             rel="noreferrer noopener"
           >
             Illustration
-          </a>{" "}
-          | <span>Sascha Nabrotzky</span>
+          </a>
+          : <span>Sascha Nabrotzky</span>
         </li>
       </ul>
     </footer>

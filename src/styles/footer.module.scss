@@ -8,7 +8,21 @@ footer {
   display: flex;
   flex-flow: wrap;
   margin: 2em 0 5em;
+  gap: 1rem;
   padding: $mainpadding;
+  color: $colormuted;
+
+  a {
+    color: $colormuted;
+
+    &:not(.footerLinkSelfPromo a) {
+      text-decoration: none;
+    }
+  }
+
+  a:visited {
+    color: $colormuted;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -20,19 +34,5 @@ footer {
 .footerLink {
   &:not(:last-child) {
     margin-bottom: 0.5rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: $colormuted;
-    margin-right: 1em;
-  }
-}
-
-.footerLinkSelfPromo {
-  color: $colormuted;
-
-  a:visited {
-    color: $colormuted;
   }
 }

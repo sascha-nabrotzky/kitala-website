@@ -30,11 +30,11 @@
   }
 
   .btnWebsite {
-    background: $colgray;
+    border: 1px solid lighten($colgray, 20%);
     margin-top: 1rem;
     padding: 0.5rem;
-    border-radius: 0.3rem;
-    color: white;
+    border-radius: 2rem;
+    color: lighten($colgray, 20%);
     text-decoration: none;
   }
 

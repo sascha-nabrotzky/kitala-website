@@ -1,6 +1,6 @@
 import React from "react";
 import homeStyles from "../styles/home.module.scss";
-import Blockquote from "../components/blockquote";
+import Blockquote from "../components/Blockquote";
 import stepLogo from "../images/StepLogo.svg";
 import emailIcon from "../images/email.svg";
 import socialMediaImg from "../images/SocialmediaImg.jpg";

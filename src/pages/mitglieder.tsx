@@ -1,5 +1,5 @@
 import React from "react";
-import Mitglied from "../components/mitglied";
+import Mitglied from "../components/Mitglied";
 import { Helmet } from "react-helmet";
 import HuewelmannImg from "../images/huewelmann300px.jpg";
 import NabrotzkyImg from "../images/nabrotzky300px.jpg";

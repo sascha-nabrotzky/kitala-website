@@ -1,5 +1,5 @@
 import React from "react";
-import Artikel from "./artikel";
+import Artikel from "./Artikel";
 import Artikel_Gemeinsam_JSON from "../text/artikel_gemeinsam.json";
 
 function Artikel_Gemeinsam() {
