@@ -1,31 +1,7 @@
-import React, { useLayoutEffect } from "react";
-import { tns } from "tiny-slider";
-import "../../node_modules/tiny-slider/src/tiny-slider.scss";
+import React from "react";
 import Aktion1JSON from "../text/aktion1.json";
 
 const Gallery = () => {
-  useLayoutEffect(() => {
-    tns({
-      container: `.sliderImages`,
-      items: 1,
-      slideBy: "page",
-      nav: false,
-      prevButton: ".prevBtn",
-      nextButton: ".nextBtn",
-      autoplay: true,
-      autoplayButtonOutput: false,
-      gutter: 10,
-      responsive: {
-        640: {
-          items: 1,
-        },
-        900: {
-          items: 2,
-        },
-      },
-    });
-  });
-
   return (
     <section className="sliderWrapper">
       <h3>Aktion &quot;Gut betreut in der Kindertagespflege&quot;</h3>
