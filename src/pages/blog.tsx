@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import Layout from "../components/Layout";
 
 const ArtikelGemeinsam = lazy(() => import("../components/Artikel_gemeinsam"));

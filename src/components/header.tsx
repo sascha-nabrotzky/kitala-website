@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../assets/images/kitala_logo.svg";
 import gradient from "../assets/images/gradient.svg";
 import Navigation from "./Navigation";

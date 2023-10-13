@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import iconHome from "../assets/images/home_neg.svg";
 import iconCalendarGallery from "../assets/images/calendar_gallery.svg";

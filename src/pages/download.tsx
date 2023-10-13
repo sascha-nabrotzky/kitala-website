@@ -1,4 +1,3 @@
-import React from "react";
 import downloadStyles from "../styles/download.module.css";
 import MitgliedsantragPDF from "../assets/images/Mitgliedsantrag_interaktiv.pdf";
 import MitgliedsantragFoerderPDF from "../assets/images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";

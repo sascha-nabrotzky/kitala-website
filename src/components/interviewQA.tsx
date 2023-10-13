@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Chevron from "./Chevron";
 import style from "../styles/interviewQA.module.css";
 

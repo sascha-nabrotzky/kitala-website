@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/mitglied.module.css";
 
 type MitgliedProps = {
