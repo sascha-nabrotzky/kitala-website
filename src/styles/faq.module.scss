@@ -1,14 +1,12 @@
-@import "variables.module.scss";
-
 .question {
-  border-bottom: 2px dotted $colblack;
+  border-bottom: 2px dotted var(--col-black);
   cursor: pointer;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
 
   h3 {
-    color: $colviolet;
+    color: var(--col-violet);
     margin: 0.7em 0;
   }
 }

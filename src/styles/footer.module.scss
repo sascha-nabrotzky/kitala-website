@@ -1,5 +1,3 @@
-@import "variables.module.scss";
-
 footer {
   margin-top: auto;
 }
@@ -9,11 +7,11 @@ footer {
   flex-flow: wrap;
   margin: 2em 0 9rem;
   gap: 1rem;
-  padding: $mainpadding;
-  color: $colormuted;
+  padding: var(--main-padding);
+  color: var(--col-muted);
 
   a {
-    color: $colormuted;
+    color: var(--col-muted);
 
     &:not(.footerLinkSelfPromo a) {
       text-decoration: none;
@@ -21,7 +19,7 @@ footer {
   }
 
   a:visited {
-    color: $colormuted;
+    color: var(--col-muted);
   }
 }
 

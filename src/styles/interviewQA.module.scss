@@ -1,5 +1,3 @@
-@import "variables.module.scss";
-
 .textHidden {
   overflow: hidden;
   max-height: 0;
@@ -13,12 +11,12 @@
 }
 
 .question {
-  border-bottom: 2px dotted $colormuted;
+  border-bottom: 2px dotted var(--col-muted);
   cursor: pointer;
 }
 
 .interviewVisible {
-  color: $colviolet;
+  color: var(--col-violet);
 }
 
 .chevronWrapper {

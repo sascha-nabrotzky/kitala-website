@@ -1,5 +1,3 @@
-@import "variables.module.scss";
-
 .downMain {
   a {
     display: flex;
@@ -8,14 +6,14 @@
     padding-inline: 1rem;
     padding-block: 0.8rem;
     text-decoration: none;
-    color: $colblack;
+    color: var(--col-black);
     font-weight: 700;
-    background-color: $colwhite;
-    box-shadow: $shadow-default;
+    background-color: white;
+    box-shadow: var(--shd-default);
     border-radius: 4px;
 
     &:visited {
-      color: $colblack;
+      color: var(--col-black);
     }
 
     .pdficon {

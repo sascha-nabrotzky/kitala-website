@@ -1,5 +1,3 @@
-@import "variables.module.scss";
-
 .navigation {
   display: flex;
   position: fixed;
@@ -10,7 +8,7 @@
   z-index: 1;
   padding: 1rem;
   backdrop-filter: blur(3px);
-  background-color: $colwhitetransp;
+  background-color: whitetransp;
 }
 
 @media (min-width: 640px) {
@@ -25,18 +23,18 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: $colgray;
-  font-size: $fs-xs;
+  color: var(--col-gray);
+  font-size: var(--fs-small);
 
   &:hover .icon {
     transition: 0.2s ease;
-    background-color: $colviolet;
+    background-color: var(--col-violet);
   }
 }
 
 @media (min-width: 640px) {
   .link {
-    font-size: $fs-md;
+    font-size: var(--fs-medium);
   }
 }
 
@@ -45,7 +43,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: $colgreen;
+  background-color: var(--col-green);
   width: 3rem;
   height: 3rem;
   margin-bottom: 0.3rem;

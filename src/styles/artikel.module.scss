@@ -1,7 +1,5 @@
-@import "variables.module.scss";
-
 .article {
-  border-top: 1px solid $colormuted;
+  border-top: 1px solid var(--col-muted);
   margin-top: 2em;
 
   img {
