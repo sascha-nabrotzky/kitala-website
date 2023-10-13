@@ -1,64 +1,59 @@
 @import "variables.module.scss";
 
 .navigation {
-  width: 100%;
-  display: inline-block;
+  display: flex;
   position: fixed;
+  right: 0;
   bottom: 0;
+  left: 0;
+  justify-content: space-between;
   z-index: 1;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+  background-color: $colwhitetransp;
+}
 
-  .navList {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-
-    .liItem {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 2.5em;
-      height: 2.5em;
-      border-radius: 50%;
-      list-style-type: none;
-      background-color: $colgreen;
-
-      &:hover {
-        background-color: $colviolet;
-        transition: 0.2s ease;
-      }
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: $colwhite;
-
-        img {
-          width: 50%;
-          height: 50px;
-        }
-      }
-    }
+@media (min-width: 640px) {
+  .navigation {
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .navigation {
-    width: 7vw;
-    right: 0;
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: $colgray;
+  font-size: $fs-xs;
 
-    .navList {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      padding: $mainpadding;
-      right: 0;
+  &:hover .icon {
+    transition: 0.2s ease;
+    background-color: $colviolet;
+    transition: background-color 0.5s ease;
+  }
+}
 
-      .liItem {
-        margin-left: 1em;
-        margin-bottom: 0.8em;
-      }
-    }
+@media (min-width: 640px) {
+  .link {
+    font-size: $fs-md;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $colgreen;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.3rem;
+  transition: background-color 0.5s ease;
+
+  img {
+    width: 60%;
+    height: 60%;
   }
 }

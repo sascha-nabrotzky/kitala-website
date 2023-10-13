@@ -11,38 +11,47 @@ import styles from "../styles/navigation.module.scss";
 function Navigation() {
   return (
     <nav className={styles.navigation}>
-      <ul className={styles.navList}>
-        <li className={styles.liItem}>
-          <Link to="/">
-            <img src={iconHome} alt="Icon Home" />
-          </Link>
-        </li>
-        <li className={styles.liItem}>
-          <Link to="/blog">
-            <img src={iconCalendarGallery} alt="Icon Home" />
-          </Link>
-        </li>
-        <li className={styles.liItem}>
-          <Link to="/mitglieder">
-            <img src={iconUsers} alt="Icon Users" />
-          </Link>
-        </li>
-        <li className={styles.liItem}>
-          <Link to="/inklusion">
-            <img src={iconInklusion} alt="Icon Inklusion" />{" "}
-          </Link>
-        </li>
-        <li className={styles.liItem}>
-          <Link to="/faq">
-            <img src={iconBook} alt="Icon Book" />
-          </Link>
-        </li>
-        <li className={styles.liItem}>
-          <Link to="/download">
-            <img src={iconDownload} alt="Icon Download" />
-          </Link>
-        </li>
-      </ul>
+      <Link to="/" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconHome} alt="Icon Home" />
+        </div>
+        Home
+      </Link>
+
+      <Link to="/blog" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconCalendarGallery} alt="Icon Image gallery" />
+        </div>
+        Aktionen
+      </Link>
+
+      <Link to="/mitglieder" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconUsers} alt="Icon Users" />
+        </div>
+        Mitglieder
+      </Link>
+
+      <Link to="/inklusion" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconInklusion} alt="Icon Inklusion" />
+        </div>
+        Inklusion
+      </Link>
+
+      <Link to="/faq" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconBook} alt="Icon Book" />
+        </div>
+        FAQs
+      </Link>
+
+      <Link to="/download" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconDownload} alt="Icon Download" />
+        </div>
+        <span>Downloads</span>
+      </Link>
     </nav>
   );
 }
