@@ -1,0 +1,38 @@
+.totopbutton {
+  display: flex;
+  position: fixed;
+  right: 1.4rem;
+  bottom: 7.5rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  border: 1px solid var(--col-gray);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  width: 3rem;
+  transition: opacity 0.5s ease-in-out;
+  height: 3rem;
+  font-size: 3rem;
+}
+
+.totopbutton:hover {
+  border-width: 2px;
+}
+
+.totopbutton svg {
+  width: 50%;
+  fill: var(--col-gray);
+}
+
+.buttonHidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media (min-width: 640px) {
+  .totopbutton {
+    bottom: 8rem;
+    right: 1.95rem;
+  }
+}
