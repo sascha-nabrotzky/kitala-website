@@ -24,7 +24,7 @@
   align-items: center;
   text-decoration: none;
   color: var(--col-gray);
-  font-size: var(--fs-small);
+  font-size: var(--fs-sm);
 }
 
 .link:hover .icon {
@@ -34,7 +34,7 @@
 
 @media (min-width: 640px) {
   .link {
-    font-size: var(--fs-medium);
+    font-size: var(--fs-md);
   }
 }
 

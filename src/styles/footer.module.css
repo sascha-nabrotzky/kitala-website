@@ -7,7 +7,7 @@ footer {
   flex-flow: wrap;
   margin: 2em 0 9rem;
   gap: 1rem;
-  padding: var(--main-padding);
+  padding-inline: var(--p-md);
   color: var(--col-muted);
 }
 
