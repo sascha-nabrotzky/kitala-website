@@ -1,5 +1,5 @@
 .article {
-  border-top: 1px solid var(--col-muted);
+  border-top: 1px solid rgb(var(--col-muted));
   margin-top: 2em;
 }
 

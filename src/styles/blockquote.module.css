@@ -7,7 +7,7 @@
   margin-right: auto;
   text-align: center;
   padding: 1rem;
-  background-color: var(--col-violet);
+  background-color: rgb(var(--col-violet));
   color: white;
   border-radius: 50%;
   font-weight: 700;

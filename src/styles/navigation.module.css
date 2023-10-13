@@ -23,13 +23,14 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: var(--col-gray);
+  color: rgb(var(--col-gray));
   font-size: var(--fs-sm);
 }
 
 .link:hover .icon {
   transition: 0.2s ease;
-  background-color: var(--col-violet);
+  background-color: rgb(var(--col-violet));
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media (min-width: 640px) {
@@ -43,11 +44,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--col-green);
+  background-color: rgb(var(--col-green));
   width: 3rem;
   height: 3rem;
   margin-bottom: 0.3rem;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .icon img {

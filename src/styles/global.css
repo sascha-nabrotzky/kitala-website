@@ -43,13 +43,11 @@
 }
 
 :root {
-  --col-gray: #414141;
-  --col-muted: #868686;
-  --col-black: #2d2d2d;
-  --col-green: #2c7923;
-  --col-green-transp: rgba(44, 121, 35, 0.2);
-  --col-violet: #4d2983;
-  --col-violet-transp: rgba(78, 42, 132, 0.2);
+  --col-gray: 65, 65, 65;
+  --col-muted: 134, 134, 134;
+  --col-black: 45, 45, 45;
+  --col-green: 44, 121, 35;
+  --col-violet: 77, 41, 131;
 
   --fs-sm: 0.7em;
   --fs-md: 0.85em;
@@ -66,10 +64,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--col-black);
+  color: rgb(var(--col-black));
   background-image: linear-gradient(
-    var(--col-violet-transp),
-    var(--col-green-transp)
+    rgba(var(--col-violet), 0.2),
+    rgba(var(--col-green), 0.2)
   );
 }
 

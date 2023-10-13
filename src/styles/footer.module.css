@@ -8,11 +8,11 @@ footer {
   margin: 2em 0 9rem;
   gap: 1rem;
   padding-inline: var(--p-md);
-  color: var(--col-muted);
+  color: rgb(var(--col-muted));
 }
 
 .footerListItems a {
-  color: var(--col-muted);
+  color: rgb(var(--col-muted));
 }
 
 .footerListItems a:not(.footerLinkSelfPromo a) {
@@ -20,7 +20,7 @@ footer {
 }
 
 .footerListItems a:visited {
-  color: var(--col-muted);
+  color: rgb(var(--col-muted));
 }
 
 .footerLink :not(:last-child) {
