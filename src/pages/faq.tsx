@@ -1,24 +1,16 @@
 import React, { lazy, Suspense } from "react";
-import { Helmet } from "react-helmet";
-import image1 from "../images/Küche.jpg";
-import image2 from "../images/Qualitätsaspekte.jpg";
-import image3 from "../images/Dokumentation.jpg";
-import image4 from "../images/Kosten.jpg";
+import image1 from "../assets/images/Küche.jpg";
+import image2 from "../assets/images/Qualitätsaspekte.jpg";
+import image3 from "../assets/images/Dokumentation.jpg";
+import image4 from "../assets/images/Kosten.jpg";
+import Layout from "../components/Layout";
 
 const Accordion = lazy(() => import("../components/Accordion"));
 const renderLoader = () => <p>Loading ...</p>;
 
 function Faq() {
   return (
-    <>
-      <Helmet>
-        <title>Fragen und Antworten | KiTaLa e.V.</title>
-        <meta
-          name="description"
-          content="Antworten rund um das Thema Kindertagespflege"
-        />
-      </Helmet>
-
+    <Layout>
       <main>
         <h1>Fragen & Antworten</h1>
 
@@ -82,7 +74,7 @@ function Faq() {
           ></Accordion>
         </Suspense>
       </main>
-    </>
+    </Layout>
   );
 }
 

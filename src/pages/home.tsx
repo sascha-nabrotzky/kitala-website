@@ -1,24 +1,14 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Blockquote from "../components/Blockquote";
-import stepLogo from "../images/StepLogo.svg";
-import emailIcon from "../images/email.svg";
-import socialMediaImg from "../images/SocialmediaImg.jpg";
-import dreiKinder from "../images/dreiKinder.svg";
+import stepLogo from "../assets/images/StepLogo.svg";
+import emailIcon from "../assets/images/email.svg";
+import dreiKinder from "../assets/images/dreiKinder.svg";
 import homeStyles from "../styles/home.module.css";
+import Layout from "../components/Layout";
 
 function Home() {
   return (
-    <>
-      <Helmet>
-        <title>
-          Über den Verein | KiTaLa e.V. - Kindertagespflege Ladbergen
-        </title>
-        <meta name="image" content={socialMediaImg} />
-        <meta name="twitter:image" content={socialMediaImg} />
-        <meta property="og:image" content={socialMediaImg} />
-      </Helmet>
-
+    <Layout>
       <main className={homeStyles.homeMain}>
         <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
 
@@ -86,7 +76,7 @@ function Home() {
           </div>
         </aside>
       </main>
-    </>
+    </Layout>
   );
 }
 

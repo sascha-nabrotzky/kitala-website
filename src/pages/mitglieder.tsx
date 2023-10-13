@@ -1,30 +1,22 @@
 import React from "react";
 import MitgliedCard from "../components/MitgliedCard";
-import { Helmet } from "react-helmet";
-import HuewelmannImg from "../images/huewelmann300px.jpg";
-import NabrotzkyImg from "../images/nabrotzky300px.jpg";
-import WelkImg from "../images/welk300px.jpg";
-import RichterImg from "../images/richter300px.jpg";
-import KochImg from "../images/Koch_300px.jpg";
-import KoenigImg from "../images/Koenig_300px.jpg";
-import LindemannImg from "../images/Lindemann_300px.jpg";
-import LutterbeiImg from "../images/Lutterbei_300px.jpg";
-import OeleschImg from "../images/Olesch_300px.jpg";
-import TuschewitzkiImg from "../images/Tuschewitzki_300px.jpg";
-import SchroerlueckeImg from "../images/Schroeerluecke_300px.jpg";
+import HuewelmannImg from "../assets/images/huewelmann300px.jpg";
+import NabrotzkyImg from "../assets/images/nabrotzky300px.jpg";
+import WelkImg from "../assets/images/welk300px.jpg";
+import RichterImg from "../assets/images/richter300px.jpg";
+import KochImg from "../assets/images/Koch_300px.jpg";
+import KoenigImg from "../assets/images/Koenig_300px.jpg";
+import LindemannImg from "../assets/images/Lindemann_300px.jpg";
+import LutterbeiImg from "../assets/images/Lutterbei_300px.jpg";
+import OeleschImg from "../assets/images/Olesch_300px.jpg";
+import TuschewitzkiImg from "../assets/images/Tuschewitzki_300px.jpg";
+import SchroerlueckeImg from "../assets/images/Schroeerluecke_300px.jpg";
 import styles from "../styles/mitglieder.module.css";
+import Layout from "../components/Layout";
 
-const Mitglieder = () => {
+function Mitglieder() {
   return (
-    <>
-      <Helmet>
-        <title>Mitglieder | KiTaLa e.V.</title>
-        <meta
-          name="description"
-          content="Die Mitglieder von KiTaLa e.V. stellen sind vor"
-        />
-      </Helmet>
-
+    <Layout>
       <main>
         <h1>Vorstand und Mitglieder des Vereins</h1>
         <h2>Wir stellen uns vor</h2>
@@ -147,8 +139,8 @@ const Mitglieder = () => {
           />
         </section>
       </main>
-    </>
+    </Layout>
   );
-};
+}
 
 export default Mitglieder;

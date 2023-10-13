@@ -1,17 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Layout from "../components/Layout";
 
 function Impressum() {
   return (
-    <>
-      <Helmet>
-        <title>Impressum | KiTaLa e.V.</title>
-        <meta
-          name="description"
-          content="Antworten rund um das Thema Kindertagespflege"
-        />
-      </Helmet>
-
+    <Layout>
       <main>
         <h1>Impressum</h1>
         <h2>Angaben gemäß § 5 TMG:</h2>
@@ -76,7 +68,7 @@ function Impressum() {
           werden wir derartige Inhalte umgehend entfernen.
         </p>
       </main>
-    </>
+    </Layout>
   );
 }
 
