@@ -1,5 +1,4 @@
-import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Home from "../pages/home";
 import Blog from "../pages/blog";
 import Mitglieder from "../pages/mitglieder";
@@ -9,7 +8,7 @@ import Impressum from "../pages/impressum";
 import Datenschutz from "../pages/datenschutz";
 import Inklusion from "../pages/inklusion";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
