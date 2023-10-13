@@ -2,57 +2,39 @@
 
 .totopbutton {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
-  width: 3rem;
-  height: 3rem;
-  bottom: 5.5rem;
-  right: 0.9rem;
-  background-color: $colgreen;
-  border: none;
-  border-radius: 50%;
-  font-size: 3rem;
-  transition: opacity 0.5s ease-in-out, background-color 0.2s ease;
-  cursor: pointer;
+  right: 1.4rem;
+  bottom: 7.5rem;
+  align-items: center;
+  justify-content: center;
   opacity: 1;
+  border: 1px solid $colgray;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  width: 3rem;
+  transition: opacity 0.5s ease-in-out;
+  height: 3rem;
+  font-size: 3rem;
+
+  &:hover {
+    border-width: 2px;
+  }
 
   svg {
     width: 50%;
-    fill: $colwhite;
-  }
-
-  &:hover {
-    background-color: #4d2983;
+    fill: $colgray;
   }
 }
 
 .buttonHidden {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  bottom: 5.5rem;
-  right: 0.9rem;
-  background-color: $colgreen;
-  border: none;
-  border-radius: 50%;
-  font-size: 3rem;
   pointer-events: none;
   opacity: 0;
-  z-index: -1;
-
-  svg {
-    width: 50%;
-    fill: $colwhite;
-  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .totopbutton {
-    bottom: 26rem;
+    bottom: 8rem;
     right: 1.95rem;
   }
 }
