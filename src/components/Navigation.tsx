@@ -6,7 +6,7 @@ import iconBook from "../images/book_neg.svg";
 import iconUsers from "../images/users_neg.svg";
 import iconDownload from "../images/download_neg.svg";
 import iconInklusion from "../images/inklusion.svg";
-import styles from "../styles/navigation.module.scss";
+import styles from "../styles/navigation.module.css";
 
 function Navigation() {
   return (
@@ -50,7 +50,7 @@ function Navigation() {
         <div className={styles.icon}>
           <img src={iconDownload} alt="Icon Download" />
         </div>
-        <span>Downloads</span>
+        Downloads
       </Link>
     </nav>
   );

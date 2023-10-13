@@ -1,0 +1,13 @@
+.imgInklusion {
+  max-height: 32rem;
+  margin-bottom: 3rem;
+}
+
+.imgInklusion img {
+  max-width: 100%;
+}
+
+.imgInklusion figcaption {
+  font-size: 0.8em;
+  float: right;
+}

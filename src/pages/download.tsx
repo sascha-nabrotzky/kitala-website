@@ -1,5 +1,5 @@
 import React from "react";
-import downloadStyles from "../styles/download.module.scss";
+import downloadStyles from "../styles/download.module.css";
 import MitgliedsantragPDF from "../images/Mitgliedsantrag_interaktiv.pdf";
 import MitgliedsantragFoerderPDF from "../images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";
 import MalwettbewerbPDF from "../images/Malwettbewerb_2023.pdf";

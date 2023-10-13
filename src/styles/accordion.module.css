@@ -4,11 +4,11 @@
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
+}
 
-  h3 {
-    color: var(--col-violet);
-    margin: 0.7em 0;
-  }
+.question h3 {
+  color: var(--col-violet);
+  margin: 0.7em 0;
 }
 
 .titleChevronWrapper {
@@ -35,17 +35,17 @@
   max-height: 0px;
   overflow: hidden;
   transition: 1s ease;
+}
 
-  p:first-of-type {
-    margin-top: 0;
-  }
+.texthidden p:first-of-type {
+  margin-top: 0;
 }
 
 .active {
   overflow: hidden;
   transition: 1s ease;
+}
 
-  p:first-of-type {
-    margin-top: 0;
-  }
+.active p:first-of-type {
+  margin-top: 0;
 }

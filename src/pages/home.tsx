@@ -1,11 +1,11 @@
 import React from "react";
-import homeStyles from "../styles/home.module.scss";
+import { Helmet } from "react-helmet";
 import Blockquote from "../components/Blockquote";
 import stepLogo from "../images/StepLogo.svg";
 import emailIcon from "../images/email.svg";
 import socialMediaImg from "../images/SocialmediaImg.jpg";
 import dreiKinder from "../images/dreiKinder.svg";
-import { Helmet } from "react-helmet";
+import homeStyles from "../styles/home.module.css";
 
 function Home() {
   return (
@@ -76,15 +76,13 @@ function Home() {
                 alt="Logo von Step Steinfurt"
               />
             </a>
-            {
-              <a href="mailto:kontakt@kitala-ladbergen.de">
-                <img
-                  className={homeStyles.homeIcon}
-                  src={emailIcon}
-                  alt="Eine E-Mail schreiben"
-                />
-              </a>
-            }
+            <a href="mailto:kontakt@kitala-ladbergen.de">
+              <img
+                className={homeStyles.homeIcon}
+                src={emailIcon}
+                alt="Eine E-Mail schreiben"
+              />
+            </a>
           </div>
         </aside>
       </main>

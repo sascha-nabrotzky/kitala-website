@@ -1,5 +1,5 @@
 import React from "react";
-import Mitglied from "../components/Mitglied";
+import MitgliedCard from "../components/MitgliedCard";
 import { Helmet } from "react-helmet";
 import HuewelmannImg from "../images/huewelmann300px.jpg";
 import NabrotzkyImg from "../images/nabrotzky300px.jpg";
@@ -12,7 +12,7 @@ import LutterbeiImg from "../images/Lutterbei_300px.jpg";
 import OeleschImg from "../images/Olesch_300px.jpg";
 import TuschewitzkiImg from "../images/Tuschewitzki_300px.jpg";
 import SchroerlueckeImg from "../images/Schroeerluecke_300px.jpg";
-import styles from "../styles/mitglieder.module.scss";
+import styles from "../styles/mitglieder.module.css";
 
 const Mitglieder = () => {
   return (
@@ -29,7 +29,7 @@ const Mitglieder = () => {
         <h1>Vorstand und Mitglieder des Vereins</h1>
         <h2>Wir stellen uns vor</h2>
         <section className={styles.mitgliederWrapper}>
-          <Mitglied
+          <MitgliedCard
             title="1. Vorsitzende"
             name="Ramona Hüwelmann"
             kita="&bdquo;Zwergenland&rdquo;"
@@ -40,7 +40,7 @@ const Mitglieder = () => {
             website="zwergenlandladbergen.de"
           />
 
-          <Mitglied
+          <MitgliedCard
             title="2. Vorsitzende"
             name="Tatjana Nabrotzky"
             kita="Großtagespflege &bdquo;Waldschnecken&rdquo;"
@@ -51,7 +51,7 @@ const Mitglieder = () => {
             website="waldschnecken-ladbergen.de"
           />
 
-          <Mitglied
+          <MitgliedCard
             title="Kassenwart"
             name="Oksana Welk"
             kita="Großtagespflege &bdquo;Waldschnecken&rdquo;"
@@ -62,7 +62,7 @@ const Mitglieder = () => {
             website="waldschnecken-ladbergen.de"
           />
 
-          <Mitglied
+          <MitgliedCard
             title="Schriftführerin"
             name="Daniela Richter"
             kita="&bdquo;Bienenkörbchen&rdquo;"
@@ -72,8 +72,8 @@ const Mitglieder = () => {
             imgAlt="Profilbild von Daniela Richter"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Stephanie Olesch"
             kita="&bdquo;Schatzkiste&rdquo;"
             adress="Sandkamp 1b"
@@ -82,8 +82,8 @@ const Mitglieder = () => {
             imgAlt="Foto von Stephanie Olesch"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Saskia Schröerlücke"
             kita="&bdquo;Marienkäfer&rdquo;"
             adress="Auf Stieneckers 58"
@@ -93,8 +93,8 @@ const Mitglieder = () => {
             imgAlt="Foto von Saskia Schröerlücke"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Anne Lindemann"
             kita="Inklusive Großtagespflege &bdquo;Landwichtel&rdquo;"
             adress="Im Alpenbrock 5"
@@ -104,8 +104,8 @@ const Mitglieder = () => {
             imgAlt="Foto von Anee Lindemann"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Birte Lutterbei"
             kita="Inklusive Großtagespflege &bdquo;Landwichtel&rdquo;"
             adress="Im Alpenbrock 5"
@@ -115,8 +115,8 @@ const Mitglieder = () => {
             imgAlt="Foto von Birte Lutterbei"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Melanie Tuschewitzki"
             kita="&bdquo;Die kleinen Raupen&rdquo;"
             adress="Stieneckers Esch 20"
@@ -126,8 +126,8 @@ const Mitglieder = () => {
             imgAlt="Foto von Melanie Tuschewitzki"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Marina Koch"
             kita="&bdquo;Die Kichererbsen&rdquo;"
             adress="Stieneckers Esch 40"
@@ -136,8 +136,8 @@ const Mitglieder = () => {
             imgAlt="Foto von Marina Koch"
           />
 
-          <Mitglied
-            title="Mitglied"
+          <MitgliedCard
+            title="MitgliedCard"
             name="Meike König"
             kita="&bdquo;Moorpiraten&rdquo;"
             adress="Moorstraße 40"

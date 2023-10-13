@@ -14,15 +14,15 @@
   transition: opacity 0.5s ease-in-out;
   height: 3rem;
   font-size: 3rem;
+}
 
-  &:hover {
-    border-width: 2px;
-  }
+.totopbutton:hover {
+  border-width: 2px;
+}
 
-  svg {
-    width: 50%;
-    fill: var(--col-gray);
-  }
+.totopbutton svg {
+  width: 50%;
+  fill: var(--col-gray);
 }
 
 .buttonHidden {

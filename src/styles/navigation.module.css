@@ -8,7 +8,7 @@
   z-index: 1;
   padding: 1rem;
   backdrop-filter: blur(3px);
-  background-color: whitetransp;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 640px) {
@@ -25,11 +25,11 @@
   text-decoration: none;
   color: var(--col-gray);
   font-size: var(--fs-small);
+}
 
-  &:hover .icon {
-    transition: 0.2s ease;
-    background-color: var(--col-violet);
-  }
+.link:hover .icon {
+  transition: 0.2s ease;
+  background-color: var(--col-violet);
 }
 
 @media (min-width: 640px) {
@@ -48,9 +48,9 @@
   height: 3rem;
   margin-bottom: 0.3rem;
   transition: background-color 0.5s ease-in-out;
+}
 
-  img {
-    width: 60%;
-    height: 60%;
-  }
+.icon img {
+  width: 60%;
+  height: 60%;
 }
