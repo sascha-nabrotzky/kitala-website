@@ -18,16 +18,23 @@ function Inklusion() {
           <figcaption>Foto: Unsplash</figcaption>
         </div>
 
-        {InklusionJSON.inkulsionInterview.map((item) => {
-          return (
-            <InterviewQA
-              key={item.index}
-              question={item.inklusionFrage}
-              person={item.inklusionTagesmutter}
-              answer={item.inklusionAntwort}
-            />
-          );
-        })}
+        {InklusionJSON.inkulsionInterview.map(
+          (item: {
+            index: React.Key | null | undefined;
+            inklusionFrage: string;
+            inklusionTagesmutter: string;
+            inklusionAntwort: string;
+          }) => {
+            return (
+              <InterviewQA
+                key={item.index}
+                question={item.inklusionFrage}
+                person={item.inklusionTagesmutter}
+                answer={item.inklusionAntwort}
+              />
+            );
+          }
+        )}
       </main>
     </Layout>
   );

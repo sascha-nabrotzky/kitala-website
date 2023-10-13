@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Mitglieder />,
   },
   {
-    path: "/inkl",
+    path: "/inklusion",
     element: <Inklusion />,
   },
   {
