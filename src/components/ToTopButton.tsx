@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import styles from "../styles/ToTopButton.module.css";
 
 function ToTopButton() {
