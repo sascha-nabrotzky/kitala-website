@@ -7,7 +7,7 @@ footer {
 .footerListItems {
   display: flex;
   flex-flow: wrap;
-  margin: 2em 0 5em;
+  margin: 2em 0 9rem;
   gap: 1rem;
   padding: $mainpadding;
   color: $colormuted;
@@ -22,12 +22,6 @@ footer {
 
   a:visited {
     color: $colormuted;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footerListItems {
-    margin: 3em 0 1rem;
   }
 }
 
