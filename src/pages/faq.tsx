@@ -5,7 +5,7 @@ import image3 from "../assets/images/Dokumentation.jpg";
 import image4 from "../assets/images/Kosten.jpg";
 import Layout from "../components/Layout";
 
-const Accordion = lazy(() => import("../components/Accordion"));
+const Accordion = lazy(() => import("../components/accordion"));
 const renderLoader = () => <p>Loading ...</p>;
 
 function Faq() {
