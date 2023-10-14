@@ -1,22 +1,14 @@
 import React from "react";
-import downloadStyles from "../styles/download.module.scss";
-import MitgliedsantragPDF from "../images/Mitgliedsantrag_interaktiv.pdf";
-import MitgliedsantragFoerderPDF from "../images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";
-import MalwettbewerbPDF from "../images/Malwettbewerb_2023.pdf";
-import iconPDF from "../images/pdf.svg";
-import { Helmet } from "react-helmet";
+import downloadStyles from "../styles/download.module.css";
+import MitgliedsantragPDF from "../assets/images/Mitgliedsantrag_interaktiv.pdf";
+import MitgliedsantragFoerderPDF from "../assets/images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";
+import MalwettbewerbPDF from "../assets/images/Malwettbewerb_2023.pdf";
+import iconPDF from "../assets/images/pdf.svg";
+import Layout from "../components/Layout";
 
 function Download() {
   return (
-    <>
-      <Helmet>
-        <title>Downloads | KiTaLa e.V.</title>
-        <meta
-          name="description"
-          content="Wichtige Dokumente können hier heruntergeladen werden"
-        />
-      </Helmet>
-
+    <Layout>
       <main className={downloadStyles.downMain}>
         <h1>Downloads</h1>
         <h2>Wichtige Dokumente und mehr</h2>
@@ -65,7 +57,7 @@ function Download() {
           Elternbeiträge
         </a>
       </main>
-    </>
+    </Layout>
   );
 }
 

@@ -1,0 +1,15 @@
+.article {
+  border-top: 1px solid var(--col-muted);
+  margin-top: 2em;
+}
+
+.article img {
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .article .maintext {
+    columns: 2;
+    column-gap: 2em;
+  }
+}

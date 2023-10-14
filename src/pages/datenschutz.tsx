@@ -1,14 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Layout from "../components/Layout";
 
 function Datenschutz() {
   return (
-    <>
-      <Helmet>
-        <title>Datenschutz | KiTaLa e.V.</title>
-        <meta name="description" content="Datenschutzerklärung" />
-      </Helmet>
-
+    <Layout>
       <main>
         <h1>Datenschutz</h1>
 
@@ -774,7 +769,7 @@ function Datenschutz() {
           Christian Solmecke erstellt.
         </p>
       </main>
-    </>
+    </Layout>
   );
 }
 

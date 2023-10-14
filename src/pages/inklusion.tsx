@@ -1,17 +1,12 @@
 import React from "react";
 import InklusionJSON from "../text/inklusion.json";
-import inklusionStyles from "../styles/inklusion.module.scss";
-import { Helmet } from "react-helmet";
-import InterviewQA from "../components/interviewQA";
+import InterviewQA from "../components/InterviewQA";
+import inklusionStyles from "../styles/inklusion.module.css";
+import Layout from "../components/Layout";
 
 function Inklusion() {
   return (
-    <>
-      <Helmet>
-        <title>Inklusion | KiTaLa e.V.</title>
-        <meta name="description" content="Was Inklusion dem Verein bedeutet" />
-      </Helmet>
-
+    <Layout>
       <main>
         <h1>Inklusion</h1>
         <h2>Interview des SKF mit unseren Tagesmüttern</h2>
@@ -34,7 +29,7 @@ function Inklusion() {
           );
         })}
       </main>
-    </>
+    </Layout>
   );
 }
 
