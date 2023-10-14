@@ -5,13 +5,13 @@
   bottom: 7.5rem;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.5s ease-in-out;
   opacity: 1;
   border: 1px solid rgb(var(--col-gray));
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
   width: 3rem;
-  transition: opacity 0.5s ease-in-out;
   height: 3rem;
   font-size: 3rem;
 }
@@ -26,13 +26,18 @@
 }
 
 .buttonHidden {
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
 }
 
 @media (min-width: 640px) {
   .totopbutton {
     bottom: 8rem;
     right: 1.95rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .totopbutton {
+    bottom: 2rem;
   }
 }

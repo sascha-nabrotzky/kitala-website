@@ -1,4 +1,3 @@
-import React from "react";
 import artikelStyles from "../styles/artikel.module.css";
 
 type ArtikelProps = {

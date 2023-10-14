@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Chevron from "./Chevron";
-import faqStyles from "../styles/accordion.module.css";
+import styles from "../styles/accordion.module.css";
 
 interface AccordionProps {
   image: string;
@@ -9,42 +9,42 @@ interface AccordionProps {
 }
 
 const Accordion = ({ image, title, text }: AccordionProps) => {
-  const [currentClass, setClass] = useState(`${faqStyles.texthidden}`);
+  const [currentClass, setClass] = useState(`${styles.texthidden}`);
   const [setHeight, setHeightState] = useState("");
-  const [setRotate, setRotateState] = useState(`${faqStyles.accordionIcon}`);
+  const [setRotate, setRotateState] = useState(`${styles.accordionIcon}`);
 
   const content = useRef<HTMLDivElement>(null);
 
   function changeClass() {
     setClass(
-      currentClass === `${faqStyles.texthidden}`
-        ? `${faqStyles.active}`
-        : `${faqStyles.texthidden}`
+      currentClass === `${styles.texthidden}`
+        ? `${styles.active}`
+        : `${styles.texthidden}`
     );
     // Typescript braucht die Condition für useRef
     if (content.current) {
       setHeightState(
-        currentClass === `${faqStyles.texthidden}`
+        currentClass === `${styles.texthidden}`
           ? `${content.current.scrollHeight}px`
           : "0px"
       );
     }
     setRotateState(
-      currentClass === `${faqStyles.texthidden}`
-        ? `${faqStyles.rotate}`
-        : `${faqStyles.accordionIcon}`
+      currentClass === `${styles.texthidden}`
+        ? `${styles.rotate}`
+        : `${styles.accordionIcon}`
     );
   }
 
   return (
     <section>
-      <div className={faqStyles.question} onClick={changeClass}>
+      <div className={styles.question} onClick={changeClass}>
         <img
           src={`${image}`}
-          className={`${faqStyles.faqImage}`}
+          className={`${styles.faqImage}`}
           alt="Illustration Sascha Nabrotzky"
         />
-        <div className={faqStyles.titleChevronWrapper}>
+        <div className={styles.titleChevronWrapper}>
           <h3>{title}</h3>
           <Chevron className={`${setRotate}`} width={"30"} fill={"#999"} />
         </div>

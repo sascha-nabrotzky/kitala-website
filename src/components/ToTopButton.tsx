@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import styles from "../styles/ToTopButton.module.css";
+import styles from "../styles/totopbutton.module.css";
 
 function ToTopButton() {
   const [currentClass, setClass] = useState(`${styles.buttonHidden}`);

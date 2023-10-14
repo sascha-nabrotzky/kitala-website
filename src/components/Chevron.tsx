@@ -1,5 +1,3 @@
-import React from "react";
-
 type ChevronProps = {
   className: string;
   width: string;
