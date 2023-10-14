@@ -17,13 +17,6 @@ function Navigation() {
         Home
       </Link>
 
-      <Link to="/blog" className={styles.link}>
-        <div className={styles.icon}>
-          <img src={iconCalendarGallery} alt="Icon Image gallery" />
-        </div>
-        Aktionen
-      </Link>
-
       <Link to="/mitglieder" className={styles.link}>
         <div className={styles.icon}>
           <img src={iconUsers} alt="Icon Users" />
@@ -43,6 +36,13 @@ function Navigation() {
           <img src={iconBook} alt="Icon Book" />
         </div>
         FAQs
+      </Link>
+
+      <Link to="/blog" className={styles.link}>
+        <div className={styles.icon}>
+          <img src={iconCalendarGallery} alt="Icon Image gallery" />
+        </div>
+        Aktionen
       </Link>
 
       <Link to="/download" className={styles.link}>

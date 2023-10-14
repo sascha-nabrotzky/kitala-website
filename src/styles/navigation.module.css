@@ -17,6 +17,17 @@
     gap: 2rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .navigation {
+    right: unset;
+    bottom: unset;
+    flex-direction: column;
+    background-color: unset;
+    height: 100%;
+    gap: 0.5rem;
+    backdrop-filter: unset;
+  }
+}
 
 .link {
   display: flex;
