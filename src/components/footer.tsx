@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/footer.module.scss";
+import styles from "../styles/footer.module.css";
 
 function Footer() {
   return (
@@ -11,14 +10,15 @@ function Footer() {
         </li>
         <li className={styles.footerLink}>
           <Link to="/datenschutz">Datenschutz</Link>
-        </li>
+        </li>{" "}
+        |{" "}
         <li className={styles.footerLinkSelfPromo}>
           <a
             href="https://sascha-nabrotzky.github.io"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Webdesign
+            Webentwicklung
           </a>{" "}
           &{" "}
           <a
@@ -27,8 +27,8 @@ function Footer() {
             rel="noreferrer noopener"
           >
             Illustration
-          </a>{" "}
-          | <span>Sascha Nabrotzky</span>
+          </a>
+          : <span>Sascha Nabrotzky</span>
         </li>
       </ul>
     </footer>

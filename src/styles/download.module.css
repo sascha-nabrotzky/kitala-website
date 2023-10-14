@@ -5,7 +5,7 @@
   padding-inline: 1rem;
   padding-block: 0.8rem;
   text-decoration: none;
-  color: var(--col-black);
+  color: rgb(var(--col-black));
   font-weight: 700;
   background-color: white;
   box-shadow: var(--shd-default);
@@ -13,7 +13,7 @@
 }
 
 .downMain a:visited {
-  color: var(--col-black);
+  color: rgb(var(--col-black));
 }
 
 .pdficon {

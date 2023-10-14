@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   opacity: 1;
-  border: 1px solid var(--col-gray);
+  border: 1px solid rgb(var(--col-gray));
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
@@ -22,7 +22,7 @@
 
 .totopbutton svg {
   width: 50%;
-  fill: var(--col-gray);
+  fill: rgb(var(--col-gray));
 }
 
 .buttonHidden {

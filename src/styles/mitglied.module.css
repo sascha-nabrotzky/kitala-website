@@ -24,12 +24,12 @@
 
 .mitgliedwrapper address a:not(.btnWebsite) {
   font-style: normal;
-  color: var(--col-black);
+  color: rgb(var(--col-black));
   font-weight: 700;
 }
 
 .kita {
-  color: var(--col-violet);
+  color: rgb(var(--col-violet));
   margin-block: 0.5rem;
 }
 
@@ -43,10 +43,10 @@
 }
 
 .btnWebsite {
-  border: 1px solid var(--col-gray);
+  border: 1px solid rgb(var(--col-gray));
   margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 2rem;
-  color: var(--col-gray);
+  color: rgb(var(--col-gray));
   text-decoration: none;
 }

@@ -1,5 +1,4 @@
-import React from "react";
-import Blockquote from "../components/Blockquote";
+import Blockquote from "../components/blockquote";
 import stepLogo from "../assets/images/StepLogo.svg";
 import emailIcon from "../assets/images/email.svg";
 import dreiKinder from "../assets/images/dreiKinder.svg";

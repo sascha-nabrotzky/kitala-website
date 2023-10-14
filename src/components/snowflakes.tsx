@@ -1,5 +1,4 @@
-import React from "react";
-import snowStyles from "../styles/snowflakes.module.scss";
+import snowStyles from "../styles/snowflakes.module.css";
 
 export default function Snowflakes() {
   return (

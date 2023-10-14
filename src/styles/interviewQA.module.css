@@ -11,12 +11,12 @@
 }
 
 .question {
-  border-bottom: 2px dotted var(--col-muted);
+  border-bottom: 2px dotted rgb(var(--col-muted));
   cursor: pointer;
 }
 
 .interviewVisible {
-  color: var(--col-violet);
+  color: rgb(var(--col-violet));
 }
 
 .chevronWrapper {

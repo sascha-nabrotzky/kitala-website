@@ -1,4 +1,3 @@
-import React from "react";
 import MitgliedCard from "../components/MitgliedCard";
 import HuewelmannImg from "../assets/images/huewelmann300px.jpg";
 import NabrotzkyImg from "../assets/images/nabrotzky300px.jpg";

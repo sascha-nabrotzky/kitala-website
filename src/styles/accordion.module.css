@@ -1,5 +1,5 @@
 .question {
-  border-bottom: 2px dotted var(--col-black);
+  border-bottom: 2px dotted rgb(var(--col-black));
   cursor: pointer;
   margin-bottom: 1em;
   display: flex;
@@ -7,7 +7,7 @@
 }
 
 .question h3 {
-  color: var(--col-violet);
+  color: rgb(var(--col-violet));
   margin: 0.7em 0;
 }
 

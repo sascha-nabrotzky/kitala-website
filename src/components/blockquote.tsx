@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../styles/blockquote.module.scss";
+import styles from "../styles/blockquote.module.css";
 
 type BlockquoteProps = {
   content: string;

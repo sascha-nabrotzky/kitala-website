@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import image1 from "../assets/images/Küche.jpg";
 import image2 from "../assets/images/Qualitätsaspekte.jpg";
 import image3 from "../assets/images/Dokumentation.jpg";
