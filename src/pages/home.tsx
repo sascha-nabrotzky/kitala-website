@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Blockquote from "../components/Blockquote";
 import stepLogo from "../assets/images/StepLogo.svg";
 import emailIcon from "../assets/images/email.svg";
@@ -17,13 +18,15 @@ function Home() {
           alt="Illustration dreier Kinder"
         />
 
-        <h3>Vorteile der Kindertagespflege</h3>
+        <h3>Die Wichtigkeit der Kindertagespflege</h3>
         <p>
           Die Kindertagespflege ist der erste offizielle Bildungsort den Ihr
-          Kind besucht und somit ein wichtiger erster Baustein. Die ersten drei
-          Lebensjahre sind eine besonders wichtige Zeit für die Entwicklung
-          Eurer Kinder, da in diesem Lebensabschnitt die Grundbausteine für
-          Lern- und Beziehungsfähigkeiten gelegt werden. <br /> <br />
+          Kind besucht und somit ein wichtiger erster Baustein.{" "}
+          <strong>Die ersten drei Lebensjahre</strong> sind eine besonders
+          wichtige Zeit für die Entwicklung Eurer Kinder, da in diesem
+          Lebensabschnitt die{" "}
+          <strong>Grundbausteine für Lern- und Beziehungsfähigkeiten</strong>{" "}
+          gelegt werden. <br /> <br />
           Durch Ausprobieren und Nachahmen lernen sie die Welt kennen und zu
           begreifen. Dafür benötigen sie vor allem eine sichere
           Bindungsbeziehung, die ihnen Geborgenheit, Akzeptanz und Sicherheit
@@ -40,8 +43,7 @@ function Home() {
           herausholen. Zusätzlich möchten wir auch die Zusammenarbeit mit der
           Gemeinde Ladbergen und dem Jugendamt weiterentwickeln und
           bedarfsgerecht ausbauen.
-        </p>
-        <p>
+          <br /> <br />
           Auch ist uns wichtig, dass sie als Eltern mehr Informationen über die
           Arbeit der Kindertagespflegepersonen durch Veranstaltungen und
           Herausgabe und Bereitstellung von Informationsmaterial bekommen.
@@ -51,8 +53,10 @@ function Home() {
           <h3>Anmeldungen zur Kindertagespflege</h3>
           <p>
             Anmeldungen Ihrer Kinder zur Tagespflege erfolgen online über das
-            Elternportal &bdquo;Step&rdquo;. Sie können uns aber auch direkt per
-            E-Mail oder telefonisch kontaktieren.
+            Elternportal <strong>&bdquo;Step&rdquo;.</strong> <br /> <br />
+            Sie können den Verein per E-Mail oder telefonisch, aber auch jedes
+            Mitglied einzeln über den{" "}
+            <Link to="/mitglieder">Mitgliederbereich</Link> direkt kontaktieren.
           </p>
 
           <div className={styles.iconWrapper}>

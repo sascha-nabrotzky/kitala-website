@@ -29,7 +29,7 @@
 }
 
 .kita {
-  color: rgb(var(--col-violet));
+  color: rgb(var(--col-green));
   margin-block: 0.5rem;
 }
 
@@ -49,4 +49,9 @@
   border-radius: 2rem;
   color: rgb(var(--col-gray));
   text-decoration: none;
+}
+
+.btnWebsite:hover {
+  outline: 1px solid;
+  outline-offset: 3px;
 }

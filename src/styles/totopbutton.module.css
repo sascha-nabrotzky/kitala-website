@@ -17,7 +17,8 @@
 }
 
 .totopbutton:hover {
-  border-width: 2px;
+  outline: 1px solid;
+  outline-offset: 3px;
 }
 
 .totopbutton svg {

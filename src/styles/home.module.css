@@ -7,6 +7,10 @@
   margin-top: 0;
 }
 
+.homeMain a {
+  color: var(--col-gray);
+}
+
 .illustration {
   margin-top: 1rem;
   margin-left: auto;
