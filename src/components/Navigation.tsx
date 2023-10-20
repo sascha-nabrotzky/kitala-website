@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import iconHome from "../assets/images/home_neg.svg";
-import iconCalendarGallery from "../assets/images/calendar_gallery.svg";
-import iconBook from "../assets/images/book_neg.svg";
-import iconUsers from "../assets/images/users_neg.svg";
-import iconDownload from "../assets/images/download_neg.svg";
-import iconInklusion from "../assets/images/inklusion.svg";
+import iconHome from "../assets/svg/home_neg.svg";
+import iconCalendarGallery from "../assets/svg/calendar_gallery.svg";
+import iconBook from "../assets/svg/book_neg.svg";
+import iconUsers from "../assets/svg/users_neg.svg";
+import iconDownload from "../assets/svg/download_neg.svg";
+import iconInklusion from "../assets/svg/inklusion.svg";
 import styles from "../styles/navigation.module.css";
 
 function Navigation() {
