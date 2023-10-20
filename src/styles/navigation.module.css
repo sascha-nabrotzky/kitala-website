@@ -19,13 +19,14 @@
 }
 @media screen and (min-width: 1024px) {
   .navigation {
+    top: 50%;
     right: unset;
     bottom: unset;
     flex-direction: column;
+    transform: translateY(-50%);
     background-color: unset;
-    height: 100%;
-    gap: 0.5rem;
     backdrop-filter: unset;
+    gap: 0.5rem;
   }
 }
 

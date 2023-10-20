@@ -38,11 +38,13 @@ function Home() {
         <h3>Was machen wir als Verein?</h3>
         <p>
           Auch der Zusammenschluss der Kindertagespflegepersonen als Verein ist
-          hierfür ein wichtiger Punkt. Denn nur gemeinsam können wir viel
-          erreichen und das Beste für unsere Schützlinge und auch für uns
-          herausholen. Zusätzlich möchten wir auch die Zusammenarbeit mit der
-          Gemeinde Ladbergen und dem Jugendamt weiterentwickeln und
-          bedarfsgerecht ausbauen.
+          hierfür ein wichtiger Punkt. Denn nur{" "}
+          <strong>gemeinsam können wir viel erreichen</strong> und das Beste für
+          unsere Schützlinge und auch für uns herausholen. Zusätzlich möchten
+          wir auch die{" "}
+          <strong>Zusammenarbeit mit der Gemeinde Ladbergen</strong> und dem
+          <strong>Jugendamt</strong> weiterentwickeln und bedarfsgerecht
+          ausbauen.
           <br /> <br />
           Auch ist uns wichtig, dass sie als Eltern mehr Informationen über die
           Arbeit der Kindertagespflegepersonen durch Veranstaltungen und
