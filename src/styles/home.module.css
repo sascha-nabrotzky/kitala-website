@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.homeMain h3 + p {
+  margin-top: 0;
+}
+
 .illustration {
   margin-top: 1rem;
   margin-left: auto;
