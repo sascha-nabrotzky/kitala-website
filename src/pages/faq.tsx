@@ -5,7 +5,7 @@ import image1 from "../assets/images/Küche.jpg";
 import image2 from "../assets/images/Qualitätsaspekte.jpg";
 import image3 from "../assets/images/Dokumentation.jpg";
 import image4 from "../assets/images/Kosten.jpg";
-import socialMediaImg from "../assets/images/socialMediaImg.jpg";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 
 const Accordion = lazy(() => import("../components/Accordion"));
 const renderLoader = () => <p>Loading ...</p>;

@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import { Helmet } from "react-helmet-async";
-import socialMediaImg from "../assets/images/socialMediaImg.jpg";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 
 function Impressum() {
   return (
