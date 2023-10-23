@@ -5,7 +5,7 @@ import stepLogo from "../assets/svg/StepLogo.svg";
 import emailIcon from "../assets/svg/email.svg";
 import dreiKinder from "../assets/svg/dreiKinder.svg";
 import Layout from "../components/Layout";
-import socialMediaImg from "../assets/images/socialMediaImg.jpg";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import styles from "../styles/home.module.css";
 
 function Home() {

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import InklusionJSON from "../content/inklusion.json";
 import InterviewQA from "../components/InterviewQA";
 import inklusionStyles from "../styles/inklusion.module.css";
-import socialMediaImg from "../assets/images/socialMediaImg.jpg";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import Layout from "../components/Layout";
 
 function Inklusion() {

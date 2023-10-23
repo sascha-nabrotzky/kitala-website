@@ -11,7 +11,7 @@ import LutterbeiImg from "../assets/images/Lutterbei_300px.jpg";
 import OeleschImg from "../assets/images/Olesch_300px.jpg";
 import TuschewitzkiImg from "../assets/images/Tuschewitzki_300px.jpg";
 import SchroerlueckeImg from "../assets/images/Schroeerluecke_300px.jpg";
-import socialMediaImg from "../assets/images/socialMediaImg.jpg";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import styles from "../styles/mitglieder.module.css";
 import Layout from "../components/Layout";
 

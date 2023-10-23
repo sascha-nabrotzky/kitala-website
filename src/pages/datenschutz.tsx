@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
-import socialMediaImg from "../assets/images/socialMediaImg.jpg";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 
 function Datenschutz() {
   return (
