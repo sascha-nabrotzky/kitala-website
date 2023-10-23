@@ -22,24 +22,36 @@ function Home() {
           content="kindertagespflege, tagesmutter, kinder, pflege"
         />
         <meta name="author" content="KiTaLa e.V." />
-        <meta name="image" content={socialMediaImg} />
+        <meta
+          name="image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
 
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
           content="KiTaLa e.V. | Kindertagespflege Ladbergen"
         />
-        <meta name="twitter:image" content={socialMediaImg} />
+        <meta
+          name="twitter:image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
         <meta
           name="twitter:description"
           content="Gemeinsam sind wir stärker! Zusammenschluss der Tagesmütter in Ladbergen für Öffentlichkeitsarbeit und Kooperation"
         />
-
+        <meta
+          property="og:title"
+          content="KiTaLa e.V. | Kindertagespflege Ladbergen"
+        />
         <meta
           property="og:description"
           content="Gemeinsam sind wir stärker! Zusammenschluss der Tagesmütter in Ladbergen für Öffentlichkeitsarbeit und Kooperation"
         />
-        <meta property="og:image" content={socialMediaImg} />
+        <meta
+          property="og:image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
         <meta property="og:url" content="https://kitala-ladbergen.de" />
         <meta property="og:type" content="website" />
       </Helmet>

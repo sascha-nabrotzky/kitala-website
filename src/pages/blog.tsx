@@ -14,9 +14,23 @@ function Blog() {
       <Helmet>
         <title>Aktionen | KiTaLa e.V.</title>
         <meta name="description" content="Was im Verein so passiert" />
-        <meta name="image" content={socialMediaImg} />
-        <meta name="twitter:image" content={socialMediaImg} />
-        <meta property="og:image" content={socialMediaImg} />
+        <meta
+          name="image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
+        <meta
+          name="twitter:image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
+        <meta property="og:title" content="Aktionen | KiTaLa e.V." />
+        <meta
+          property="og:image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
+        <meta
+          property="og:description"
+          content="Gemeinsam sind wir stärker! Zusammenschluss der Tagesmütter in Ladbergen für Öffentlichkeitsarbeit und Kooperation"
+        />
       </Helmet>
 
       <Layout>
