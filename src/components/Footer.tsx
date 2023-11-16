@@ -18,11 +18,11 @@ function Footer() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Webentwicklung
+            Webdesign
           </a>{" "}
           &{" "}
           <a
-            href="https://www.instagram.com/sascha.illustrates"
+            href="http://www.sascha-nabrotzky.de"
             target="_blank"
             rel="noreferrer noopener"
           >

@@ -66,7 +66,7 @@ function Home() {
             alt="Illustration dreier Kinder"
           />
 
-          <h3>Die Wichtigkeit der Kindertagespflege</h3>
+          <h3>Die Relevanz der Kindertagespflege</h3>
           <p>
             Die Kindertagespflege ist der erste offizielle Bildungsort den Ihr
             Kind besucht und somit ein wichtiger erster Baustein.{" "}
@@ -83,7 +83,7 @@ function Home() {
 
           <Blockquote content="Geborgenheit, Akzeptanz und Sicherheit stehen für uns an erster Stelle" />
 
-          <h3>Was machen wir als Verein?</h3>
+          <h3>Verein der Tagesmütter ist wichtige Anlaufstelle</h3>
           <p>
             Auch der Zusammenschluss der Kindertagespflegepersonen als Verein
             ist hierfür ein wichtiger Punkt. Denn nur{" "}
