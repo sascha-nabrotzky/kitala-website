@@ -10,8 +10,8 @@ function Footer() {
         </li>
         <li className={styles.footerLink}>
           <Link to="/datenschutz">Datenschutz</Link>
-        </li>{" "}
-        |{" "}
+        </li>
+        <li>|</li>
         <li className={styles.footerLinkSelfPromo}>
           <a
             href="https://sascha-nabrotzky.github.io"

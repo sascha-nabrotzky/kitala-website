@@ -9,7 +9,12 @@ function Header() {
         <img src={gradient} alt="Verlauf oben" />
       </div>
       <div className={styles.logo}>
-        <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
+        <img
+          src={Logo}
+          alt="Logo KiTaLa e.V. Ladbergen"
+          width="200px"
+          height="auto"
+        />
       </div>
     </header>
   );
