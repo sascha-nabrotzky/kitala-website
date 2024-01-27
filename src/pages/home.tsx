@@ -22,24 +22,36 @@ function Home() {
           content="kindertagespflege, tagesmutter, kinder, pflege"
         />
         <meta name="author" content="KiTaLa e.V." />
-        <meta name="image" content={socialMediaImg} />
+        <meta
+          name="image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
 
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
           content="KiTaLa e.V. | Kindertagespflege Ladbergen"
         />
-        <meta name="twitter:image" content={socialMediaImg} />
+        <meta
+          name="twitter:image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
         <meta
           name="twitter:description"
           content="Gemeinsam sind wir stärker! Zusammenschluss der Tagesmütter in Ladbergen für Öffentlichkeitsarbeit und Kooperation"
         />
-
+        <meta
+          property="og:title"
+          content="KiTaLa e.V. | Kindertagespflege Ladbergen"
+        />
         <meta
           property="og:description"
           content="Gemeinsam sind wir stärker! Zusammenschluss der Tagesmütter in Ladbergen für Öffentlichkeitsarbeit und Kooperation"
         />
-        <meta property="og:image" content={socialMediaImg} />
+        <meta
+          property="og:image"
+          content={`https://kitala-ladbergen.de${socialMediaImg}`}
+        />
         <meta property="og:url" content="https://kitala-ladbergen.de" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -52,9 +64,11 @@ function Home() {
             src={dreiKinder}
             className={styles.illustration}
             alt="Illustration dreier Kinder"
+            width="576"
+            height="auto"
           />
 
-          <h3>Die Wichtigkeit der Kindertagespflege</h3>
+          <h2>Die Relevanz der Kindertagespflege</h2>
           <p>
             Die Kindertagespflege ist der erste offizielle Bildungsort den Ihr
             Kind besucht und somit ein wichtiger erster Baustein.{" "}
@@ -71,7 +85,7 @@ function Home() {
 
           <Blockquote content="Geborgenheit, Akzeptanz und Sicherheit stehen für uns an erster Stelle" />
 
-          <h3>Was machen wir als Verein?</h3>
+          <h2>Verein der Tagesmütter ist wichtige Anlaufstelle</h2>
           <p>
             Auch der Zusammenschluss der Kindertagespflegepersonen als Verein
             ist hierfür ein wichtiger Punkt. Denn nur{" "}
@@ -89,7 +103,7 @@ function Home() {
           </p>
 
           <aside>
-            <h3>Anmeldungen zur Kindertagespflege</h3>
+            <h2>Anmeldungen zur Kindertagespflege</h2>
             <p>
               Anmeldungen Ihrer Kinder zur Tagespflege erfolgen online über das
               Elternportal <strong>&bdquo;Step&rdquo;.</strong> <br /> <br />
@@ -106,16 +120,20 @@ function Home() {
                 rel="noreferrer noopener"
               >
                 <img
-                  className={styles.homeIcon}
+                  className={styles.stepIcon}
                   src={stepLogo}
                   alt="Logo von Step Steinfurt"
+                  width="109"
+                  height="auto"
                 />
               </a>
               <a href="mailto:kontakt@kitala-ladbergen.de">
                 <img
-                  className={styles.homeIcon}
+                  className={styles.mailIcon}
                   src={emailIcon}
                   alt="Eine E-Mail schreiben"
+                  width="61"
+                  height="auto"
                 />
               </a>
             </div>
