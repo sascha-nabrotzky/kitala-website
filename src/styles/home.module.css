@@ -3,11 +3,20 @@
   flex-direction: column;
 }
 
+.homeMain h3 + p {
+  margin-top: 0;
+}
+
+.homeMain a {
+  color: var(--col-gray);
+}
+
 .illustration {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   width: clamp(min(375px, 100%), 80%, 100%);
+  aspect-ratio: 576 / 337.5;
 }
 
 .iconWrapper {
@@ -18,11 +27,21 @@
   margin-bottom: 4rem;
 }
 
-.homeIcon {
+.iconWrapper a:first-of-type img {
+  aspect-ratio: 109 / 48;
+}
+
+.iconWrapper a:last-of-type img {
+  aspect-ratio: 61 / 48;
+}
+
+.stepIcon,
+.mailIcon {
   height: 2.5em;
   transition: 0.2s ease-in-out;
 }
 
-.homeIcon:hover {
+.stepIcon:hover,
+.mailIcon:hover {
   transform: scale(1.2);
 }

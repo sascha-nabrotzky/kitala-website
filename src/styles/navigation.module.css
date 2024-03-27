@@ -4,11 +4,12 @@
   right: 0;
   bottom: 0;
   left: 0;
+  flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 1rem;
   backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 640px) {
@@ -19,13 +20,14 @@
 }
 @media screen and (min-width: 1024px) {
   .navigation {
+    top: 50%;
     right: unset;
     bottom: unset;
     flex-direction: column;
+    transform: translateY(-50%);
     background-color: unset;
-    height: 100%;
-    gap: 0.5rem;
     backdrop-filter: unset;
+    gap: 0.5rem;
   }
 }
 
