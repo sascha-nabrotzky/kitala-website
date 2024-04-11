@@ -17,6 +17,7 @@ footer {
   color: rgb(var(--col-muted));
   margin-top: 3rem;
   margin-bottom: 0;
+  font-size: 1rem;
 }
 
 .footerListItems a {
