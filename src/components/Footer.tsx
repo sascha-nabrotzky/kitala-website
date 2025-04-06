@@ -14,19 +14,11 @@ function Footer() {
         <li>|</li>
         <li className={styles.footerLinkSelfPromo}>
           <a
-            href="https://sascha-nabrotzky.github.io"
+            href="https://sascha-nabrotzky.de"
             target="_blank"
             rel="noreferrer noopener"
           >
             Webdesign
-          </a>{" "}
-          &{" "}
-          <a
-            href="http://www.sascha-nabrotzky.de"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Illustration
           </a>
           : <span>Sascha Nabrotzky</span>
         </li>
