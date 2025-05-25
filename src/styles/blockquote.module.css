@@ -1,15 +1,14 @@
 .blockquote {
-  display: flex;
-  align-items: center;
-  width: clamp(min(5rem, 100%), 14rem, 17rem);
-  aspect-ratio: 1/1;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 1rem;
-  background-color: rgb(var(--col-violet));
-  color: white;
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 50%;
+    background-color: var(--col-violet);
+    padding: 1rem;
+    width: clamp(min(5rem, 100%), 14rem, 17rem);
+    text-align: center;
+    color: var(--col-white);
+    font-size: 1.2em;
+    font-weight: 700;
+    aspect-ratio: 1/1;
 }

@@ -1,47 +1,59 @@
 .homeMain {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .homeMain h3 + p {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .homeMain a {
-  color: var(--col-gray);
+    color: var(--col-gray);
 }
 
 .illustration {
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: clamp(min(375px, 100%), 80%, 100%);
-  aspect-ratio: 576 / 337.5;
+    margin: 3rem auto;
+    width: clamp(min(375px, 100%), 80%, 100%);
+    aspect-ratio: 576 / 337.5;
 }
 
 .iconWrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    color: var(--col-black);
+    border-block: 1px solid var(--col-black);
+    padding-block: 2rem;
+}
+
+.iconWrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 1rem;
 }
 
 .iconWrapper a:first-of-type img {
-  aspect-ratio: 109 / 48;
+    width: 80px;
+    height: auto;
 }
 
 .iconWrapper a:last-of-type img {
-  aspect-ratio: 61 / 48;
+    width: 41px;
+    height: auto;
 }
 
 .stepIcon,
 .mailIcon {
-  height: 2.5em;
-  transition: 0.2s ease-in-out;
+    height: 2.5em;
+    transition: 0.2s ease-in-out;
 }
 
 .stepIcon:hover,
 .mailIcon:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }

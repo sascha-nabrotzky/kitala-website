@@ -1,45 +1,45 @@
 .totopbutton {
-  display: flex;
-  position: fixed;
-  right: 1.4rem;
-  bottom: 7.5rem;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-  border: 1px solid rgb(var(--col-gray));
-  border-radius: 50%;
-  background-color: transparent;
-  cursor: pointer;
-  width: 3rem;
-  height: 3rem;
-  font-size: 3rem;
+    display: flex;
+    position: fixed;
+    right: 1.4rem;
+    bottom: 7.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    border: 1px solid var(--col-gray);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
 }
 
 .totopbutton:hover {
-  outline: 1px solid;
-  outline-offset: 3px;
+    outline: 1px solid;
+    outline-offset: 3px;
 }
 
 .totopbutton svg {
-  width: 50%;
-  fill: rgb(var(--col-gray));
+    width: 50%;
+    fill: var(--col-gray);
 }
 
 .buttonHidden {
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
 }
 
 @media (min-width: 640px) {
-  .totopbutton {
-    bottom: 8rem;
-    right: 1.95rem;
-  }
+    .totopbutton {
+        bottom: 8rem;
+        right: 1.95rem;
+    }
 }
 @media screen and (min-width: 1024px) {
-  .totopbutton {
-    bottom: 2rem;
-  }
+    .totopbutton {
+        bottom: 2rem;
+    }
 }

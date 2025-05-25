@@ -1,51 +1,51 @@
 .question {
-  border-bottom: 2px dotted rgb(var(--col-black));
-  cursor: pointer;
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
+    border-bottom: 2px dotted var(--col-black);
+    cursor: pointer;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .question h3 {
-  color: rgb(var(--col-violet));
-  margin: 0.7em 0;
+    color: var(--col-black);
+    margin: 0.7em 0;
 }
 
 .titleChevronWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .faqImage {
-  width: 100%;
-  margin-top: 2em;
+    width: 100%;
+    margin-top: 2em;
 }
 
 .accordionIcon {
-  transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .rotate {
-  transition: transform 0.4s ease;
-  transform: rotate(90deg);
+    transition: transform 0.4s ease;
+    transform: rotate(90deg);
 }
 
 .texthidden {
-  max-height: 0px;
-  overflow: hidden;
-  transition: 1s ease;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s ease;
 }
 
 .texthidden p:first-of-type {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .active {
-  overflow: hidden;
-  transition: 1s ease;
+    overflow: hidden;
+    transition: 1s ease;
 }
 
 .active p:first-of-type {
-  margin-top: 0;
+    margin-top: 0;
 }
