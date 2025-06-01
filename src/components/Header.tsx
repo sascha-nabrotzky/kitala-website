@@ -1,21 +1,40 @@
-import Logo from "../assets/icons/kitala_logo.svg";
-import gradient from "../assets/icons/gradient.svg";
+import { Link } from "react-router-dom";
 import styles from "../styles/header.module.css";
+import Logo from "../assets/icons/kitala_logo.svg";
 
 function Header() {
     return (
         <header className={styles.header}>
-            <div className={styles.gradient}>
-                <img src={gradient} alt="Verlauf oben" />
-            </div>
-            <div className={styles.logo}>
-                <img
-                    src={Logo}
-                    alt="Logo KiTaLa e.V. Ladbergen"
-                    width="200px"
-                    height="auto"
-                />
-            </div>
+            <nav className={styles.navigation}>
+                <Link to="/" className={styles.link}>
+                    Home
+                </Link>
+
+                <Link to="/mitglieder" className={styles.link}>
+                    Mitglieder
+                </Link>
+
+                <Link to="/inklusion" className={styles.link}>
+                    Inklusion
+                </Link>
+
+                <div className={styles.logo}>
+                    <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
+                </div>
+
+                <Link to="/faq" className={styles.link}>
+                    FAQs
+                </Link>
+
+                <Link to="/blog" className={styles.link}>
+                    Aktionen
+                </Link>
+
+                <Link to="/download" className={styles.link}>
+                    Downloads
+                </Link>
+            </nav>
+            <div className={styles.heroImg}>Hero Img</div>
         </header>
     );
 }
