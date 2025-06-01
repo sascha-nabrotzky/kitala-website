@@ -44,7 +44,14 @@
 
 :root {
     --kita-color-black: #2d2d2d;
+    --kita-color-black-rgb: 45, 45, 45;
     --kita-color-white: #ffffff;
+    --kita-color-white-rgb: 255, 255, 255;
+
+    --kita-color-contrast-light: #f2f2f2;
+    --kita-color-contrast-light-rgb: 242, 242, 242;
+    --kita-color-contrast-dark: #121212;
+    --kita-color-contrast-dark-rgb: 18, 18, 18;
 
     --kita-color-primary: #2c7923;
     --kita-color-primary-20: #2c792333;
