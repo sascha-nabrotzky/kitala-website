@@ -1,15 +1,15 @@
 .article {
-  border-top: 1px solid rgb(var(--col-muted));
-  margin-top: 2em;
+    border-top: 1px solid rgb(var(--kita-color-black));
+    margin-top: 2em;
 }
 
 .article img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .article .maintext {
-    columns: 2;
-    column-gap: 2em;
-  }
+    .article .maintext {
+        columns: 2;
+        column-gap: 2em;
+    }
 }

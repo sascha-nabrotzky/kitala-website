@@ -8,7 +8,7 @@
 }
 
 .homeMain a {
-    color: var(--col-gray);
+    color: var(--kita-color-black);
 }
 
 .illustration {
@@ -23,8 +23,8 @@
     justify-content: space-around;
     margin-top: 8rem;
     margin-bottom: 4rem;
-    color: var(--col-black);
-    border-block: 1px solid var(--col-black);
+    color: var(--kita-color-black);
+    border-block: 1px solid var(--kita-color-black);
     padding-block: 2rem;
 }
 

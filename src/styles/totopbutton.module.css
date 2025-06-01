@@ -7,7 +7,7 @@
     justify-content: center;
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
-    border: 1px solid var(--col-gray);
+    border: 1px solid var(--kita-color-black);
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -23,7 +23,7 @@
 
 .totopbutton svg {
     width: 50%;
-    fill: var(--col-gray);
+    fill: var(--kita-color-black);
 }
 
 .buttonHidden {

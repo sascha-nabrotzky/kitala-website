@@ -5,7 +5,7 @@
     justify-content: center;
     flex-basis: 10rem;
     text-align: center;
-    background-color: var(--col-white);
+    background-color: var(--kita-color-white);
     border-radius: 0.3rem;
     overflow: hidden;
 }
@@ -24,12 +24,12 @@
 
 .mitgliedwrapper address a:not(.btnWebsite) {
     font-style: normal;
-    color: var(--col-black);
+    color: var(--kita-color-black);
     font-weight: 700;
 }
 
 .mitgliedwrapper p.kita {
-    color: var(--col-green);
+    color: var(--kita-color-primary);
     margin-block: 0.5rem;
 }
 
@@ -43,11 +43,11 @@
 }
 
 .btnWebsite {
-    border: 1px solid var(--col-gray);
+    border: 1px solid var(--kita-color-black);
     margin-top: 1rem;
     padding: 0.5rem;
     border-radius: 2rem;
-    color: var(--col-gray);
+    color: var(--kita-color-black);
     text-decoration: none;
 }
 

@@ -5,15 +5,15 @@
     padding-inline: 1rem;
     padding-block: 0.8rem;
     text-decoration: none;
-    color: var(--col-black);
+    color: var(--kita-color-black);
     font-weight: 700;
-    background-color: var(--col-white);
-    box-shadow: var(--shd-default);
+    background-color: var(--kita-color-white);
+    box-shadow: var(--kita-shadow-medium);
     border-radius: 4px;
 }
 
 .downMain a:visited {
-    color: var(--col-black);
+    color: var(--kita-color-black);
 }
 
 .pdficon {

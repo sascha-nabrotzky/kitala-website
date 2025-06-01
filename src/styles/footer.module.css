@@ -13,14 +13,14 @@ footer {
     display: flex;
     flex-flow: wrap;
     gap: 1rem;
-    padding-inline: var(--p-md);
+    padding-inline: var(--kita-space-200);
     margin-top: 3rem;
     margin-bottom: 0;
     font-size: 1rem;
 }
 
 .footerListItems a {
-    color: var(--col-gray);
+    color: var(--kita-color-black);
     text-decoration: none;
 }
 

@@ -1,5 +1,5 @@
 .question {
-    border-bottom: 2px dotted var(--col-muted);
+    border-bottom: 2px dotted var(--kita-color-black);
     text-align: left;
 }
 
@@ -21,7 +21,7 @@ button {
 }
 
 .interviewVisible {
-    color: var(--col-violet);
+    color: var(--kita-color-secondary);
 }
 
 .chevronWrapper {

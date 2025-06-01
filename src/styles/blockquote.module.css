@@ -3,11 +3,11 @@
     align-items: center;
     margin: 2rem auto;
     border-radius: 50%;
-    background-color: var(--col-violet);
+    background-color: var(--kita-color-secondary);
     padding: 1rem;
     width: clamp(min(5rem, 100%), 14rem, 17rem);
     text-align: center;
-    color: var(--col-white);
+    color: var(--kita-color-white);
     font-size: 1.2em;
     font-weight: 700;
     aspect-ratio: 1/1;

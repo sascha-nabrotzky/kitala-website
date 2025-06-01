@@ -36,19 +36,19 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: var(--col-gray);
-    font-size: var(--fs-sm);
+    color: var(--kita-color-black);
+    font-size: var(--kita-font-size-xs);
 }
 
 .link:hover .icon {
     transition: 0.2s ease;
-    background-color: var(--col-violet);
+    background-color: var(--kita-color-secondary);
     transition: background-color 0.3s ease-in-out;
 }
 
 @media (min-width: 640px) {
     .link {
-        font-size: var(--fs-md);
+        font-size: var(--kita-font-size-s);
     }
 }
 
@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: var(--col-green);
+    background-color: var(--kita-color-primary);
     width: 3rem;
     height: 3rem;
     margin-bottom: 0.3rem;

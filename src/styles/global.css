@@ -43,21 +43,84 @@
 }
 
 :root {
-    --col-gray: rgb(65, 65, 65);
-    --col-muted: rgb(134, 134, 134);
-    --col-black: rgb(45, 45, 45);
-    --col-green: rgb(44, 121, 35);
-    --col-green-20: rgba(44, 121, 35, 0.2);
-    --col-violet: rgb(77, 41, 131);
-    --col-violet-20: rgba(77, 41, 131, 0.2);
-    --col-white: rgb(255, 255, 255);
+    --kita-color-black: #2d2d2d;
+    --kita-color-white: #ffffff;
 
-    --fs-sm: 0.7em;
-    --fs-md: 0.85em;
+    --kita-color-primary: #2c7923;
+    --kita-color-primary-20: #2c792333;
+    --kita-color-primary-rgb: 44, 121, 35;
+    --kita-color-primary-contrast: var(--kita-color-contrast-dark);
+    --kita-color-primary-contrast-rgb: 242, 242, 242;
+    --kita-color-primary-tint: #76a56a;
+    --kita-color-primary-shade: #23501c;
+    --kita-color-primary-tone: #4e7c44;
 
-    --shd-default: 0 3px 5px rgba(0, 0, 0, 0.2);
+    --kita-color-secondary: #4d2983;
+    --kita-color-secondary-20: #4d298333;
+    --kita-color-secondary-rgb: 77, 41, 131;
+    --kita-color-secondary-contrast: var(--kita-color-contrast-dark);
+    --kita-color-secondary-contrast-rgb: 242, 242, 242;
+    --kita-color-secondary-tint: #896cac;
+    --kita-color-secondary-shade: #351e56;
+    --kita-color-secondary-tone: #614683;
 
-    --p-md: 2rem;
+    --kita-color-accent: #15cade;
+    --kita-color-accent-rgb: 21, 202, 222;
+    --kita-color-accent-contrast: var(--kita-color-contrast-light);
+    --kita-color-accent-contrast-rgb: 13, 13, 13;
+    --kita-color-accent-tint: #86dce9;
+    --kita-color-accent-shade: #23828e;
+    --kita-color-accent-tone: #5bb1be;
+
+    --kita-font-size-xs: 0.694rem;
+    --kita-font-size-s: 0.833rem;
+    --kita-font-size-n: 1rem;
+    --kita-font-size-l: 1.2rem;
+    --kita-font-size-xl: 1.44rem;
+    --kita-font-size-xxl: 1.728rem;
+
+    --kita-line-height-tight: 1.2;
+    --kita-line-height-regular: 1.6;
+    --kita-line-height-loose: 2.133;
+
+    --kita-icon-size-xs: 0.867rem;
+    --kita-icon-size-s: 1.041rem;
+    --kita-icon-size-n: 1.25rem;
+    --kita-icon-size-l: 1.5rem;
+    --kita-icon-size-xl: 1.8rem;
+    --kita-icon-size-xxl: 2.16rem;
+
+    --kita-space-012: 0.125rem;
+    --kita-space-025: 0.25rem;
+    --kita-space-050: 0.5rem;
+    --kita-space-075: 0.75rem;
+    --kita-space-100: 1rem;
+    --kita-space-125: 1.25rem;
+    --kita-space-150: 1.5rem;
+    --kita-space-175: 1.75rem;
+    --kita-space-200: 2rem;
+
+    --kita-radius-small: 0.25rem;
+    --kita-radius-medium: 0.5rem;
+    --kita-radius-large: 1rem;
+    --kita-radius-round: 50%;
+    --kita-radius-pill: 9999px;
+
+    --kita-shadow-color: #c836e8;
+    --kita-shadow-color-rgb: 200, 54, 232;
+    --kita-shadow-small: 0px 1px 1px rgba(var(--kita-shadow-color-rgb), 0.2),
+        0px 1px 2px -0.5px rgba(var(--kita-shadow-color-rgb), 0.45),
+        0px 1px 4px -3px rgba(var(--kita-shadow-color-rgb), 0.35);
+    --kita-shadow-medium: 0px 1px 1px -0.5px rgba(var(--kita-shadow-color-rgb), 0.1),
+        0px 1px 2px -1px rgba(var(--kita-shadow-color-rgb), 0.25),
+        0px 2px 3px -1.5px rgba(var(--kita-shadow-color-rgb), 0.3),
+        0px 5px 6px -2px rgba(var(--kita-shadow-color-rgb), 0.4);
+    --kita-shadow-large: 0px 0.5px 0.5px rgba(var(--kita-shadow-color-rgb), 0.2),
+        0px 2px 2px -0.5px rgba(var(--kita-shadow-color-rgb), 0.25),
+        0px 5px 6px -1px rgba(var(--kita-shadow-color-rgb), 0.25),
+        0px 8px 9px -1px rgba(var(--kita-shadow-color-rgb), 0.3),
+        0px 12px 14px -2px rgba(var(--kita-shadow-color-rgb), 0.3),
+        0px 16px 20px -3px rgba(var(--kita-shadow-color-rgb), 0.25);
 }
 
 body {
@@ -65,10 +128,10 @@ body {
     font-weight: 400;
     font-size: 1.2em;
     margin: 0;
-    color: var(--col-black);
+    color: var(--kita-color-black);
     background-image: linear-gradient(
-        var(--col-violet-20),
-        var(--col-green-20)
+        var(--kita-color-secondary-20),
+        var(--kita-color-primary-20)
     );
 }
 
@@ -82,7 +145,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 45rem;
-    padding-inline: var(--p-md);
+    padding-inline: var(--kita-space-200);
 }
 
 h1,
