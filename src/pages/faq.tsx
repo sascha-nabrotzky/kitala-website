@@ -44,6 +44,7 @@ function Faq() {
             <Layout
                 heroSrc="/images/hero.jpg"
                 heroAlt="FAQ KiTaLa e.V. - Kindertagespflege Ladbergen"
+                ariaLabel="FAQ KiTaLa e.V. - Kindertagespflege Ladbergen"
             >
                 <h1>Fragen & Antworten</h1>
 

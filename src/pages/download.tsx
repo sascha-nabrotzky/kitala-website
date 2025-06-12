@@ -36,6 +36,7 @@ const Download = () => {
             <Layout
                 heroSrc="/images/hero.jpg"
                 heroAlt="Downloads KiTaLa e.V. - Kindertagespflege Ladbergen"
+                ariaLabel="Downloads KiTaLa e.V. - Kindertagespflege Ladbergen"
             >
                 <h1>Downloads</h1>
                 <h2>Wichtige Dokumente und mehr</h2>

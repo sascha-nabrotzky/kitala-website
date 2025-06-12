@@ -7,9 +7,10 @@ import Logo from "../assets/icons/kitala_logo.svg";
 type HeaderProps = {
     heroSrc?: string;
     heroAlt?: string;
+    ariaLabel?: string;
 };
 
-function Header({ heroSrc, heroAlt }: HeaderProps) {
+function Header({ heroSrc, heroAlt, ariaLabel }: HeaderProps) {
     const [navOpen, setNavOpen] = React.useState(false);
     const [useStyles, setUseStyles] = React.useState(window.innerWidth <= 768);
 
@@ -74,7 +75,11 @@ function Header({ heroSrc, heroAlt }: HeaderProps) {
                 <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
             </div>
 
-            <HeroImage src={heroSrc ?? ""} alt={heroAlt} />
+            <HeroImage
+                src={heroSrc ?? ""}
+                alt={heroAlt}
+                ariaLabel={ariaLabel}
+            />
         </header>
     );
 }

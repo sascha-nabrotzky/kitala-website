@@ -11,4 +11,5 @@
     font-size: 1.2em;
     font-weight: 700;
     aspect-ratio: 1/1;
+    box-shadow: var(--kita-shadow-large);
 }

@@ -46,6 +46,7 @@
     --kita-color-black: #2d2d2d;
     --kita-color-black-rgb: 45, 45, 45;
     --kita-color-white: #ffffff;
+    --kita-color-white-muted: #efefef;
     --kita-color-white-rgb: 255, 255, 255;
 
     --kita-color-contrast-light: #f2f2f2;
@@ -131,11 +132,13 @@
 }
 
 body {
-    font-family: "Assistant", sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
     margin: 0;
+    background-color: var(--kita-color-white);
     color: var(--kita-color-black);
+    font-family: "Assistant", sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: var(--kita-color-white-muted);
 }
 
 #root {

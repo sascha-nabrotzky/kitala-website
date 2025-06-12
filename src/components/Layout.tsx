@@ -7,12 +7,13 @@ import { PropsWithChildren } from "react";
 type LayoutProps = PropsWithChildren<{
     heroSrc?: string;
     heroAlt?: string;
+    ariaLabel?: string;
 }>;
 
-const Layout = ({ children, heroSrc, heroAlt }: LayoutProps) => {
+const Layout = ({ children, heroSrc, heroAlt, ariaLabel }: LayoutProps) => {
     return (
         <>
-            <Header heroSrc={heroSrc} heroAlt={heroAlt} />
+            <Header heroSrc={heroSrc} heroAlt={heroAlt} ariaLabel={ariaLabel} />
             <main>{children}</main>
             <ToTopButton />
             <Footer />

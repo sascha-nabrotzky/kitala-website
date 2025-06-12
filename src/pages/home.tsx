@@ -58,6 +58,7 @@ function Home() {
             <Layout
                 heroSrc="/images/hero.jpg"
                 heroAlt="KiTaLa e.V. - Kindertagespflege Ladbergen"
+                ariaLabel="KiTaLa e.V. - Kindertagespflege Ladbergen"
             >
                 <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
                 <h2>Die Relevanz der Kindertagespflege</h2>

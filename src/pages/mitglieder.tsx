@@ -49,6 +49,7 @@ const Mitglieder = () => {
             <Layout
                 heroSrc="/images/hero.jpg"
                 heroAlt="Mitglieder KiTaLa e.V. - Kindertagespflege Ladbergen"
+                ariaLabel="Mitglieder KiTaLa e.V. - Kindertagespflege Ladbergen"
             >
                 <h1>Vorstand und Mitglieder des Vereins</h1>
                 <h2>Wir stellen uns vor</h2>
