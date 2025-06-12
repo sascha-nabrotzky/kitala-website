@@ -6,7 +6,7 @@ import iconPDF from "../assets/icons/pdf.svg";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import downloadStyles from "../styles/download.module.css";
 
-function Download() {
+const Download = () => {
     return (
         <>
             <Helmet>
@@ -35,55 +35,53 @@ function Download() {
             </Helmet>
 
             <Layout>
-                <main className={downloadStyles.downMain}>
-                    <h1>Downloads</h1>
-                    <h2>Wichtige Dokumente und mehr</h2>
+                <h1>Downloads</h1>
+                <h2>Wichtige Dokumente und mehr</h2>
 
-                    <a
-                        href={MitgliedsantragPDF}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Download Mitgliedsantrag"
-                    >
-                        <img
-                            className={downloadStyles.pdficon}
-                            src={iconPDF}
-                            alt="PDF Icon"
-                        />{" "}
-                        Mitgliedsantrag
-                    </a>
+                <a
+                    href={MitgliedsantragPDF}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download Mitgliedsantrag"
+                >
+                    <img
+                        className={downloadStyles.pdficon}
+                        src={iconPDF}
+                        alt="PDF Icon"
+                    />{" "}
+                    Mitgliedsantrag
+                </a>
 
-                    <a
-                        href={MitgliedsantragFoerderPDF}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Download Mitgliedsantrag Fördermitglied"
-                    >
-                        <img
-                            className={downloadStyles.pdficon}
-                            src={iconPDF}
-                            alt="PDF Icon"
-                        />{" "}
-                        Mitgliedsantrag als Fördermitglied
-                    </a>
+                <a
+                    href={MitgliedsantragFoerderPDF}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download Mitgliedsantrag Fördermitglied"
+                >
+                    <img
+                        className={downloadStyles.pdficon}
+                        src={iconPDF}
+                        alt="PDF Icon"
+                    />{" "}
+                    Mitgliedsantrag als Fördermitglied
+                </a>
 
-                    <a
-                        href="https://www.kreis-steinfurt.de/kv_steinfurt/Ressourcen/Familie,%20Kinder%20&%20Jugendliche/Merkblatt%20Elternbeitr%C3%A4ge%20zur%20Kindertagesbetreuung.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Download Merkblatt Elternbeiträge"
-                    >
-                        <img
-                            className={downloadStyles.pdficon}
-                            src={iconPDF}
-                            alt="PDF Icon"
-                        />{" "}
-                        Merkblatt Elternbeiträge
-                    </a>
-                </main>
+                <a
+                    href="https://www.kreis-steinfurt.de/kv_steinfurt/Ressourcen/Familie,%20Kinder%20&%20Jugendliche/Merkblatt%20Elternbeitr%C3%A4ge%20zur%20Kindertagesbetreuung.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download Merkblatt Elternbeiträge"
+                >
+                    <img
+                        className={downloadStyles.pdficon}
+                        src={iconPDF}
+                        alt="PDF Icon"
+                    />{" "}
+                    Merkblatt Elternbeiträge
+                </a>
             </Layout>
         </>
     );
-}
+};
 
 export default Download;

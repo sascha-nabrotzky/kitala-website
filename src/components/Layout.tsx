@@ -3,15 +3,15 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ToTopButton from "./ToTopButton";
 
-function Layout({ children }: React.PropsWithChildren<object>) {
+const Layout = ({ children }: React.PropsWithChildren<object>) => {
     return (
         <>
             <Header />
-            {children}
+            <main>{children}</main>
             <ToTopButton />
             <Footer />
         </>
     );
-}
+};
 
 export default Layout;

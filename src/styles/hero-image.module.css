@@ -1,0 +1,6 @@
+.heroImg {
+    background-color: var(--kita-color-black);
+    min-height: 20rem;
+    color: var(--kita-color-white);
+    text-align: center;
+}

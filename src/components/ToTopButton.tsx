@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import styles from "../styles/totopbutton.module.css";
 
-function ToTopButton() {
+const ToTopButton = () => {
     const [currentClass, setClass] = useState(`${styles.buttonHidden}`);
 
     const button = useRef(null);
@@ -35,6 +35,6 @@ function ToTopButton() {
             </svg>
         </button>
     );
-}
+};
 
 export default ToTopButton;
