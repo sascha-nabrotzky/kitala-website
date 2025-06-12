@@ -113,8 +113,8 @@
     --kita-radius-round: 50%;
     --kita-radius-pill: 9999px;
 
-    --kita-shadow-color: #c836e8;
-    --kita-shadow-color-rgb: 200, 54, 232;
+    --kita-shadow-color: rgb(77, 41, 131);
+    --kita-shadow-color-rgb: 77, 41, 131;
     --kita-shadow-small: 0px 1px 1px rgba(var(--kita-shadow-color-rgb), 0.2),
         0px 1px 2px -0.5px rgba(var(--kita-shadow-color-rgb), 0.45),
         0px 1px 4px -3px rgba(var(--kita-shadow-color-rgb), 0.35);
@@ -136,16 +136,11 @@ body {
     font-size: 1.2em;
     margin: 0;
     color: var(--kita-color-black);
-    background-image: linear-gradient(
-        var(--kita-color-secondary-20),
-        var(--kita-color-primary-20)
-    );
 }
 
-body > div {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+#root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 main {
@@ -154,7 +149,8 @@ main {
     margin-right: auto;
     margin-left: auto;
     max-width: 45rem;
-    padding-block: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
     padding-inline: var(--kita-space-200);
 }
 

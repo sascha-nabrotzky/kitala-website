@@ -41,7 +41,10 @@ function Faq() {
                 />
             </Helmet>
 
-            <Layout>
+            <Layout
+                heroSrc="/images/hero.jpg"
+                heroAlt="FAQ KiTaLa e.V. - Kindertagespflege Ladbergen"
+            >
                 <h1>Fragen & Antworten</h1>
 
                 <Suspense fallback={renderLoader()}>

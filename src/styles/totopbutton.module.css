@@ -14,6 +14,8 @@
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
+    bottom: 2rem;
+    right: 2rem;
 }
 
 .totopbutton:hover {
@@ -30,16 +32,4 @@
     position: fixed;
     opacity: 0;
     pointer-events: none;
-}
-
-@media (min-width: 640px) {
-    .totopbutton {
-        bottom: 8rem;
-        right: 1.95rem;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .totopbutton {
-        bottom: 2rem;
-    }
 }

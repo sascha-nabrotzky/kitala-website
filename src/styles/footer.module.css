@@ -1,12 +1,7 @@
 footer {
-    margin-top: auto;
-    padding-bottom: 9rem;
-}
-
-@media screen and (min-width: 1024px) {
-    footer {
-        padding-bottom: 2rem;
-    }
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
 }
 
 .footerListItems {
@@ -28,4 +23,10 @@ footer {
 
 .footerLink :not(:last-child) {
     margin-bottom: 0.5rem;
+}
+
+.waveBottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

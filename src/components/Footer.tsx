@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/footer.module.css";
+import WaveBottom from "../assets/images/wave-bottom.svg";
 
 const Footer = () => {
     return (
@@ -22,6 +23,9 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
+            <div className={styles.waveBottom}>
+                <img src={WaveBottom} alt="" />
+            </div>
         </footer>
     );
 };

@@ -31,7 +31,10 @@ const Blog = () => {
                 />
             </Helmet>
 
-            <Layout>
+            <Layout
+                heroSrc="/images/hero.jpg"
+                heroAlt="Blog KiTaLa e.V. - Kindertagespflege Ladbergen"
+            >
                 <h1>Termine und Veranstaltungen</h1>
                 <h2>Was im Verein so passiert</h2>
                 <Suspense fallback={RenderLoader}>

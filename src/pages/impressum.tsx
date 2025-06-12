@@ -30,7 +30,10 @@ function Impressum() {
                 />
             </Helmet>
 
-            <Layout>
+            <Layout
+                heroSrc="/images/hero.jpg"
+                heroAlt="Impressum KiTaLa e.V. - Kindertagespflege Ladbergen"
+            >
                 <h1>Impressum</h1>
                 <h2>Angaben gemäß § 5 TMG:</h2>
                 <p>
@@ -47,6 +50,9 @@ function Impressum() {
                     <br />
                     E-Mail: kontakt[at]kitala-ladbergen.de
                 </p>
+
+                <p>Fotos: Mina Romser</p>
+                <p>Illustrationen: Sascha Nabrotzky</p>
 
                 <h2>Haftungsausschluss Disclaimer</h2>
                 <h2>Haftung für Inhalte</h2>

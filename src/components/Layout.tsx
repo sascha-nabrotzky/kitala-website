@@ -1,12 +1,18 @@
-import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import ToTopButton from "./ToTopButton";
 
-const Layout = ({ children }: React.PropsWithChildren<object>) => {
+import { PropsWithChildren } from "react";
+
+type LayoutProps = PropsWithChildren<{
+    heroSrc?: string;
+    heroAlt?: string;
+}>;
+
+const Layout = ({ children, heroSrc, heroAlt }: LayoutProps) => {
     return (
         <>
-            <Header />
+            <Header heroSrc={heroSrc} heroAlt={heroAlt} />
             <main>{children}</main>
             <ToTopButton />
             <Footer />

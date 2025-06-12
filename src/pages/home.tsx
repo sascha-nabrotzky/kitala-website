@@ -55,7 +55,10 @@ function Home() {
                 <meta property="og:type" content="website" />
             </Helmet>
 
-            <Layout>
+            <Layout
+                heroSrc="/images/hero.jpg"
+                heroAlt="KiTaLa e.V. - Kindertagespflege Ladbergen"
+            >
                 <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
                 <h2>Die Relevanz der Kindertagespflege</h2>
                 <p>

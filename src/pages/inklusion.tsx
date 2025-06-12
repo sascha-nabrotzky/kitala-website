@@ -34,7 +34,10 @@ function Inklusion() {
                 />
             </Helmet>
 
-            <Layout>
+            <Layout
+                heroSrc="/images/hero.jpg"
+                heroAlt="Inklusion KiTaLa e.V. - Kindertagespflege Ladbergen"
+            >
                 <h1>Inklusion</h1>
                 <h2>Interview des SKF mit unseren Tagesmüttern</h2>
                 <div className={inklusionStyles.imgInklusion}>

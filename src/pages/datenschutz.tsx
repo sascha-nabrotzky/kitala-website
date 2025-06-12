@@ -27,7 +27,10 @@ function Datenschutz() {
                 />
             </Helmet>
 
-            <Layout>
+            <Layout
+                heroSrc="/images/hero.jpg"
+                heroAlt="Datenschutz KiTaLa e.V. - Kindertagespflege Ladbergen"
+            >
                 <h1>Datenschutz</h1>
 
                 <p>
