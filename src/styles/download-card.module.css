@@ -1,22 +1,22 @@
-.downMain a {
+.downloadCard {
     display: flex;
     align-items: center;
     margin-bottom: 1em;
-    padding-inline: 1rem;
-    padding-block: 0.8rem;
+    border-radius: 4px;
+    box-shadow: var(--kita-shadow-medium);
+    background-color: var(--kita-color-white);
     text-decoration: none;
     color: var(--kita-color-black);
     font-weight: 700;
-    background-color: var(--kita-color-white);
-    box-shadow: var(--kita-shadow-medium);
-    border-radius: 4px;
+    padding-block: 0.8rem;
+    padding-inline: 1rem;
 }
 
-.downMain a:visited {
+.downloadCard:visited {
     color: var(--kita-color-black);
 }
 
-.pdficon {
+.downloadCard .pdfIcon {
     max-width: 35px;
     height: auto;
     margin-right: 0.8em;

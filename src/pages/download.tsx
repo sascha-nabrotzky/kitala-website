@@ -1,10 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
+import DownloadCard from "../components/DownloadCard";
 import MitgliedsantragPDF from "../assets/images/Mitgliedsantrag_interaktiv.pdf";
 import MitgliedsantragFoerderPDF from "../assets/images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";
-import iconPDF from "../assets/icons/pdf.svg";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
-import downloadStyles from "../styles/download.module.css";
 
 const Download = () => {
     return (
@@ -38,47 +37,21 @@ const Download = () => {
                 <h1>Downloads</h1>
                 <h2>Wichtige Dokumente und mehr</h2>
 
-                <a
+                <DownloadCard
                     href={MitgliedsantragPDF}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    label="Mitgliedsantrag"
                     aria-label="Download Mitgliedsantrag"
-                >
-                    <img
-                        className={downloadStyles.pdficon}
-                        src={iconPDF}
-                        alt="PDF Icon"
-                    />{" "}
-                    Mitgliedsantrag
-                </a>
-
-                <a
+                />
+                <DownloadCard
                     href={MitgliedsantragFoerderPDF}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    label="Mitgliedsantrag als Fördermitglied"
                     aria-label="Download Mitgliedsantrag Fördermitglied"
-                >
-                    <img
-                        className={downloadStyles.pdficon}
-                        src={iconPDF}
-                        alt="PDF Icon"
-                    />{" "}
-                    Mitgliedsantrag als Fördermitglied
-                </a>
-
-                <a
+                />
+                <DownloadCard
                     href="https://www.kreis-steinfurt.de/kv_steinfurt/Ressourcen/Familie,%20Kinder%20&%20Jugendliche/Merkblatt%20Elternbeitr%C3%A4ge%20zur%20Kindertagesbetreuung.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    label="Merkblatt Elternbeiträge"
                     aria-label="Download Merkblatt Elternbeiträge"
-                >
-                    <img
-                        className={downloadStyles.pdficon}
-                        src={iconPDF}
-                        alt="PDF Icon"
-                    />{" "}
-                    Merkblatt Elternbeiträge
-                </a>
+                />
             </Layout>
         </>
     );
