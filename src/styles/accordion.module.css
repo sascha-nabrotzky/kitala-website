@@ -1,9 +1,9 @@
 .question {
-    border-bottom: 2px dotted var(--kita-color-black);
-    cursor: pointer;
-    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
+    border-bottom: 2px dotted var(--kita-color-black);
+    cursor: pointer;
 }
 
 .question h3 {
