@@ -10,7 +10,7 @@ import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 const Accordion = lazy(() => import("../components/Accordion"));
 const renderLoader = () => <p>Loading ...</p>;
 
-function Faq() {
+const Faq = () => {
     return (
         <>
             <Helmet>
@@ -110,6 +110,6 @@ function Faq() {
             </Layout>
         </>
     );
-}
+};
 
 export default Faq;

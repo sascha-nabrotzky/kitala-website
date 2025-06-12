@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import { Helmet } from "react-helmet-async";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 
-function Impressum() {
+const Impressum = () => {
     return (
         <>
             <Helmet>
@@ -109,6 +109,6 @@ function Impressum() {
             </Layout>
         </>
     );
-}
+};
 
 export default Impressum;

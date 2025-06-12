@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 
-function Datenschutz() {
+const Datenschutz = () => {
     return (
         <>
             <Helmet>
@@ -926,6 +926,6 @@ function Datenschutz() {
             </Layout>
         </>
     );
-}
+};
 
 export default Datenschutz;

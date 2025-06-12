@@ -6,7 +6,7 @@ import inklusionStyles from "../styles/inklusion.module.css";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import Layout from "../components/Layout";
 
-function Inklusion() {
+const Inklusion = () => {
     return (
         <>
             <Helmet>
@@ -69,6 +69,6 @@ function Inklusion() {
             </Layout>
         </>
     );
-}
+};
 
 export default Inklusion;

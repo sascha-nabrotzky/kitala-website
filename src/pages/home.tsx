@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import styles from "../styles/home.module.css";
 
-function Home() {
+const Home = () => {
     return (
         <>
             <Helmet>
@@ -141,6 +141,6 @@ function Home() {
             </Layout>
         </>
     );
-}
+};
 
 export default Home;
