@@ -4,12 +4,13 @@
     margin: 2rem auto;
     border-radius: 50%;
     box-shadow: var(--kita-shadow-large);
-    background-color: var(--kita-color-secondary);
-    padding: 1rem;
+    background-color: var(--kita-color-tertiary);
+    padding: var(--kita-space-base);
     width: clamp(min(5rem, 100%), 14rem, 17rem);
     text-align: center;
     color: var(--kita-color-white);
-    font-size: 1.2em;
+    font-size: var(--kita-font-size-l);
+    line-height: var(--kita-line-height-regular);
     font-weight: 700;
     aspect-ratio: 1/1;
 }

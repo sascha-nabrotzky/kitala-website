@@ -1,7 +1,7 @@
 .downloadCard {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: var(--kita-space-base);
     border-radius: 4px;
     box-shadow: var(--kita-shadow-medium);
     background-color: var(--kita-color-white);
@@ -9,7 +9,7 @@
     color: var(--kita-color-black);
     font-weight: 700;
     padding-block: 0.8rem;
-    padding-inline: 1rem;
+    padding-inline: var(--kita-space-base);
 }
 
 .downloadCard:visited {

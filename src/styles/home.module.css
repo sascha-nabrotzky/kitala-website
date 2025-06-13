@@ -4,7 +4,7 @@
     justify-content: space-around;
     margin-top: 4rem;
     color: var(--kita-color-black);
-    border-block: 1px solid var(--kita-color-black);
+    border-block: 2px solid var(--kita-color-black);
     padding-block: 2rem;
     flex-wrap: wrap;
     row-gap: 2rem;
@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: var(--kita-font-size-l);
     gap: 1rem;
     white-space: nowrap;
 }
@@ -24,19 +24,20 @@
     width: 80px;
     height: auto;
 }
-
 .iconWrapper a:last-of-type img {
     width: 41px;
     height: auto;
+}
+
+.iconWrapper a:first-of-type:hover img {
+    transform: scale(1.2);
+}
+.iconWrapper a:last-of-type:hover img {
+    transform: scale(1.2);
 }
 
 .stepIcon,
 .mailIcon {
     height: 2.5em;
     transition: 0.2s ease-in-out;
-}
-
-.stepIcon:hover,
-.mailIcon:hover {
-    transform: scale(1.2);
 }

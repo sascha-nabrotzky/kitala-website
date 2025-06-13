@@ -43,6 +43,7 @@
 }
 
 :root {
+    /* Color */
     --kita-color-black: #2d2d2d;
     --kita-color-black-rgb: 45, 45, 45;
     --kita-color-white: #ffffff;
@@ -55,7 +56,6 @@
     --kita-color-contrast-dark-rgb: 18, 18, 18;
 
     --kita-color-primary: #2c7923;
-    --kita-color-primary-20: #2c792333;
     --kita-color-primary-rgb: 44, 121, 35;
     --kita-color-primary-contrast: var(--kita-color-contrast-dark);
     --kita-color-primary-contrast-rgb: 242, 242, 242;
@@ -64,7 +64,6 @@
     --kita-color-primary-tone: #4e7c44;
 
     --kita-color-secondary: #4d2983;
-    --kita-color-secondary-20: #4d298333;
     --kita-color-secondary-rgb: 77, 41, 131;
     --kita-color-secondary-contrast: var(--kita-color-contrast-dark);
     --kita-color-secondary-contrast-rgb: 242, 242, 242;
@@ -72,25 +71,43 @@
     --kita-color-secondary-shade: #351e56;
     --kita-color-secondary-tone: #614683;
 
-    --kita-color-accent: #15cade;
-    --kita-color-accent-rgb: 21, 202, 222;
+    --kita-color-tertiary: #7a318d;
+    --kita-color-tertiary-rgb: 122, 49, 141;
+    --kita-color-tertiary-contrast: var(--kita-color-contrast-dark);
+    --kita-color-tertiary-contrast-rgb: 242, 242, 242;
+    --kita-color-tertiary-tint: #a875b3;
+    --kita-color-tertiary-shade: #51245c;
+    --kita-color-tertiary-tone: #7e4e89;
+
+    --kita-color-quarternary: #c19881;
+    --kita-color-quarternary-rgb: 193, 152, 129;
+    --kita-color-quarternary-contrast: var(--kita-color-contrast-light);
+    --kita-color-quarternary-contrast-rgb: 13, 13, 13;
+    --kita-color-quarternary-tint: #d7b9a9;
+    --kita-color-quarternary-shade: #7c6355;
+    --kita-color-quarternary-tone: #ac9081;
+
+    --kita-color-accent: #e5df84;
+    --kita-color-accent-rgb: 229, 223, 132;
     --kita-color-accent-contrast: var(--kita-color-contrast-light);
     --kita-color-accent-contrast-rgb: 13, 13, 13;
-    --kita-color-accent-tint: #86dce9;
-    --kita-color-accent-shade: #23828e;
-    --kita-color-accent-tone: #5bb1be;
+    --kita-color-accent-tint: #efe9ad;
+    --kita-color-accent-shade: #928e57;
+    --kita-color-accent-tone: #c3be84;
 
-    --kita-font-size-xs: 0.694rem;
-    --kita-font-size-s: 0.833rem;
+    /* Typography */
+    --kita-font-size-xs: 0.5rem;
+    --kita-font-size-s: 0.707rem;
     --kita-font-size-n: 1rem;
-    --kita-font-size-l: 1.2rem;
-    --kita-font-size-xl: 1.44rem;
-    --kita-font-size-xxl: 1.728rem;
+    --kita-font-size-l: 1.414rem;
+    --kita-font-size-xl: 1.999rem;
+    --kita-font-size-xxl: 2.827rem;
 
     --kita-line-height-tight: 1.2;
     --kita-line-height-regular: 1.6;
     --kita-line-height-loose: 2.133;
 
+    /* Sizes */
     --kita-icon-size-xs: 0.867rem;
     --kita-icon-size-s: 1.041rem;
     --kita-icon-size-n: 1.25rem;
@@ -98,24 +115,26 @@
     --kita-icon-size-xl: 1.8rem;
     --kita-icon-size-xxl: 2.16rem;
 
-    --kita-space-012: 0.125rem;
-    --kita-space-025: 0.25rem;
-    --kita-space-050: 0.5rem;
-    --kita-space-075: 0.75rem;
-    --kita-space-100: 1rem;
-    --kita-space-125: 1.25rem;
-    --kita-space-150: 1.5rem;
-    --kita-space-175: 1.75rem;
-    --kita-space-200: 2rem;
+    /* Spacing */
+    --kita-space-xs: 0.25rem; /* 4px */
+    --kita-space-sm: 0.5rem; /* 8px */
+    --kita-space-base: 1rem; /* 16px */
+    --kita-space-md: 2rem; /* 32px */
+    --kita-space-ls: 3rem; /* 48px */
+    --kita-space-xl: 4rem; /* 64px */
+    --kita-space-2xl: 5rem; /* 80px */
+    --kita-space-3xl: 6rem; /* 96px */
 
+    /* Borders */
     --kita-radius-small: 0.25rem;
     --kita-radius-medium: 0.5rem;
     --kita-radius-large: 1rem;
     --kita-radius-round: 50%;
     --kita-radius-pill: 9999px;
 
-    --kita-shadow-color: rgb(77, 41, 131);
-    --kita-shadow-color-rgb: 77, 41, 131;
+    /* Shadows */
+    --kita-shadow-color: var(--kita-color-secondary);
+    --kita-shadow-color-rgb: var(--kita-color-secondary-rgb);
     --kita-shadow-small: 0px 1px 1px rgba(var(--kita-shadow-color-rgb), 0.2),
         0px 1px 2px -0.5px rgba(var(--kita-shadow-color-rgb), 0.45),
         0px 1px 4px -3px rgba(var(--kita-shadow-color-rgb), 0.35);
@@ -136,9 +155,10 @@ body {
     background-color: var(--kita-color-white);
     color: var(--kita-color-black);
     font-family: "Assistant", sans-serif;
-    font-size: 1.2em;
+    font-size: var(--kita-font-size-l);
     font-weight: 400;
     background-color: var(--kita-color-white-muted);
+    line-height: var(--kita-line-height-regular);
 }
 
 #root {
@@ -151,7 +171,7 @@ main {
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-    max-width: 45rem;
+    max-width: 50rem;
     padding-top: 4rem;
     padding-bottom: 8rem;
     padding-inline: var(--kita-space-200);
@@ -172,16 +192,16 @@ h6 {
 
 h1 {
     margin: 0 0 0.5rem;
-    line-height: 1.2;
+    line-height: var(--kita-line-height-tight);
 }
 
 h2,
 h3 {
-    line-height: 1.3;
+    line-height: var(--kita-line-height-tight);
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: var(--kita-font-size-l);
 }
 
 li {

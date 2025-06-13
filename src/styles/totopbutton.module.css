@@ -13,7 +13,7 @@
     cursor: pointer;
     width: 3rem;
     height: 3rem;
-    font-size: 3rem;
+    font-size: var(--kita-font-size-xxl);
     bottom: 2rem;
     right: 2rem;
 }
