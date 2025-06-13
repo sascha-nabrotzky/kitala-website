@@ -5,7 +5,7 @@
     border-radius: 50%;
     box-shadow: var(--kita-shadow-large);
     background-color: var(--kita-color-tertiary);
-    padding: var(--kita-space-base);
+    padding: var(--kita-space-n);
     width: clamp(min(5rem, 100%), 14rem, 17rem);
     text-align: center;
     color: var(--kita-color-white);

@@ -8,7 +8,7 @@ footer {
     display: flex;
     flex-flow: wrap;
     gap: 1rem;
-    padding-inline: var(--kita-space-md);
+    padding-inline: var(--kita-space-l);
     margin: 0;
     font-size: var(--kita-font-size-l);
 }
@@ -22,7 +22,7 @@ footer {
 }
 
 .footerLink :not(:last-child) {
-    margin-bottom: var(--kita-space-sm);
+    margin-bottom: var(--kita-space-s);
 }
 
 .waveBottom {

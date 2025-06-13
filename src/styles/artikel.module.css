@@ -1,6 +1,6 @@
 .article {
     border-top: 1px solid rgb(var(--kita-color-black));
-    margin-top: var(--kita-space-md);
+    margin-top: var(--kita-space-l);
 }
 
 .article img {
@@ -10,6 +10,6 @@
 @media (min-width: 1024px) {
     .article .maintext {
         columns: 2;
-        column-gap: var(--kita-space-md);
+        column-gap: var(--kita-space-l);
     }
 }

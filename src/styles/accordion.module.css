@@ -1,14 +1,14 @@
 .question {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
+    margin-bottom: var(--kita-space-n);
     border-bottom: 2px dotted var(--kita-color-black);
     cursor: pointer;
 }
 
 .question h3 {
     color: var(--kita-color-black);
-    margin: 0.7em 0;
+    margin: var(--kita-space-md) 0;
 }
 
 .titleChevronWrapper {

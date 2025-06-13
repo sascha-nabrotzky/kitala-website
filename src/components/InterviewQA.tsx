@@ -44,7 +44,11 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
 
     return (
         <section className={style.question}>
-            <button onClick={changeClass} aria-label="Öffne/Schließe Antwort">
+            <button
+                onClick={changeClass}
+                aria-label="Öffne/Schließe Antwort"
+                className={style.titleButton}
+            >
                 <h3 className={setColor}>{question}</h3>
             </button>
             <div
@@ -58,7 +62,7 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
                 </p>
             </div>
             <button
-                className={style.chevronWrapper}
+                className={style.chevronButton}
                 onClick={changeClass}
                 aria-label="Öffne/Schließe Antwort"
             >
