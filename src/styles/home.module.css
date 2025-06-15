@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 4rem;
+    margin-top: var(--kita-space-xxl);
     color: var(--kita-color-black);
     border-block: 2px solid var(--kita-color-black);
-    padding-block: 2rem;
+    padding-block: var(--kita-space-l);
     flex-wrap: wrap;
-    row-gap: 2rem;
+    row-gap: var(--kita-space-l);
 }
 
 .iconWrapper a {
@@ -16,7 +16,7 @@
     align-items: center;
     text-decoration: none;
     font-size: var(--kita-font-size-l);
-    gap: 1rem;
+    gap: var(--kita-space-n);
     white-space: nowrap;
 }
 

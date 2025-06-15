@@ -1,6 +1,6 @@
 .imgInklusion {
     max-height: 32rem;
-    margin-bottom: 3rem;
+    margin-bottom: var(--kita-space-xl);
 }
 
 .imgInklusion img {

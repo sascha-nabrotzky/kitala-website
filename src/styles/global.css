@@ -95,6 +95,16 @@
     --kita-color-accent-shade: #928e57;
     --kita-color-accent-tone: #c3be84;
 
+    /* Button Colors */
+    --button-primary-color: var(--kita-color-primary);
+    --button-primary-primary-hover: var(--kita-color-primary-shade);
+    --button-secondary-color: var(--kita-color-secondary);
+    --button-secondary-color-hover: var(--kita-color-secondary-shade);
+    --button-tertiary-color: var(--kita-color-tertiary);
+    --button-tertiary-color-hover: var(--kita-color-tertiary-shade);
+    --button-quarternary-color: var(--kita-color-quarternary);
+    --button-quarternary-color-hover: var(--kita-color-quarternary-shade);
+
     /* Typography */
     --kita-font-size-xs: 0.5rem;
     --kita-font-size-s: 0.707rem;
@@ -125,11 +135,12 @@
     --kita-space-xxl: 4rem; /* 64px */
     --kita-space-3xl: 5rem; /* 80px */
     --kita-space-4xl: 6rem; /* 96px */
+    --kita-space-5xl: 8rem; /* 128px */
 
     /* Borders */
-    --kita-radius-small: 0.25rem;
-    --kita-radius-medium: 0.5rem;
-    --kita-radius-large: 1rem;
+    --kita-radius-small: 0.25rem; /* 4px */
+    --kita-radius-medium: 0.5rem; /* 8px */
+    --kita-radius-large: 1rem; /* 16px */
     --kita-radius-round: 50%;
     --kita-radius-pill: 9999px;
 
@@ -173,9 +184,14 @@ main {
     margin-right: auto;
     margin-left: auto;
     max-width: 50rem;
-    padding-top: 4rem;
-    padding-bottom: 8rem;
-    padding-inline: var(--kita-space-200);
+    padding-block: var(--kita-space-xxl) var(--kita-space-5xl);
+    padding-inline: var(--kita-space-n);
+}
+
+@media screen and (width > 768px) {
+    main {
+        padding-inline: 0;
+    }
 }
 
 a {

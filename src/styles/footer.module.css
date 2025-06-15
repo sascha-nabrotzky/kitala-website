@@ -1,16 +1,16 @@
 footer {
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: var(--kita-space-xxl);
 }
 
 .footerListItems {
     display: flex;
     flex-flow: wrap;
-    gap: 1rem;
+    gap: var(--kita-space-n);
     padding-inline: var(--kita-space-l);
     margin: 0;
-    font-size: var(--kita-font-size-l);
+    font-size: var(--kita-font-size-n);
 }
 
 .footerListItems a {

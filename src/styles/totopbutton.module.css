@@ -1,35 +1,35 @@
 .totopbutton {
     display: flex;
     position: fixed;
-    right: 1.4rem;
-    bottom: 7.5rem;
+    right: var(--kita-space-l);
+    bottom: var(--kita-space-l);
     align-items: center;
     justify-content: center;
-    transition: opacity 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
     opacity: 1;
-    border: 1px solid var(--kita-color-black);
-    border-radius: 50%;
-    background-color: transparent;
+    border-radius: var(--kita-radius-round);
+    box-shadow: var(--kita-shadow-medium);
+    background-color: var(--button-quarternary-color);
     cursor: pointer;
     width: 3rem;
     height: 3rem;
     font-size: var(--kita-font-size-xxl);
-    bottom: 2rem;
-    right: 2rem;
 }
 
 .totopbutton:hover {
-    outline: 1px solid;
-    outline-offset: 3px;
+    background-color: var(--button-quarternary-color-hover);
+    box-shadow: var(--kita-shadow-large);
+    translate: 0 -2px;
 }
 
 .totopbutton svg {
     width: 50%;
-    fill: var(--kita-color-black);
+    fill: var(--kita-color-white);
 }
 
 .buttonHidden {
     position: fixed;
     opacity: 0;
+    border-radius: var(--kita-radius-round);
     pointer-events: none;
 }

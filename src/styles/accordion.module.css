@@ -19,7 +19,7 @@
 
 .faqImage {
     width: 100%;
-    margin-top: 2em;
+    margin-top: var(--kita-space-l);
 }
 
 .accordionIcon {

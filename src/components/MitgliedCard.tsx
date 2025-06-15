@@ -1,4 +1,4 @@
-import styles from "../styles/mitglied.module.css";
+import styles from "../styles/mitgliedCard.module.css";
 
 type MitgliedProps = {
     imgSrc: string;
@@ -6,7 +6,7 @@ type MitgliedProps = {
     title?: string;
     name: string;
     kita: string;
-    adress: string;
+    address: string;
     tel: string;
     tel2?: string;
     website?: string;
@@ -17,7 +17,7 @@ const Mitglied = ({
     imgAlt,
     name,
     kita,
-    adress,
+    address,
     tel,
     tel2,
     title,
@@ -27,14 +27,19 @@ const Mitglied = ({
         <div className={styles.mitgliedwrapper}>
             <img className={styles.profilbild} src={imgSrc} alt={imgAlt} />
             <address className={styles.textWrapper}>
-                {title && <p dangerouslySetInnerHTML={{ __html: title }}></p>}
-                <p>
+                {title && (
+                    <p
+                        className={styles.title}
+                        dangerouslySetInnerHTML={{ __html: title }}
+                    ></p>
+                )}
+                <h3 className={styles.name}>
                     <strong dangerouslySetInnerHTML={{ __html: name }}></strong>
-                </p>
+                </h3>
                 <p className={styles.kita}>
                     <strong dangerouslySetInnerHTML={{ __html: kita }}></strong>
                 </p>
-                <p dangerouslySetInnerHTML={{ __html: adress }}></p>
+                <p dangerouslySetInnerHTML={{ __html: address }}></p>
                 <a
                     href={`tel: ${tel}`}
                     dangerouslySetInnerHTML={{ __html: tel }}
@@ -52,7 +57,7 @@ const Mitglied = ({
                         target="__blank"
                         rel="noreferrer"
                     >
-                        Website
+                        Zur Website
                     </a>
                 )}
             </address>

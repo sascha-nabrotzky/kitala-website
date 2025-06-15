@@ -18,7 +18,7 @@
 .link {
     color: var(--kita-color-black);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: var(--kita-space-s) var(--kita-space-n);
 }
 
 .link:hover {
@@ -66,7 +66,7 @@
         z-index: 1;
         border-radius: 0 var(--kita-radius-small) var(--kita-radius-small) 0;
         background-color: var(--kita-color-white);
-        padding: 1rem;
+        padding: var(--kita-space-n);
         width: fit-content;
         box-shadow: var(--kita-shadow-medium);
     }
@@ -84,15 +84,15 @@
     .hamburger {
         display: flex;
         position: fixed;
-        top: 1rem;
-        right: 1rem;
+        top: var(--kita-space-n);
+        right: var(--kita-space-n);
         flex-direction: column;
         justify-content: space-between;
         border-radius: var(--kita-radius-small);
         background-color: var(--kita-color-white);
         width: 2.5rem;
         height: 2.5rem;
-        padding: 0.5rem 0.35rem;
+        padding: var(--kita-space-s) var(--kita-space-xs);
     }
 
     .hamburgerLine {
