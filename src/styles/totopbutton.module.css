@@ -28,8 +28,6 @@
 }
 
 .buttonHidden {
-    position: fixed;
     opacity: 0;
-    border-radius: var(--kita-radius-round);
     pointer-events: none;
 }

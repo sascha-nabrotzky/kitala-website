@@ -1,18 +1,18 @@
-import { useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/totopbutton.module.css";
 
 const ToTopButton = () => {
-    const [currentClass, setClass] = useState(`${styles.buttonHidden}`);
+    const [showButton, setShowButton] = useState(false);
 
-    const button = useRef(null);
-
-    window.addEventListener("scroll", () => {
-        setClass(
-            window.scrollY > 200
-                ? `${styles.totopbutton}`
-                : `${styles.buttonHidden}`
-        );
-    });
+    useEffect(() => {
+        const handleScroll = () => {
+            setShowButton(window.scrollY > 200);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     function toTop() {
         window.scrollTo({
@@ -24,8 +24,9 @@ const ToTopButton = () => {
 
     return (
         <button
-            className={currentClass}
-            ref={button}
+            className={`${styles.totopbutton} ${
+                !showButton && styles.buttonHidden
+            }`}
             onClick={toTop}
             aria-label="Zurück nach oben"
             title="Zurück nach oben"
