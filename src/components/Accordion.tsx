@@ -11,7 +11,7 @@ interface AccordionProps {
 const Accordion = ({ image, title, text }: AccordionProps) => {
     const [currentClass, setClass] = useState(`${styles.texthidden}`);
     const [setHeight, setHeightState] = useState("");
-    const [setRotate, setRotateState] = useState(`${styles.accordionIcon}`);
+    const [setRotate, setRotateState] = useState("");
 
     const content = useRef<HTMLDivElement>(null);
 
@@ -30,29 +30,26 @@ const Accordion = ({ image, title, text }: AccordionProps) => {
             );
         }
         setRotateState(
-            currentClass === `${styles.texthidden}`
-                ? `${styles.rotate}`
-                : `${styles.accordionIcon}`
+            currentClass === `${styles.texthidden}` ? `${styles.rotate}` : ""
         );
     }
 
     return (
         <section>
             <div className={styles.question}>
-                <img
-                    src={`${image}`}
-                    className={`${styles.faqImage}`}
-                    alt="Illustration Sascha Nabrotzky"
-                />
-                <button
-                    className={styles.titleChevronWrapper}
-                    onClick={changeClass}
-                >
-                    <h3>{title}</h3>
+                <div className={styles.imageWrapper}>
+                    <img
+                        src={`${image}`}
+                        className={`${styles.faqImage}`}
+                        alt=""
+                    />
+                </div>
+                <button className={styles.titleWrapper} onClick={changeClass}>
+                    <h3 className={styles.title}>{title}</h3>
                     <Chevron
-                        className={`${setRotate}`}
+                        className={`${styles.accordionIcon} ${setRotate}`}
                         width={"30"}
-                        fill={"#999"}
+                        fill={"currentColor"}
                     />
                 </button>
                 <div

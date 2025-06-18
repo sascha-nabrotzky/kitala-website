@@ -6,20 +6,29 @@
     cursor: pointer;
 }
 
-.question h3 {
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.title {
     color: var(--kita-color-black);
     margin: var(--kita-space-md) 0;
 }
 
-.titleChevronWrapper {
+.imageWrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: var(--kita-color-black);
+    min-height: 20rem;
 }
 
 .faqImage {
     width: 100%;
-    margin-top: var(--kita-space-l);
+    height: 100%;
 }
 
 .accordionIcon {
@@ -27,7 +36,6 @@
 }
 
 .rotate {
-    transition: transform 0.4s ease;
     transform: rotate(90deg);
 }
 
