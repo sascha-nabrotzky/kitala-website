@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HeroImage from "./HeroImage";
 import styles from "../styles/header.module.css";
 import Logo from "../assets/icons/kitala_logo.svg";
@@ -13,6 +13,7 @@ type HeaderProps = {
 function Header({ heroSrc, heroAlt, ariaLabel }: HeaderProps) {
     const [navOpen, setNavOpen] = React.useState(false);
     const [useStyles, setUseStyles] = React.useState(window.innerWidth <= 768);
+    const [navActive, setNavActive] = React.useState(false);
 
     React.useEffect(() => {
         const handleResize = () => {
@@ -31,33 +32,33 @@ function Header({ heroSrc, heroAlt, ariaLabel }: HeaderProps) {
     return (
         <header className={styles.header}>
             <nav className={styles.navigation} style={navStyle}>
-                <Link to="/" className={styles.link}>
+                <NavLink to="/" className={styles.link}>
                     Home
-                </Link>
+                </NavLink>
 
-                <Link to="/mitglieder" className={styles.link}>
+                <NavLink to="/mitglieder" className={styles.link}>
                     Mitglieder
-                </Link>
+                </NavLink>
 
-                <Link to="/inklusion" className={styles.link}>
+                <NavLink to="/inklusion" className={styles.link}>
                     Inklusion
-                </Link>
+                </NavLink>
 
                 <div className={styles.logo}>
                     <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
                 </div>
 
-                <Link to="/faq" className={styles.link}>
+                <NavLink to="/faq" className={styles.link}>
                     FAQs
-                </Link>
+                </NavLink>
 
-                <Link to="/blog" className={styles.link}>
+                <NavLink to="/blog" className={styles.link}>
                     Aktionen
-                </Link>
+                </NavLink>
 
-                <Link to="/download" className={styles.link}>
+                <NavLink to="/download" className={styles.link}>
                     Downloads
-                </Link>
+                </NavLink>
             </nav>
 
             <button

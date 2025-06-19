@@ -1,6 +1,14 @@
 .heroImg {
     background-color: var(--kita-color-black);
     min-height: 20rem;
-    color: var(--kita-color-white);
+    max-height: 30rem;
     text-align: center;
+    color: var(--kita-color-white);
+}
+
+.heroImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }

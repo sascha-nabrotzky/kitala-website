@@ -25,6 +25,11 @@ footer {
     margin-bottom: var(--kita-space-s);
 }
 
+[aria-current="page"] {
+    text-decoration: underline !important;
+    text-underline-offset: var(--kita-space-s);
+}
+
 .waveBottom {
     overflow: hidden;
 }
