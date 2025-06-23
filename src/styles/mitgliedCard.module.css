@@ -50,16 +50,15 @@
 }
 
 .btnWebsite {
-    background-color: var(--button-quarternary-color);
+    background-color: var(--button-accent-color);
     margin-top: var(--kita-space-n);
     padding: var(--kita-space-s);
     border-radius: var(--kita-radius-pill);
-    color: var(--kita-color-white);
     text-decoration: none;
     font-size: var(--kita-font-size-n);
     transition: background-color 0.3s ease-in-out;
 }
 
 .btnWebsite:hover {
-    background-color: var(--button-quarternary-color-hover);
+    background-color: var(--button-accent-color-hover);
 }

@@ -33,6 +33,7 @@ const Mitglied = ({
                         dangerouslySetInnerHTML={{ __html: title }}
                     ></p>
                 )}
+
                 <h3 className={styles.name}>
                     <strong dangerouslySetInnerHTML={{ __html: name }}></strong>
                 </h3>
@@ -44,18 +45,21 @@ const Mitglied = ({
                     href={`tel: ${tel}`}
                     dangerouslySetInnerHTML={{ __html: tel }}
                 ></a>
+
                 {tel2 && (
                     <a
                         href={`tel: ${tel2}`}
                         dangerouslySetInnerHTML={{ __html: tel2 }}
                     ></a>
                 )}
+
                 {website && (
                     <a
                         href={`https://www.${website}`}
                         className={styles.btnWebsite}
                         target="__blank"
                         rel="noreferrer"
+                        aria-label={`Zur Website von ${name}`}
                     >
                         Zur Website
                     </a>

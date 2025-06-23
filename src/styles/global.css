@@ -104,6 +104,8 @@
     --button-tertiary-color-hover: var(--kita-color-tertiary-shade);
     --button-quarternary-color: var(--kita-color-quarternary);
     --button-quarternary-color-hover: var(--kita-color-quarternary-shade);
+    --button-accent-color: var(--kita-color-accent);
+    --button-accent-color-hover: var(--kita-color-accent-shade);
 
     /* Typography */
     --kita-font-size-xs: 0.5rem;
