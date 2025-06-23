@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import styles from "../styles/faq.module.css";
+import HandHerzImg from "../assets/images/Hand_und_Herz.webp";
+import KuecheImg from "../assets/images/Kueche_und_Schaukelpferd.webp";
+import DokumenteImg from "../assets/images/Dokumente.webp";
+import EurozeichenImg from "../assets/images/Eurozeichen.webp";
 
 const Accordion = lazy(() => import("../components/Accordion"));
 const renderLoader = () => <p>Loading ...</p>;
@@ -45,10 +49,11 @@ const Faq = () => {
             >
                 <div className={styles.faqContainer}>
                     <h1>Fragen & Antworten</h1>
+                    <h2>Hier beantworten wir häufig gestellte Fragen</h2>
 
                     <Suspense fallback={renderLoader()}>
                         <Accordion
-                            image=""
+                            image={HandHerzImg}
                             title="Was ist Kindertagespflege?"
                             text="<p>In der Kindertagespflege werden Kinder im Alter von 0-3 Jahren  in einer kleinen Gruppe von maximal 5 Kindern in einer familiären Atmosphäre professionell betreut. Dieses zeichnet die Kindertagespflege aus. Die Kinder werden in der Regel im Haushalt der Kindertagespflegeperson oder in dafür angemieteten Räumen betreut. Jede Kindertagespflegeperson benötigt eine Pflegeerlaubnis durch das zuständige Jugendamt. Eine Kindertagespflegeperson darf mit der Pflegeerlaubnis 8 Kinder betreuen jedoch nur 5 Kinder gleichzeitig.</p>
                 <p>Frühkindliche Bildung und Pädagogik ist ein fester Bestandteil der Kindertagespflege. Die Kindertagespflegepersonen begleiten die Kinder in ihrer Entwicklung. Sie planen pädagogische Angebote, fördern die Bildung und die Entwicklung der Kinder und ermöglichen ihnen eigene Erfahrungen zu sammeln.</p>
@@ -58,7 +63,7 @@ const Faq = () => {
 
                     <Suspense fallback={renderLoader()}>
                         <Accordion
-                            image=""
+                            image={KuecheImg}
                             title="Qualitätsaspekte der Kindertagespflege"
                             text="<h4>Kleine, überschaubare Gruppe</h4>
                 <p>Die kleine Gruppengröße erleichtert es den Kindern, untereinander Beziehungen aufzubauen und soziale Erfahrungen zu machen. Gerade für Einzelkinder ist die enge geschwister ähnliche Konstellation mit den anderen Kindern besonders bereichernd.</p>
@@ -88,7 +93,7 @@ const Faq = () => {
 
                     <Suspense fallback={renderLoader()}>
                         <Accordion
-                            image=""
+                            image={DokumenteImg}
                             title="Bildungsdokumentation/ Portfolio"
                             text="<p>Die Bildungsdokumentation, auch genannt Portfolio beinhaltet für den Bildungsprozess relevante Projekte, Fotos, Bilder oder andere Produkte des Kindes. Geäußerte Gedanken u.v.m. finden ihren Platz im Portfolio des Kindes.</p>
                 <p>Mit dem Führen eines Portfolios für jedes Bezugskind schärft sich der Blick sowohl für die Persönlichkeit des Kindes als auch für seine Interessen, Vorlieben und Stärken. Eine ständige Reflektion über die Bildungsprozesse eines Kindes ist so möglich. Mit dem Portfolio reflektieren Erwachsene und Kinder gemeinsam Vergangenes. Das Kind spürt die Wertschätzung für Erlebtes und Gelerntes.</p>
@@ -99,7 +104,7 @@ const Faq = () => {
 
                     <Suspense fallback={renderLoader()}>
                         <Accordion
-                            image=""
+                            image={EurozeichenImg}
                             title="Was kostet die Kindertagespflege?"
                             text="<p>Der Kostenbeitrag errechnet sich nach dem gemeinsamen Jahresbruttoeinkommen und ist mit dem Kostenbeitrag im Kindergarten identisch. Auch für die Kindertagespflege gilt der Freibetrag für die Betreuung eines Geschwisterkindes. Die Elternbeitragstabelle finden sie in unserem Download-Bereich.
                 </p>"

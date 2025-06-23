@@ -3,10 +3,18 @@
     text-align: left;
 }
 
+.question:first-of-type {
+    margin-top: 3rem;
+}
+
 .titleButton {
     text-align: left;
     cursor: pointer;
     padding: 0;
+}
+
+.title {
+    margin-block: 1rem;
 }
 
 .textHidden {

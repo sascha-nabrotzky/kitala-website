@@ -11,7 +11,6 @@ type InterviewProps = {
 const InterviewQA = ({ question, person, answer }: InterviewProps) => {
     const [currentClass, setClass] = useState(`${style.textHidden}`);
     const [setHeight, setHeightState] = useState("");
-    const [setColor, setColorState] = useState("");
     const [setRotate, setRotateState] = useState(`${style.chevronIcon}`);
 
     const content = useRef<HTMLDivElement>(null);
@@ -30,11 +29,6 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
                     : "0px"
             );
         }
-        setColorState(
-            currentClass === `${style.textHidden}`
-                ? `${style.interviewVisible}`
-                : ""
-        );
         setRotateState(
             currentClass === `${style.textHidden}`
                 ? `${style.rotate}`
@@ -49,7 +43,7 @@ const InterviewQA = ({ question, person, answer }: InterviewProps) => {
                 aria-label="Öffne/Schließe Antwort"
                 className={style.titleButton}
             >
-                <h3 className={setColor}>{question}</h3>
+                <h3 className={style.title}>{question}</h3>
             </button>
             <div
                 className={currentClass}
