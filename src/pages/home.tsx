@@ -61,8 +61,12 @@ const Home = () => {
                 heroAlt="KiTaLa e.V. - Kindertagespflege Ladbergen"
                 ariaLabel="KiTaLa e.V. - Kindertagespflege Ladbergen"
             >
-                <h1>KiTaLa e.V. &ndash; Kindertagespflege Ladbergen</h1>
-                <h2>Die Relevanz der Kindertagespflege</h2>
+                <h1 className={styles.title}>
+                    KiTaLa e.V. &ndash; Kindertagespflege Ladbergen
+                </h1>
+                <h2 className={styles.subtitle}>
+                    Die Relevanz der Kindertagespflege
+                </h2>
                 <p>
                     Die Kindertagespflege ist der erste offizielle Bildungsort
                     den Ihr Kind besucht und somit ein wichtiger erster
@@ -81,7 +85,9 @@ const Home = () => {
 
                 <Blockquote content="Geborgenheit, Akzeptanz und Sicherheit stehen für uns an erster Stelle" />
 
-                <h2>Verein der Tagesmütter ist wichtige Anlaufstelle</h2>
+                <h2 className={styles.subtitle}>
+                    Verein der Tagesmütter ist wichtige Anlaufstelle
+                </h2>
                 <p>
                     Auch der Zusammenschluss der Kindertagespflegepersonen als
                     Verein ist hierfür ein wichtiger Punkt. Denn nur{" "}
@@ -101,7 +107,9 @@ const Home = () => {
                 </p>
 
                 <aside>
-                    <h2>Anmeldungen zur Kindertagespflege</h2>
+                    <h2 className={styles.subtitle}>
+                        Anmeldungen zur Kindertagespflege
+                    </h2>
                     <p>
                         Anmeldungen Ihrer Kinder zur Tagespflege erfolgen online
                         über das Elternportal{" "}

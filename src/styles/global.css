@@ -210,13 +210,13 @@ h6 {
 }
 
 h1 {
-    margin: 0 0 0.5rem;
+    margin-block: var(--kita-space-l) var(--kita-space-xl);
     line-height: var(--kita-line-height-tight);
 }
 
 h2,
 h3 {
-    margin: 0 0 0.5rem;
+    margin-bottom: var(--kita-space-n);
     line-height: var(--kita-line-height-tight);
 }
 
