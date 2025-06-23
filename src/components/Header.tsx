@@ -5,12 +5,13 @@ import styles from "../styles/header.module.css";
 import Logo from "../assets/icons/kitala_logo.svg";
 
 type HeaderProps = {
-    heroSrc?: string;
+    heroSrcBig?: string;
+    heroSrcSmall?: string;
     heroAlt?: string;
     ariaLabel?: string;
 };
 
-function Header({ heroSrc, heroAlt, ariaLabel }: HeaderProps) {
+function Header({ heroSrcBig, heroSrcSmall, heroAlt, ariaLabel }: HeaderProps) {
     const [navOpen, setNavOpen] = React.useState(false);
     const [useStyles, setUseStyles] = React.useState(window.innerWidth <= 768);
     const [navActive, setNavActive] = React.useState(false);
@@ -77,7 +78,8 @@ function Header({ heroSrc, heroAlt, ariaLabel }: HeaderProps) {
             </div>
 
             <HeroImage
-                src={heroSrc ?? ""}
+                srcBig={heroSrcBig ?? ""}
+                srcSmall={heroSrcSmall ?? ""}
                 alt={heroAlt}
                 ariaLabel={ariaLabel}
             />

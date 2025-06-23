@@ -6,7 +6,7 @@ import emailIcon from "../assets/icons/email.svg";
 import Layout from "../components/Layout";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import styles from "../styles/home.module.css";
-import HeroImage from "../assets/images/Haende_Scan-2.png";
+import HeroImageBig from "../assets/images/Haende_Scan-2.png";
 
 const Home = () => {
     return (
@@ -57,7 +57,8 @@ const Home = () => {
             </Helmet>
 
             <Layout
-                heroSrc={HeroImage}
+                heroSrcBig={HeroImageBig}
+                heroSrcSmall={HeroImageBig}
                 heroAlt="KiTaLa e.V. - Kindertagespflege Ladbergen"
                 ariaLabel="KiTaLa e.V. - Kindertagespflege Ladbergen"
             >

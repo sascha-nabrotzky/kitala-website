@@ -5,15 +5,27 @@ import ToTopButton from "./ToTopButton";
 import { PropsWithChildren } from "react";
 
 type LayoutProps = PropsWithChildren<{
-    heroSrc?: string;
+    heroSrcBig?: string;
+    heroSrcSmall?: string;
     heroAlt?: string;
     ariaLabel?: string;
 }>;
 
-const Layout = ({ children, heroSrc, heroAlt, ariaLabel }: LayoutProps) => {
+const Layout = ({
+    children,
+    heroSrcBig,
+    heroSrcSmall,
+    heroAlt,
+    ariaLabel,
+}: LayoutProps) => {
     return (
         <>
-            <Header heroSrc={heroSrc} heroAlt={heroAlt} ariaLabel={ariaLabel} />
+            <Header
+                heroSrcBig={heroSrcBig}
+                heroSrcSmall={heroSrcSmall}
+                heroAlt={heroAlt}
+                ariaLabel={ariaLabel}
+            />
             <main>{children}</main>
             <ToTopButton />
             <Footer />
