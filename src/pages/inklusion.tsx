@@ -43,7 +43,7 @@ const Inklusion = () => {
                 <h2>Interview des SKF mit unseren Tagesmüttern</h2>
                 <div className={inklusionStyles.imgInklusion}>
                     <img src="" alt="" />
-                    <figcaption>Illustration: Unsplash</figcaption>
+                    <figcaption>Illustration: Sascha Nabrotzky</figcaption>
                 </div>
 
                 {InklusionJSON.inkulsionInterview.map(
