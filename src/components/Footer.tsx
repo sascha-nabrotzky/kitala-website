@@ -24,7 +24,7 @@ const Footer = () => {
                 </li>
             </ul>
             <div className={styles.waveBottom}>
-                <img src={WaveBottom} alt="" />
+                <img src={WaveBottom} alt="" loading="lazy" />
             </div>
         </footer>
     );

@@ -1,4 +1,4 @@
-.heroImg {
+.heroImgWrapper {
     background-color: var(--kita-color-black);
     min-height: 20rem;
     max-height: 30rem;
@@ -6,7 +6,7 @@
     color: var(--kita-color-white);
 }
 
-.heroImg img {
+.heroImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
