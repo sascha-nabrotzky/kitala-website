@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding-top: var(--kita-space-l);
-    gap: var(--kita-space-l);
+    gap: var(--kita-space-xl);
 }
 
 .navigation {

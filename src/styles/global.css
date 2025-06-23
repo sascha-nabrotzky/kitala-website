@@ -186,7 +186,7 @@ main {
     margin-right: auto;
     margin-left: auto;
     max-width: 50rem;
-    padding-block: var(--kita-space-xxl) var(--kita-space-5xl);
+    padding-block: var(--kita-space-3xl) var(--kita-space-5xl);
     padding-inline: var(--kita-space-n);
 }
 
@@ -210,7 +210,7 @@ h6 {
 }
 
 h1 {
-    margin-block: var(--kita-space-l) var(--kita-space-xl);
+    margin-block: 0 var(--kita-space-xl);
     line-height: var(--kita-line-height-tight);
 }
 
