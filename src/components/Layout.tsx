@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import ToTopButton from "./ToTopButton";
+import HeroImage from "./HeroImage";
 
 import { PropsWithChildren } from "react";
 
@@ -20,10 +21,11 @@ const Layout = ({
 }: LayoutProps) => {
     return (
         <>
-            <Header
-                heroSrcBig={heroSrcBig}
-                heroSrcSmall={heroSrcSmall}
-                heroAlt={heroAlt}
+            <Header />
+            <HeroImage
+                srcBig={heroSrcBig ?? ""}
+                srcSmall={heroSrcSmall ?? ""}
+                alt={heroAlt}
                 ariaLabel={ariaLabel}
             />
             <main>{children}</main>

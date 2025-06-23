@@ -28,7 +28,8 @@ const Datenschutz = () => {
             </Helmet>
 
             <Layout
-                heroSrc="/images/hero.jpg"
+                heroSrcBig="/images/hero.jpg"
+                heroSrcSmall="/images/hero_small.jpg"
                 heroAlt="Datenschutz KiTaLa e.V. - Kindertagespflege Ladbergen"
                 ariaLabel="Datenschutz KiTaLa e.V. - Kindertagespflege Ladbergen"
             >

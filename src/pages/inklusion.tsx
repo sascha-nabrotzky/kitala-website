@@ -35,7 +35,8 @@ const Inklusion = () => {
             </Helmet>
 
             <Layout
-                heroSrc="/images/hero.jpg"
+                heroSrcBig="/images/hero.jpg"
+                heroSrcSmall="/images/hero_small.jpg"
                 heroAlt="Inklusion KiTaLa e.V. - Kindertagespflege Ladbergen"
                 ariaLabel="Inklusion KiTaLa e.V. - Kindertagespflege Ladbergen"
             >

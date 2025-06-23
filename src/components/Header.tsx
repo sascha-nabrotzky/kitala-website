@@ -1,20 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HeroImage from "./HeroImage";
+
 import styles from "../styles/header.module.css";
 import Logo from "../assets/icons/kitala_logo.svg";
 
-type HeaderProps = {
-    heroSrcBig?: string;
-    heroSrcSmall?: string;
-    heroAlt?: string;
-    ariaLabel?: string;
-};
-
-function Header({ heroSrcBig, heroSrcSmall, heroAlt, ariaLabel }: HeaderProps) {
+const Header = () => {
     const [navOpen, setNavOpen] = React.useState(false);
     const [useStyles, setUseStyles] = React.useState(window.innerWidth <= 768);
-    const [navActive, setNavActive] = React.useState(false);
 
     React.useEffect(() => {
         const handleResize = () => {
@@ -76,15 +68,8 @@ function Header({ heroSrcBig, heroSrcSmall, heroAlt, ariaLabel }: HeaderProps) {
             <div className={styles.logoMobile}>
                 <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
             </div>
-
-            <HeroImage
-                srcBig={heroSrcBig ?? ""}
-                srcSmall={heroSrcSmall ?? ""}
-                alt={heroAlt}
-                ariaLabel={ariaLabel}
-            />
         </header>
     );
-}
+};
 
 export default Header;

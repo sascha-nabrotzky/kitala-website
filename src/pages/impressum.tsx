@@ -31,7 +31,8 @@ const Impressum = () => {
             </Helmet>
 
             <Layout
-                heroSrc="/images/hero.jpg"
+                heroSrcBig="/images/hero.jpg"
+                heroSrcSmall="/images/hero_small.jpg"
                 heroAlt="Impressum KiTaLa e.V. - Kindertagespflege Ladbergen"
                 ariaLabel="Impressum KiTaLa e.V. - Kindertagespflege Ladbergen"
             >

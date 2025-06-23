@@ -34,7 +34,8 @@ const Download = () => {
             </Helmet>
 
             <Layout
-                heroSrc="/images/hero.jpg"
+                heroSrcBig="/images/hero.jpg"
+                heroSrcSmall="/images/hero_small.jpg"
                 heroAlt="Downloads KiTaLa e.V. - Kindertagespflege Ladbergen"
                 ariaLabel="Downloads KiTaLa e.V. - Kindertagespflege Ladbergen"
             >

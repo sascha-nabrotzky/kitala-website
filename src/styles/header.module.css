@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding-top: var(--kita-space-l);
+    padding-block: var(--kita-space-l) var(--kita-space-xl);
     gap: var(--kita-space-xl);
 }
 
