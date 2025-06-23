@@ -1,8 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import InklusionJSON from "../content/inklusion.json";
-import InterviewQA from "../components/InterviewQA";
-import inklusionStyles from "../styles/inklusion.module.css";
+import InterviewQA from "../components/AccordionInterview";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import Layout from "../components/Layout";
 

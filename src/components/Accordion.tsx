@@ -6,9 +6,10 @@ interface AccordionProps {
     image: string;
     title: string;
     text: string;
+    alt?: string;
 }
 
-const Accordion = ({ image, title, text }: AccordionProps) => {
+const Accordion = ({ image, title, text, alt }: AccordionProps) => {
     const [currentClass, setClass] = useState(`${styles.texthidden}`);
     const [setHeight, setHeightState] = useState("");
     const [setRotate, setRotateState] = useState("");
@@ -41,15 +42,18 @@ const Accordion = ({ image, title, text }: AccordionProps) => {
                     <img
                         src={`${image}`}
                         className={`${styles.faqImage}`}
-                        alt=""
+                        alt={alt || ""}
                     />
                 </div>
-                <button className={styles.titleWrapper} onClick={changeClass}>
+                <button
+                    className={styles.titleWrapper}
+                    onClick={changeClass}
+                    aria-label="Öffne/Schließe Text"
+                >
                     <h3 className={styles.title}>{title}</h3>
                     <Chevron
                         className={`${styles.accordionIcon} ${setRotate}`}
-                        width={"30"}
-                        fill={"currentColor"}
+                        width={"20"}
                     />
                 </button>
                 <div
