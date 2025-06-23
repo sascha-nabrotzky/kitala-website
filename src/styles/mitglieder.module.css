@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--kita-space-l);
+    margin-top: var(--kita-space-xxl);
 }
 
 @media screen and (max-width: 640px) {

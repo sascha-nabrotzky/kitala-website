@@ -4,7 +4,7 @@
 }
 
 .question:first-of-type {
-    margin-top: 3rem;
+    margin-top: var(--kita-space-xxl);
 }
 
 .titleButton {
@@ -14,7 +14,7 @@
 }
 
 .title {
-    margin-block: 1rem;
+    margin-block: var(--kita-space-n);
 }
 
 .textHidden {
