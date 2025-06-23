@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "../styles/footer.module.css";
 import WaveBottom from "../assets/images/wave-bottom.svg";
 
@@ -7,10 +7,10 @@ const Footer = () => {
         <footer>
             <ul className={styles.footerListItems}>
                 <li className={styles.footerLink}>
-                    <Link to="/impressum">Impressum</Link>
+                    <NavLink to="/impressum">Impressum</NavLink>
                 </li>
                 <li className={styles.footerLink}>
-                    <Link to="/datenschutz">Datenschutz</Link>
+                    <NavLink to="/datenschutz">Datenschutz</NavLink>
                 </li>
                 <li>|</li>
                 <li className={styles.footerLinkSelfPromo}>

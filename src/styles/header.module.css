@@ -23,6 +23,7 @@
 
 .link:hover {
     text-decoration: underline;
+    text-underline-offset: var(--kita-space-s);
 }
 
 .logo {
