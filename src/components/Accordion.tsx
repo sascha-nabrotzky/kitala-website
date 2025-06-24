@@ -38,8 +38,9 @@ const Accordion = ({ image, title, text, alt }: AccordionProps) => {
                 <button
                     className={styles.titleWrapper}
                     onClick={handleTextVisibility}
-                    aria-label="Öffne/Schließe Text"
+                    aria-label={showText ? "Weniger anzeigen" : "Mehr anzeigen"}
                     aria-expanded={showText ? true : false}
+                    aria-controls={title.split(" ").join("-").toLowerCase()}
                 >
                     <h3 className={styles.title}>{title}</h3>
                     <Chevron
@@ -49,6 +50,7 @@ const Accordion = ({ image, title, text, alt }: AccordionProps) => {
                     />
                 </button>
                 <div
+                    id={title.split(" ").join("-").toLowerCase()}
                     className={styles.textContainer}
                     ref={content}
                     style={{ height: `${setHeight}px` }}

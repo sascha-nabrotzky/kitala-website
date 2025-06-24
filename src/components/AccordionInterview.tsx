@@ -31,6 +31,7 @@ const AccordionInterview = ({
         <section className={style.question}>
             <h3 className={style.title}>{question}</h3>
             <div
+                id={question.split(" ").join("-").toLowerCase()}
                 className={style.textContainer}
                 ref={content}
                 style={{ height: `${setHeight}px` }}
@@ -43,8 +44,8 @@ const AccordionInterview = ({
             <button
                 className={style.showButton}
                 onClick={handleTextVisibility}
-                aria-label="Zeige mehr/weniger"
                 aria-expanded={showText ? true : false}
+                aria-controls={question.split(" ").join("-").toLowerCase()}
             >
                 {showText ? "Weniger anzeigen" : "Mehr anzeigen"}
             </button>
