@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    padding: 0;
 }
 
 .title {
@@ -37,25 +38,15 @@
     transition: transform 0.4s ease;
 }
 
-.rotate {
-    transform: rotate(-180deg);
-}
-
-.texthidden {
-    max-height: 0px;
+.textContainer {
     overflow: hidden;
-    transition: 1s ease;
+    transition: 0.7s ease;
 }
 
-.texthidden p:first-of-type {
+.textContainer div p:first-of-type {
     margin-top: 0;
 }
 
-.active {
-    overflow: hidden;
-    transition: 1s ease;
-}
-
-.active p:first-of-type {
-    margin-top: 0;
+.textContainer div h4 {
+    margin-bottom: var(--kita-space-s);
 }

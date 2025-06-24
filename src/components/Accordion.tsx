@@ -10,30 +10,20 @@ interface AccordionProps {
 }
 
 const Accordion = ({ image, title, text, alt }: AccordionProps) => {
-    const [currentClass, setClass] = useState(`${styles.texthidden}`);
-    const [setHeight, setHeightState] = useState("");
-    const [setRotate, setRotateState] = useState("");
+    const [setHeight, setHeightState] = useState(0);
+    const [showText, setShowText] = useState(false);
 
     const content = useRef<HTMLDivElement>(null);
 
-    function changeClass() {
-        setClass(
-            currentClass === `${styles.texthidden}`
-                ? `${styles.active}`
-                : `${styles.texthidden}`
-        );
-        // Typescript braucht die Condition für useRef
-        if (content.current) {
-            setHeightState(
-                currentClass === `${styles.texthidden}`
-                    ? `${content.current.scrollHeight}px`
-                    : "0px"
-            );
-        }
-        setRotateState(
-            currentClass === `${styles.texthidden}` ? `${styles.rotate}` : ""
-        );
-    }
+    const handleTextVisibility = () => {
+        setShowText((prev) => {
+            const willShow = !prev;
+            if (content.current) {
+                setHeightState(willShow ? content.current.scrollHeight : 0);
+            }
+            return willShow;
+        });
+    };
 
     return (
         <section>
@@ -47,19 +37,21 @@ const Accordion = ({ image, title, text, alt }: AccordionProps) => {
                 </div>
                 <button
                     className={styles.titleWrapper}
-                    onClick={changeClass}
+                    onClick={handleTextVisibility}
                     aria-label="Öffne/Schließe Text"
+                    aria-expanded={showText ? true : false}
                 >
                     <h3 className={styles.title}>{title}</h3>
                     <Chevron
-                        className={`${styles.accordionIcon} ${setRotate}`}
+                        className={styles.accordionIcon}
                         width={"20"}
+                        rotate={showText ? 180 : 0}
                     />
                 </button>
                 <div
-                    className={currentClass}
+                    className={styles.textContainer}
                     ref={content}
-                    style={{ maxHeight: `${setHeight}` }}
+                    style={{ height: `${setHeight}px` }}
                 >
                     <div dangerouslySetInnerHTML={{ __html: text }}></div>
                 </div>

@@ -1,9 +1,10 @@
 type ChevronProps = {
     className: string;
     width: string;
+    rotate?: number;
 };
 
-const Chevron = ({ className, width }: ChevronProps) => {
+const Chevron = ({ className, width, rotate }: ChevronProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -11,6 +12,7 @@ const Chevron = ({ className, width }: ChevronProps) => {
             width={width}
             fill="none"
             viewBox="0 0 11 7"
+            style={{ transform: `rotate(-${rotate}deg)` }}
         >
             <path
                 fill="currentColor"
