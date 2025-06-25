@@ -4,6 +4,9 @@ import DownloadCard from "../components/DownloadCard";
 import MitgliedsantragPDF from "../assets/images/Mitgliedsantrag_interaktiv.pdf";
 import MitgliedsantragFoerderPDF from "../assets/images/Mitgliedsantrag_Foerdermitglied_interaktiv.pdf";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
+import styles from "../styles/downloads.module.css";
 
 const Download = () => {
     return (
@@ -34,29 +37,32 @@ const Download = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig="/images/hero.jpg"
-                heroSrcSmall="/images/hero_small.jpg"
-                heroAlt="Downloads KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="Downloads KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
-                <h1>Downloads</h1>
-                <h2>Wichtige Dokumente und mehr</h2>
+                <div>
+                    <h1>Downloads</h1>
+                    <h2>Wichtige Dokumente und mehr</h2>
+                </div>
 
-                <DownloadCard
-                    href={MitgliedsantragPDF}
-                    label="Mitgliedsantrag"
-                    aria-label="Download Mitgliedsantrag"
-                />
-                <DownloadCard
-                    href={MitgliedsantragFoerderPDF}
-                    label="Mitgliedsantrag als Fördermitglied"
-                    aria-label="Download Mitgliedsantrag Fördermitglied"
-                />
-                <DownloadCard
-                    href="https://www.kreis-steinfurt.de/kv_steinfurt/Ressourcen/Familie,%20Kinder%20&%20Jugendliche/Merkblatt%20Elternbeitr%C3%A4ge%20zur%20Kindertagesbetreuung.pdf"
-                    label="Merkblatt Elternbeiträge"
-                    aria-label="Download Merkblatt Elternbeiträge"
-                />
+                <section className={styles.downloadContainer}>
+                    <DownloadCard
+                        href={MitgliedsantragPDF}
+                        label="Mitgliedsantrag"
+                        aria-label="Download Mitgliedsantrag"
+                    />
+                    <DownloadCard
+                        href={MitgliedsantragFoerderPDF}
+                        label="Mitgliedsantrag als Fördermitglied"
+                        aria-label="Download Mitgliedsantrag Fördermitglied"
+                    />
+                    <DownloadCard
+                        href="https://www.kreis-steinfurt.de/kv_steinfurt/Ressourcen/Familie,%20Kinder%20&%20Jugendliche/Merkblatt%20Elternbeitr%C3%A4ge%20zur%20Kindertagesbetreuung.pdf"
+                        label="Merkblatt Elternbeiträge"
+                        aria-label="Download Merkblatt Elternbeiträge"
+                    />
+                </section>
             </Layout>
         </>
     );

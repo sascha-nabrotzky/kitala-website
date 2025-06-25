@@ -1,7 +1,7 @@
 .blockquote {
     display: flex;
     align-items: center;
-    margin: var(--kita-font-size-l) auto;
+    margin: var(--kita-font-size-xxl) auto;
     border-radius: 50%;
     box-shadow: var(--kita-shadow-large);
     background-color: var(--kita-color-tertiary);

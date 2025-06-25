@@ -7,6 +7,8 @@ import HandHerzImg from "../assets/images/Hand_und_Herz.webp";
 import KuecheImg from "../assets/images/Kueche_und_Schaukelpferd.webp";
 import DokumenteImg from "../assets/images/Dokumente.webp";
 import EurozeichenImg from "../assets/images/Eurozeichen.webp";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
 
 const Accordion = lazy(() => import("../components/Accordion"));
 const renderLoader = () => <p>Loading ...</p>;
@@ -43,14 +45,29 @@ const Faq = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig="/images/hero.jpg"
-                heroSrcSmall="/images/hero_small.jpg"
-                heroAlt="FAQ KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="FAQ KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
                 <div className={styles.faqContainer}>
-                    <h1>Fragen & Antworten</h1>
-                    <h2>Hier beantworten wir häufig gestellte Fragen</h2>
+                    <div>
+                        <h1>Fragen & Antworten rund um unsere Tagespflege</h1>
+                        <h2>
+                            Alle wichtigen Infos auf einen Blick – für Eltern,
+                            die sicher und informiert starten möchten.
+                        </h2>
+                        <p>
+                            Willkommen in unserem FAQ-Bereich! Hier sammeln wir
+                            Antworten auf die häufigsten Fragen rund um
+                            Anmeldung, Kosten, Betreuungszeiten, pädagogische
+                            Ausrichtung und vieles mehr. Sie möchten wissen, wie
+                            der Ablauf der Eingewöhnung aussieht oder welche
+                            Unterstützung unsere Fachberatung bietet? Dann sind
+                            Sie hier genau richtig. Falls Ihre Frage nicht dabei
+                            ist, melden Sie sich gerne persönlich – wir sind für
+                            Sie da.
+                        </p>
+                    </div>
 
                     <Suspense fallback={renderLoader()}>
                         <Accordion

@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
 
 const ArtikelGemeinsam = lazy(() => import("../components/Artikel_gemeinsam"));
 const RenderLoader = <p>Loading ...</p>;
@@ -32,10 +34,9 @@ const Blog = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig="/images/hero.jpg"
-                heroSrcSmall="/images/hero_small.jpg"
-                heroAlt="Blog KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="Blog KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
                 <h1>Termine und Veranstaltungen</h1>
                 <h2>Was im Verein so passiert</h2>

@@ -12,6 +12,8 @@ import OeleschImg from "../assets/images/Olesch_300px.jpg";
 import TuschewitzkiImg from "../assets/images/Tuschewitzki_300px.jpg";
 import SchroerlueckeImg from "../assets/images/Schroeerluecke_300px.jpg";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
 import styles from "../styles/mitglieder.module.css";
 import Layout from "../components/Layout";
 
@@ -47,13 +49,28 @@ const Mitglieder = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig="/images/hero.jpg"
-                heroSrcSmall="/images/hero_small.jpg"
-                heroAlt="Mitglieder KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="Mitglieder KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
-                <h1>Vorstand und Mitglieder des Vereins</h1>
-                <h2>Wir stellen uns vor</h2>
+                <div>
+                    <h1>Gesichter des Vertrauens</h1>
+                    <h2>
+                        Hier finden Sie alle Ansprechpartnerinnen unseres
+                        Vereins – persönlich, erreichbar und mit ganz viel Herz
+                        für Kinder.
+                    </h2>
+                    <p>
+                        Unser Verein lebt von den Menschen, die sich Tag für Tag
+                        mit viel Engagement, Fürsorge und Fachwissen für das
+                        Wohl der Kinder einsetzen. Ob im Vorstand oder als
+                        aktive Tagespflegeperson – jede Einzelne bringt
+                        Persönlichkeit, Erfahrung und Herzblut mit ein. Lernen
+                        Sie uns kennen – wir freuen uns darauf, Sie und Ihr Kind
+                        zu begleiten.
+                    </p>
+                </div>
+
                 <section className={styles.mitgliederWrapper}>
                     <Suspense fallback={renderLoader()}>
                         <MitgliedCard

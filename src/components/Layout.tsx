@@ -9,7 +9,6 @@ type LayoutProps = PropsWithChildren<{
     heroSrcBig?: string;
     heroSrcSmall?: string;
     heroAlt?: string;
-    ariaLabel?: string;
 }>;
 
 const Layout = ({
@@ -17,7 +16,6 @@ const Layout = ({
     heroSrcBig,
     heroSrcSmall,
     heroAlt,
-    ariaLabel,
 }: LayoutProps) => {
     return (
         <>
@@ -26,7 +24,6 @@ const Layout = ({
                 srcBig={heroSrcBig ?? ""}
                 srcSmall={heroSrcSmall ?? ""}
                 alt={heroAlt}
-                ariaLabel={ariaLabel}
             />
             <main>{children}</main>
             <ToTopButton />

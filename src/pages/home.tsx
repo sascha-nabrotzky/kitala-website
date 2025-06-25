@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Layout from "../components/Layout";
 import Blockquote from "../components/Blockquote";
+import styles from "../styles/home.module.css";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
 import stepLogo from "../assets/icons/StepLogo.svg";
 import emailIcon from "../assets/icons/email.svg";
-import Layout from "../components/Layout";
-import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
-import styles from "../styles/home.module.css";
-import HeroImageBig from "../assets/images/Haende_Scan-2.png";
 
 const Home = () => {
     return (
@@ -57,13 +58,13 @@ const Home = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig={HeroImageBig}
-                heroSrcSmall={HeroImageBig}
-                heroAlt="KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
                 <h1 className={styles.title}>
-                    KiTaLa e.V. &ndash; Kindertagespflege Ladbergen
+                    KiTaLa e.V. &ndash; <br />
+                    Kindertagespflege Ladbergen
                 </h1>
                 <h2 className={styles.subtitle}>
                     Die Relevanz der Kindertagespflege

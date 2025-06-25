@@ -1,0 +1,6 @@
+.downloadContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--kita-space-n);
+    margin-top: var(--kita-space-xxl);
+}

@@ -46,6 +46,9 @@
 .textContainer div p:first-of-type {
     margin-top: 0;
 }
+.textContainer div p:last-of-type {
+    margin-bottom: var(--kita-space-xl);
+}
 
 .textContainer div h4 {
     margin-bottom: var(--kita-space-s);

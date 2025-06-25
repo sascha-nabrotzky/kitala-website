@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
 
 const Datenschutz = () => {
     return (
@@ -28,10 +30,9 @@ const Datenschutz = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig="/images/hero.jpg"
-                heroSrcSmall="/images/hero_small.jpg"
-                heroAlt="Datenschutz KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="Datenschutz KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
                 <h1>Datenschutz</h1>
 

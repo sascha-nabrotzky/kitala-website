@@ -211,6 +211,7 @@ h6 {
 
 h1 {
     margin-block: 0 var(--kita-space-xl);
+    text-wrap: balance;
     line-height: var(--kita-line-height-tight);
 }
 
@@ -235,4 +236,5 @@ a {
 button {
     background-color: transparent;
     border: none;
+    padding: 0;
 }
