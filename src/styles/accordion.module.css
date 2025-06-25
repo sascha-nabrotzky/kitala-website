@@ -17,6 +17,7 @@
 .title {
     color: var(--kita-color-black);
     margin: var(--kita-space-md) 0;
+    text-align: left;
 }
 
 .imageWrapper {

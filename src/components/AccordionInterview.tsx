@@ -28,7 +28,7 @@ const AccordionInterview = ({
     };
 
     return (
-        <section className={style.question}>
+        <div className={style.question}>
             <h3 className={style.title}>{question}</h3>
             <div
                 id={question.split(" ").join("-").toLowerCase()}
@@ -49,7 +49,7 @@ const AccordionInterview = ({
             >
                 {showText ? "Weniger anzeigen" : "Mehr anzeigen"}
             </button>
-        </section>
+        </div>
     );
 };
 

@@ -1,13 +1,9 @@
-.imgInklusion {
-    max-height: 32rem;
-    margin-bottom: var(--kita-space-xl);
+.questionContainer {
+    padding-top: var(--kita-space-xl);
 }
 
-.imgInklusion img {
-    max-width: 100%;
-}
-
-.imgInklusion figcaption {
-    font-size: var(--kita-font-size-s);
-    float: right;
+@media screen and (width < 640px) {
+    .questionContainer {
+        padding-top: var(--kita-space-n);
+    }
 }

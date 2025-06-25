@@ -219,6 +219,12 @@ h1 {
     line-height: var(--kita-line-height-tight);
 }
 
+@media screen and (width < 640px) {
+    h1 {
+        margin-block: 0 var(--kita-space-xs);
+    }
+}
+
 h2,
 h3 {
     margin-bottom: var(--kita-space-n);

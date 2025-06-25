@@ -4,12 +4,14 @@
     margin-bottom: var(--kita-space-xl);
 }
 
-.question:first-of-type {
-    margin-top: var(--kita-space-xxl);
-}
-
 .title {
     margin-block: var(--kita-space-n);
+}
+
+@media screen and (width < 640px) {
+    .title {
+        margin-block: 0;
+    }
 }
 
 .textContainer {
