@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
 import { Helmet } from "react-helmet-async";
 import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
+import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
+import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
 
 const Impressum = () => {
     return (
@@ -31,10 +33,9 @@ const Impressum = () => {
             </Helmet>
 
             <Layout
-                heroSrcBig="/images/hero.jpg"
-                heroSrcSmall="/images/hero_small.jpg"
-                heroAlt="Impressum KiTaLa e.V. - Kindertagespflege Ladbergen"
-                ariaLabel="Impressum KiTaLa e.V. - Kindertagespflege Ladbergen"
+                heroSrcBig={ChildminderImg}
+                heroSrcSmall={ChildminderImgSmall}
+                heroAlt=""
             >
                 <h1>Impressum</h1>
                 <h2>Angaben gemäß § 5 TMG:</h2>

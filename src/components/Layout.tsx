@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import ToTopButton from "./ToTopButton";
@@ -17,6 +18,10 @@ const Layout = ({
     heroSrcSmall,
     heroAlt,
 }: LayoutProps) => {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Header />

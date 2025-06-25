@@ -164,6 +164,10 @@
         0px 16px 20px -3px rgba(var(--kita-shadow-color-rgb), 0.25);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var(--kita-color-white);
