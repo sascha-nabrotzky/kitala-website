@@ -1,39 +1,20 @@
-.mitgliedwrapper {
+.memberContainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     flex-basis: 10rem;
     text-align: center;
     background-color: var(--kita-color-white);
-    border-radius: var(--kita-radius-small);
+    border-radius: var(--kita-radius-medium);
     overflow: hidden;
-    font-size: var(--kita-font-size-n);
+    font-size: var(--kita-font-size-l);
 }
 
-.profilbild {
+.profileImage {
     width: 100%;
 }
 
-.mitgliedwrapper p:not(.title, .name) {
-    margin: 0;
-}
-
-.title {
-    margin-block: 0 var(--kita-space-xs);
-}
-
-.name {
-    font-size: var(--kita-font-size-l);
-    margin-block: 0 var(--kita-space-s);
-}
-
-.mitgliedwrapper .kita {
-    color: var(--kita-color-primary);
-    margin-block: var(--kita-space-s);
-}
-
-.textWrapper {
+.addressContainer {
     font-style: normal;
     display: flex;
     flex-direction: column;
@@ -43,15 +24,17 @@
     line-height: 1.3;
 }
 
-.textWrapper a:not(.btnWebsite) {
-    font-style: normal;
-    color: var(--kita-color-black);
-    font-weight: 700;
+.addressContainer > * {
+    margin-block: var(--kita-space-xs);
+}
+
+.name {
+    font-size: var(--kita-font-size-xl);
 }
 
 .btnWebsite {
     background-color: var(--button-accent-color);
-    margin-top: var(--kita-space-n);
+    margin-block: var(--kita-space-md) var(--kita-space-n);
     padding: var(--kita-space-s);
     border-radius: var(--kita-radius-pill);
     text-decoration: none;

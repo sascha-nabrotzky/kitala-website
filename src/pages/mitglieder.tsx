@@ -17,17 +17,17 @@ import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp
 import styles from "../styles/mitglieder.module.css";
 import Layout from "../components/Layout";
 
-const MitgliedCard = lazy(() => import("../components/MitgliedCard")); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
+const MemberCard = lazy(() => import("../components/MemberCard")); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
 const renderLoader = () => <p>Loading ...</p>;
 
-const Mitglieder = () => {
+const Members = () => {
     return (
         <>
             <Helmet>
                 <title>Mitglieder | KiTaLa e.V.</title>
                 <meta
                     name="description"
-                    content="Die Mitglieder von KiTaLa e.V. stellen sind vor"
+                    content="Die Members von KiTaLa e.V. stellen sind vor"
                 />
                 <meta
                     name="image"
@@ -37,7 +37,7 @@ const Mitglieder = () => {
                     name="twitter:image"
                     content={`https://kitala-ladbergen.de${socialMediaImg}`}
                 />
-                <meta property="og:title" content="Mitglieder | KiTaLa e.V." />
+                <meta property="og:position" content="Members | KiTaLa e.V." />
                 <meta
                     property="og:image"
                     content={`https://kitala-ladbergen.de${socialMediaImg}`}
@@ -73,24 +73,24 @@ const Mitglieder = () => {
 
                 <section className={styles.mitgliederWrapper}>
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
-                            title="1. Vorsitzende"
+                        <MemberCard
+                            position="1. Vorsitzende"
                             name="Ramona Hüwelmann"
-                            kita="&bdquo;Zwergenland&rdquo;"
+                            organisation="&bdquo;Zwergenland&rdquo;"
                             address="Westerweg 29"
-                            tel="+49 5485 2261"
+                            phone="+49 5485 2261"
                             imgSrc={HuewelmannImg}
                             imgAlt="Profilbild von Ramona Hüwelmann"
                             website="zwergenlandladbergen.de"
                         />
                     </Suspense>
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
-                            title="2. Vorsitzende"
+                        <MemberCard
+                            position="2. Vorsitzende"
                             name="Tatjana Nabrotzky"
-                            kita="Großtagespflege &bdquo;Waldschnecken&rdquo;"
+                            organisation="Großtagespflege &bdquo;Waldschnecken&rdquo;"
                             address="Auf Stieneckers 52"
-                            tel="+49 176 43848013"
+                            phone="+49 176 43848013"
                             imgSrc={NabrotzkyImg}
                             imgAlt="Profilbild von Tatjana Nabrotzky"
                             website="waldschnecken-ladbergen.de"
@@ -98,12 +98,12 @@ const Mitglieder = () => {
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
-                            title="Kassenwart"
+                        <MemberCard
+                            position="Kassenwart"
                             name="Oksana Welk"
-                            kita="Großtagespflege &bdquo;Waldschnecken&rdquo;"
+                            organisation="Großtagespflege &bdquo;Waldschnecken&rdquo;"
                             address="Auf Stieneckers 52"
-                            tel="+49 162 1366853"
+                            phone="+49 162 1366853"
                             imgSrc={WelkImg}
                             imgAlt="Profilbild von Oksana Welk"
                             website="waldschnecken-ladbergen.de"
@@ -111,93 +111,93 @@ const Mitglieder = () => {
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
-                            title="Schriftführerin"
+                        <MemberCard
+                            position="Schriftführerin"
                             name="Daniela Richter"
-                            kita="&bdquo;Bienenkörbchen&rdquo;"
+                            organisation="&bdquo;Bienenkörbchen&rdquo;"
                             address="Kramerstraße 11"
-                            tel="+49 5485 9539827"
+                            phone="+49 5485 9539827"
                             imgSrc={RichterImg}
                             imgAlt="Profilbild von Daniela Richter"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Stephanie Olesch"
-                            kita="&bdquo;Schatzkiste&rdquo;"
+                            organisation="&bdquo;Schatzkiste&rdquo;"
                             address="Sandkamp 1b"
-                            tel="+49 5485 1406"
+                            phone="+49 5485 1406"
                             imgSrc={OeleschImg}
                             imgAlt="Foto von Stephanie Olesch"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Saskia Schröerlücke"
-                            kita="&bdquo;Marienkäfer&rdquo;"
+                            organisation="&bdquo;Marienkäfer&rdquo;"
                             address="Auf Stieneckers 58"
-                            tel="+49 5485 833560"
-                            tel2="+49 176 92255280"
+                            phone="+49 5485 833560"
+                            phone2="+49 176 92255280"
                             imgSrc={SchroerlueckeImg}
                             imgAlt="Foto von Saskia Schröerlücke"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Anne Lindemann"
-                            kita="Inklusive Großtagespflege &bdquo;Landwichtel&rdquo;"
+                            organisation="Inklusive Großtagespflege &bdquo;Landwichtel&rdquo;"
                             address="Im Alpenbrock 5"
-                            tel="+49 1573 4262072"
-                            tel2="+49 5484 1402"
+                            phone="+49 1573 4262072"
+                            phone2="+49 5484 1402"
                             imgSrc={LindemannImg}
                             imgAlt="Foto von Anee Lindemann"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Birte Lutterbei"
-                            kita="Inklusive Großtagespflege &bdquo;Landwichtel&rdquo;"
+                            organisation="Inklusive Großtagespflege &bdquo;Landwichtel&rdquo;"
                             address="Im Alpenbrock 5"
-                            tel="+49 1577 4668562"
-                            tel2="+49 5485 834160"
+                            phone="+49 1577 4668562"
+                            phone2="+49 5485 834160"
                             imgSrc={LutterbeiImg}
                             imgAlt="Foto von Birte Lutterbei"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Melanie Tuschewitzki"
-                            kita="&bdquo;Die kleinen Raupen&rdquo;"
+                            organisation="&bdquo;Die kleinen Raupen&rdquo;"
                             address="Stieneckers Esch 20"
-                            tel="+49 5485 8334407"
-                            tel2="+49 157 34236164"
+                            phone="+49 5485 8334407"
+                            phone2="+49 157 34236164"
                             imgSrc={TuschewitzkiImg}
                             imgAlt="Foto von Melanie Tuschewitzki"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Marina Koch"
-                            kita="&bdquo;Die Kichererbsen&rdquo;"
+                            organisation="&bdquo;Die Kichererbsen&rdquo;"
                             address="Stieneckers Esch 40"
-                            tel="+49 1575 6287339"
+                            phone="+49 1575 6287339"
                             imgSrc={KochImg}
                             imgAlt="Foto von Marina Koch"
                         />
                     </Suspense>
 
                     <Suspense fallback={renderLoader()}>
-                        <MitgliedCard
+                        <MemberCard
                             name="Meike König"
-                            kita="&bdquo;Moorpiraten&rdquo;"
+                            organisation="&bdquo;Moorpiraten&rdquo;"
                             address="Moorstraße 40"
-                            tel="+49 5484 962821"
+                            phone="+49 5484 962821"
                             imgSrc={KoenigImg}
                             imgAlt="Foto von Meike König"
                         />
@@ -208,4 +208,4 @@ const Mitglieder = () => {
     );
 };
 
-export default Mitglieder;
+export default Members;
