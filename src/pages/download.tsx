@@ -39,7 +39,7 @@ const Download = () => {
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroAlt=""
+                heroTitle="Downloads"
             >
                 <div>
                     <h1>Downloads</h1>

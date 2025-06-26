@@ -39,7 +39,7 @@ const Inklusion = () => {
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroAlt=""
+                heroTitle="Inklusion"
             >
                 <div>
                     <h1>Inklusion</h1>

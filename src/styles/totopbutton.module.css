@@ -17,8 +17,8 @@
 }
 
 .totopbutton:hover {
-    background-color: var(--button-white-muted);
     box-shadow: var(--kita-shadow-large);
+    background-color: var(--button-white-muted);
     translate: 0 -2px;
 }
 

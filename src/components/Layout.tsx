@@ -10,6 +10,7 @@ type LayoutProps = PropsWithChildren<{
     heroSrcBig?: string;
     heroSrcSmall?: string;
     heroAlt?: string;
+    heroTitle?: string;
 }>;
 
 const Layout = ({
@@ -17,6 +18,7 @@ const Layout = ({
     heroSrcBig,
     heroSrcSmall,
     heroAlt,
+    heroTitle,
 }: LayoutProps) => {
     React.useEffect(() => {
         window.scrollTo(0, 0);
@@ -29,6 +31,7 @@ const Layout = ({
                 srcBig={heroSrcBig ?? ""}
                 srcSmall={heroSrcSmall ?? ""}
                 alt={heroAlt}
+                heroTitle={heroTitle}
             />
             <main>{children}</main>
             <ToTopButton />

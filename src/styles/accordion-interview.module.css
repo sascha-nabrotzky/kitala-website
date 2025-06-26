@@ -1,7 +1,7 @@
 .question {
+    margin-bottom: var(--kita-space-xl);
     border-bottom: 2px dotted var(--kita-color-black);
     text-align: left;
-    margin-bottom: var(--kita-space-xl);
 }
 
 .title {

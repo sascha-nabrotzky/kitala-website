@@ -15,9 +15,9 @@
 }
 
 .title {
-    color: var(--kita-color-black);
     margin: var(--kita-space-md) 0;
     text-align: left;
+    color: var(--kita-color-black);
 }
 
 .imageWrapper {
@@ -40,8 +40,8 @@
 }
 
 .textContainer {
-    overflow: hidden;
     transition: 0.7s ease;
+    overflow: hidden;
 }
 
 .textContainer div p:first-of-type {

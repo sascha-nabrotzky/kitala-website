@@ -1,47 +1,46 @@
-
 import { createHashRouter } from "react-router-dom";
 import Home from "../pages/home";
 import Blog from "../pages/blog";
-import Mitglieder from "../pages/mitglieder";
+import Members from "../pages/Members";
 import FAQ from "../pages/faq";
 import Download from "../pages/download";
-import Impressum from "../pages/impressum";
-import Datenschutz from "../pages/datenschutz";
+import Imprint from "../pages/imprint";
+import Privacy from "../pages/privacy";
 import Inklusion from "../pages/inklusion";
 
 const router = createHashRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/blog",
-    element: <Blog />,
-  },
-  {
-    path: "/mitglieder",
-    element: <Mitglieder />,
-  },
-  {
-    path: "/inklusion",
-    element: <Inklusion />,
-  },
-  {
-    path: "/faq",
-    element: <FAQ />,
-  },
-  {
-    path: "/download",
-    element: <Download />,
-  },
-  {
-    path: "/impressum",
-    element: <Impressum />,
-  },
-  {
-    path: "/datenschutz",
-    element: <Datenschutz />,
-  },
+    {
+        path: "/",
+        element: <Home />,
+    },
+    {
+        path: "/blog",
+        element: <Blog />,
+    },
+    {
+        path: "/mitglieder",
+        element: <Members />,
+    },
+    {
+        path: "/inklusion",
+        element: <Inklusion />,
+    },
+    {
+        path: "/faq",
+        element: <FAQ />,
+    },
+    {
+        path: "/download",
+        element: <Download />,
+    },
+    {
+        path: "/impressum",
+        element: <Imprint />,
+    },
+    {
+        path: "/datenschutz",
+        element: <Privacy />,
+    },
 ]);
 
 export default router;

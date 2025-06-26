@@ -1,14 +1,30 @@
-.heroImgWrapper {
-    background-color: var(--kita-color-black);
-    min-height: 20rem;
-    max-height: 30rem;
-    text-align: center;
-    color: var(--kita-color-white);
+.heroContainer {
+    position: relative;
 }
 
-.heroImg {
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--kita-color-black);
+    height: 30rem;
+}
+
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 35%;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--kita-color-white);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
 }

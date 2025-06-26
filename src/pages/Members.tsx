@@ -52,6 +52,7 @@ const Members = () => {
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
                 heroAlt=""
+                heroTitle="Mitglieder"
             >
                 <div>
                     <h1>Gesichter des Vertrauens</h1>

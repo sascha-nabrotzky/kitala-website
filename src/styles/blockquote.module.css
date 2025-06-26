@@ -8,9 +8,9 @@
     padding: var(--kita-space-n);
     width: clamp(min(5rem, 100%), 14rem, 17rem);
     text-align: center;
+    line-height: var(--kita-line-height-regular);
     color: var(--kita-color-white);
     font-size: var(--kita-font-size-l);
-    line-height: var(--kita-line-height-regular);
     font-weight: 700;
     aspect-ratio: 1/1;
 }

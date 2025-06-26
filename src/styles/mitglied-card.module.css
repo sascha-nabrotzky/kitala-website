@@ -1,12 +1,12 @@
 .memberContainer {
     display: flex;
+    flex-basis: 10rem;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 10rem;
-    text-align: center;
-    background-color: var(--kita-color-white);
     border-radius: var(--kita-radius-medium);
+    background-color: var(--kita-color-white);
     overflow: hidden;
+    text-align: center;
     font-size: var(--kita-font-size-l);
 }
 
@@ -15,13 +15,13 @@
 }
 
 .addressContainer {
-    font-style: normal;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
     padding: var(--kita-space-n);
     line-height: 1.3;
+    font-style: normal;
 }
 
 .addressContainer > * {
@@ -33,13 +33,13 @@
 }
 
 .btnWebsite {
-    background-color: var(--button-accent-color);
-    margin-block: var(--kita-space-md) var(--kita-space-n);
-    padding: var(--kita-space-s);
+    transition: background-color 0.3s ease-in-out;
     border-radius: var(--kita-radius-pill);
+    background-color: var(--button-accent-color);
+    padding: var(--kita-space-s);
     text-decoration: none;
     font-size: var(--kita-font-size-n);
-    transition: background-color 0.3s ease-in-out;
+    margin-block: var(--kita-space-md) var(--kita-space-n);
 }
 
 .btnWebsite:hover {

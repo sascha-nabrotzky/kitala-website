@@ -1,15 +1,15 @@
 .downloadCard {
     display: flex;
     align-items: center;
+    transition: 0.3s ease-in-out;
     margin-bottom: var(--kita-space-n);
     border-radius: var(--kita-radius-small);
     box-shadow: var(--kita-shadow-medium);
     background-color: var(--kita-color-white);
+    padding: var(--kita-space-n);
     text-decoration: none;
     color: var(--kita-color-black);
     font-weight: 700;
-    padding: var(--kita-space-n);
-    transition: 0.3s ease-in-out;
 }
 
 .downloadCard:hover {
@@ -22,7 +22,7 @@
 }
 
 .downloadCard .pdfIcon {
+    margin-right: var(--kita-space-n);
     max-width: 35px;
     height: auto;
-    margin-right: var(--kita-space-n);
 }

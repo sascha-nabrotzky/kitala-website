@@ -1,12 +1,12 @@
 .iconWrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     margin-top: var(--kita-space-3xl);
     color: var(--kita-color-black);
     border-block: 2px solid var(--kita-color-black);
     padding-block: var(--kita-space-xl);
-    flex-wrap: wrap;
     row-gap: var(--kita-space-l);
 }
 
@@ -15,9 +15,9 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    white-space: nowrap;
     font-size: var(--kita-font-size-l);
     gap: var(--kita-space-n);
-    white-space: nowrap;
 }
 
 .iconWrapper a:first-of-type img {
@@ -38,6 +38,6 @@
 
 .stepIcon,
 .mailIcon {
-    height: 2.5em;
     transition: 0.2s ease-in-out;
+    height: 2.5em;
 }
