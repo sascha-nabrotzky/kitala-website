@@ -1,47 +1,105 @@
 .header {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding-block: var(--kita-space-l) var(--kita-space-xl);
+    gap: var(--kita-space-xl);
 }
 
-.gradient {
-  margin-top: -7rem;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
-  aspect-ratio: 75 / 14;
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 576px) {
-  .gradient {
-    margin-top: 0;
-  }
+.hamburger {
+    display: none;
 }
 
-@media (min-width: 1900px) {
-  .gradient {
-    margin-top: -11rem;
-  }
+.link {
+    color: var(--kita-color-black);
+    text-decoration: none;
+    padding: var(--kita-space-s) var(--kita-space-n);
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-underline-offset: var(--kita-space-s);
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 10rem;
 }
 
-.logo img {
-  aspect-ratio: 134 / 150;
-  transform-origin: center bottom;
-  animation: rotate 3s infinite;
+.logoMobile {
+    display: none;
+}
+
+.logo img,
+.logoMobile img {
+    transform-origin: center bottom;
+    animation: rotate 3s infinite;
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.logo img {
+    height: 7rem;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        transition: 0.5s ease;
+        z-index: 1;
+        border-radius: 0 var(--kita-radius-small) var(--kita-radius-small) 0;
+        background-color: var(--kita-color-white);
+        padding: var(--kita-space-n);
+        width: fit-content;
+        box-shadow: var(--kita-shadow-medium);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logoMobile {
+        display: flex;
+        width: 10rem;
+        margin-inline: auto;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        top: var(--kita-space-n);
+        right: var(--kita-space-n);
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: var(--kita-radius-small);
+        background-color: var(--kita-color-white);
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: var(--kita-space-s) var(--kita-space-xs);
+    }
+
+    .hamburgerLine {
+        flex-shrink: 0;
+        background-color: var(--kita-color-black);
+        width: auto;
+        height: 0.25rem;
+    }
 }

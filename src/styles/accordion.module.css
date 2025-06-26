@@ -1,51 +1,56 @@
 .question {
-  border-bottom: 2px dotted rgb(var(--col-black));
-  cursor: pointer;
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--kita-space-n);
+    border-bottom: 2px dotted var(--kita-color-black);
+    cursor: pointer;
 }
 
-.question h3 {
-  color: rgb(var(--col-violet));
-  margin: 0.7em 0;
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0;
 }
 
-.titleChevronWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.title {
+    margin: var(--kita-space-md) 0;
+    text-align: left;
+    color: var(--kita-color-black);
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--kita-color-black);
+    height: 20rem;
 }
 
 .faqImage {
-  width: 100%;
-  margin-top: 2em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .accordionIcon {
-  transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
-.rotate {
-  transition: transform 0.4s ease;
-  transform: rotate(90deg);
+.textContainer {
+    transition: 0.7s ease;
+    overflow: hidden;
 }
 
-.texthidden {
-  max-height: 0px;
-  overflow: hidden;
-  transition: 1s ease;
+.textContainer div p:first-of-type {
+    margin-top: 0;
+}
+.textContainer div p:last-of-type {
+    margin-bottom: var(--kita-space-xl);
 }
 
-.texthidden p:first-of-type {
-  margin-top: 0;
-}
-
-.active {
-  overflow: hidden;
-  transition: 1s ease;
-}
-
-.active p:first-of-type {
-  margin-top: 0;
+.textContainer div h4 {
+    margin-bottom: var(--kita-space-s);
 }

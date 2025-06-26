@@ -1,36 +1,48 @@
 footer {
-  margin-top: auto;
-  margin-bottom: 9rem;
-}
-
-@media screen and (min-width: 1024px) {
-  footer {
-    margin-bottom: 2rem;
-  }
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--kita-space-xxl);
 }
 
 .footerListItems {
-  display: flex;
-  flex-flow: wrap;
-  gap: 1rem;
-  padding-inline: var(--p-md);
-  color: rgb(var(--col-muted));
-  margin-top: 3rem;
-  margin-bottom: 0;
+    display: flex;
+    flex-flow: wrap;
+    gap: var(--kita-space-n);
+    padding-inline: var(--kita-space-l);
+    margin: 0;
+    font-size: var(--kita-font-size-n);
 }
 
 .footerListItems a {
-  color: rgb(var(--col-muted));
+    text-decoration: none;
 }
 
-.footerListItems a:not(.footerLinkSelfPromo a) {
-  text-decoration: none;
-}
-
-.footerListItems a:visited {
-  color: rgb(var(--col-muted));
+.footerListItems a:hover {
+    text-decoration: underline;
 }
 
 .footerLink :not(:last-child) {
-  margin-bottom: 0.5rem;
+    margin-bottom: var(--kita-space-s);
+}
+
+[aria-current="page"] {
+    text-decoration: underline !important;
+    text-underline-offset: var(--kita-space-s);
+}
+
+.waveBottom {
+    overflow: hidden;
+}
+
+.waveBottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (min-width: 768px) {
+    .waveBottom {
+        height: 10rem;
+    }
 }

@@ -1,0 +1,37 @@
+.question {
+    margin-bottom: var(--kita-space-xl);
+    border-bottom: 2px dotted var(--kita-color-black);
+    text-align: left;
+}
+
+.title {
+    margin-block: var(--kita-space-n);
+}
+
+@media screen and (width < 640px) {
+    .title {
+        margin-block: 0;
+    }
+}
+
+.textContainer {
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.textContainer p {
+    margin-bottom: 0;
+}
+
+.showButton {
+    display: flex;
+    padding: var(--kita-space-l) 0 var(--kita-space-l);
+    cursor: pointer;
+    background-image: linear-gradient(
+        to top,
+        var(--kita-color-white-muted),
+        transparent
+    );
+    width: 100%;
+    letter-spacing: 0.05rem;
+}
