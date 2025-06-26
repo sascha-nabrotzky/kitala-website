@@ -89,7 +89,7 @@ const Members = () => {
                         <MemberCard
                             position="2. Vorsitzende"
                             name="Tatjana Nabrotzky"
-                            organisation="Großtagespflege &bdquo;Waldschnecken&rdquo;"
+                            organisation="Inklusive Großtagespflege &bdquo;Waldschnecken&rdquo;"
                             address="Auf Stieneckers 52"
                             phone="+49 176 43848013"
                             imgSrc={NabrotzkyImg}
@@ -102,7 +102,7 @@ const Members = () => {
                         <MemberCard
                             position="Kassenwart"
                             name="Oksana Welk"
-                            organisation="Großtagespflege &bdquo;Waldschnecken&rdquo;"
+                            organisation="Inklusive Großtagespflege &bdquo;Waldschnecken&rdquo;"
                             address="Auf Stieneckers 52"
                             phone="+49 162 1366853"
                             imgSrc={WelkImg}

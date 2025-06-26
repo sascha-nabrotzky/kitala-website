@@ -10,7 +10,7 @@ type HeroImageProps = {
 const HeroImage = ({ srcBig, srcSmall, alt, heroTitle }: HeroImageProps) => {
     return (
         <div className={styles.heroContainer}>
-            <picture className={styles.imageContainer} aria-hidden="true" inert>
+            <picture className={styles.imageContainer} aria-hidden="true">
                 <source
                     media="(max-width: 30rem)"
                     srcSet={srcSmall}

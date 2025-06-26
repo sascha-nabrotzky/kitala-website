@@ -107,6 +107,10 @@
     --button-accent-color: var(--kita-color-accent);
     --button-accent-color-hover: var(--kita-color-accent-shade);
 
+    /* Link Colors */
+    --link-underline-color-current: var(--kita-color-tertiary);
+    --link-underline-color-hover: var(--kita-color-tertiary);
+
     /* Typography */
     --kita-font-size-xs: 0.5rem;
     --kita-font-size-s: 0.707rem;
@@ -240,7 +244,11 @@ li {
 }
 
 a {
-    text-underline-offset: 6px;
+    text-underline-offset: var(--kita-space-s);
+}
+
+[aria-current="page"] {
+    text-decoration: wavy underline var(--link-underline-color-current);
 }
 
 button {

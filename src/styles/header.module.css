@@ -1,8 +1,9 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding-block: var(--kita-space-l) var(--kita-space-xl);
+    z-index: 1;
     gap: var(--kita-space-xl);
+    padding-block: var(--kita-space-l) var(--kita-space-xl);
 }
 
 .navigation {
