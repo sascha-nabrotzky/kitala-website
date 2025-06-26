@@ -9,7 +9,7 @@
     opacity: 1;
     border-radius: var(--kita-radius-round);
     box-shadow: var(--kita-shadow-medium);
-    background-color: var(--button-quarternary-color);
+    background-color: var(--kita-color-white);
     cursor: pointer;
     width: 3rem;
     height: 3rem;
@@ -17,14 +17,14 @@
 }
 
 .totopbutton:hover {
-    background-color: var(--button-quarternary-color-hover);
+    background-color: var(--button-white-muted);
     box-shadow: var(--kita-shadow-large);
     translate: 0 -2px;
 }
 
 .totopbutton svg {
     width: 50%;
-    fill: var(--kita-color-white);
+    fill: var(--kita-color-black);
 }
 
 .buttonHidden {
