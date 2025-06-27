@@ -33,6 +33,7 @@ const Datenschutz = () => {
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
                 heroAlt=""
+                heroTitle="Datenschutz"
             >
                 <h1>Datenschutz</h1>
 

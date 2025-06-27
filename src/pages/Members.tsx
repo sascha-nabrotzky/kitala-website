@@ -1,5 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
+import Layout from "../components/Layout";
+import styles from "../styles/members.module.css";
+import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import HuewelmannImg from "../assets/images/huewelmann300px.jpg";
 import NabrotzkyImg from "../assets/images/nabrotzky300px.jpg";
 import WelkImg from "../assets/images/welk300px.jpg";
@@ -11,11 +14,8 @@ import LutterbeiImg from "../assets/images/Lutterbei_300px.jpg";
 import OeleschImg from "../assets/images/Olesch_300px.jpg";
 import TuschewitzkiImg from "../assets/images/Tuschewitzki_300px.jpg";
 import SchroerlueckeImg from "../assets/images/Schroeerluecke_300px.jpg";
-import socialMediaImg from "../assets/images/SocialMediaImg.jpg";
 import ChildminderImg from "../assets/images/Tagesmuetter_Gruppe.webp";
 import ChildminderImgSmall from "../assets/images/Tagesmuetter_Gruppe_Klein.webp";
-import styles from "../styles/mitglieder.module.css";
-import Layout from "../components/Layout";
 
 const MemberCard = lazy(() => import("../components/MemberCard")); //Daten werden mit React.lazy() bei Bedarf als const nachgeladen, Suspense als Fallback
 const renderLoader = () => <p>Loading ...</p>;
@@ -51,8 +51,7 @@ const Members = () => {
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroAlt=""
-                heroTitle="Mitglieder"
+                heroTitle="Mitglieder von KiTaLa e.V."
             >
                 <div>
                     <h1>Gesichter des Vertrauens</h1>

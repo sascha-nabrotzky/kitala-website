@@ -1,4 +1,4 @@
-import styles from "../styles/mitglied-card.module.css";
+import styles from "../styles/member-card.module.css";
 
 type MemberProps = {
     imgSrc: string;

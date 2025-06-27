@@ -47,7 +47,7 @@ const Faq = () => {
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroTitle="FAQs"
+                heroTitle="Wichtige Infos auf einen Blick"
             >
                 <div className={styles.faqContainer}>
                     <div>

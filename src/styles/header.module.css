@@ -30,17 +30,34 @@
 .logo {
     display: flex;
     justify-content: center;
-    width: 10rem;
+    flex-direction: column;
+    margin-inline: var(--kita-space-l);
 }
 
 .logoMobile {
     display: none;
+    flex-direction: column;
+    margin-inline: auto;
 }
 
 .logo img,
 .logoMobile img {
     transform-origin: center bottom;
     animation: rotate 3s infinite;
+}
+
+.logo img {
+    height: 7rem;
+}
+
+.logoMobile img {
+    width: 10rem;
+    margin-inline: auto;
+}
+
+.logoText {
+    text-align: center;
+    white-space: nowrap;
 }
 
 @keyframes rotate {
@@ -53,10 +70,6 @@
     100% {
         transform: rotate(0deg);
     }
-}
-
-.logo img {
-    height: 7rem;
 }
 
 @media (max-width: 768px) {
@@ -79,8 +92,6 @@
 
     .logoMobile {
         display: flex;
-        width: 10rem;
-        margin-inline: auto;
     }
 
     .hamburger {

@@ -60,14 +60,14 @@ const Home = () => {
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroAlt=""
+                heroTitle="Gemeinsam viel erreichen"
             >
                 <h1 className={styles.title}>
-                    KiTaLa e.V. &ndash; <br />
-                    Kindertagespflege Ladbergen
+                    Die Relevanz der Kindertagespflege
                 </h1>
                 <h2 className={styles.subtitle}>
-                    Die Relevanz der Kindertagespflege
+                    Kindertagespflege in Ladbergen ist der erste offizielle
+                    lokale Bildungsort
                 </h2>
                 <p>
                     Die Kindertagespflege ist der erste offizielle Bildungsort

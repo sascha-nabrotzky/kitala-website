@@ -39,6 +39,9 @@ const Header = () => {
 
                 <div className={styles.logo}>
                     <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
+                    <span className={styles.logoText}>
+                        <strong>KiTaLa e.V.</strong>
+                    </span>
                 </div>
 
                 <NavLink to="/faq" className={styles.link}>
@@ -67,6 +70,11 @@ const Header = () => {
 
             <div className={styles.logoMobile}>
                 <img src={Logo} alt="Logo KiTaLa e.V. Ladbergen" />
+                <span className={styles.logoText}>
+                    <strong>KiTaLa e.V. &ndash;</strong>
+                    <br />
+                    Kindertagespflege Ladbergen
+                </span>
             </div>
         </header>
     );

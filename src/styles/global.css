@@ -174,13 +174,12 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--kita-color-white);
+    background-color: var(--kita-color-white-muted);
+    line-height: var(--kita-line-height-regular);
     color: var(--kita-color-black);
     font-family: "Assistant", sans-serif;
     font-size: var(--kita-font-size-l);
     font-weight: 400;
-    background-color: var(--kita-color-white-muted);
-    line-height: var(--kita-line-height-regular);
 }
 
 #root {

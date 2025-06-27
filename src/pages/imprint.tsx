@@ -35,7 +35,7 @@ const Impressum = () => {
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroAlt=""
+                heroTitle="Impressum"
             >
                 <h1>Impressum</h1>
                 <h2>Angaben gemäß § 5 TMG:</h2>

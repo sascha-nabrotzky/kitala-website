@@ -6,6 +6,7 @@
 
 .title {
     margin-block: var(--kita-space-n);
+    line-height: var(--kita-line-height-regular);
 }
 
 @media screen and (width < 640px) {
