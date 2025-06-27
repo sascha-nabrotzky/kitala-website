@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../styles/hero-image.module.css";
 
 type HeroImageProps = {
@@ -8,6 +9,18 @@ type HeroImageProps = {
 };
 
 const HeroImage = ({ srcBig, srcSmall, alt, heroTitle }: HeroImageProps) => {
+    const [scale, setScale] = React.useState(0);
+    const [opacity, setOpacity] = React.useState(0);
+
+    React.useLayoutEffect(() => {
+        setTimeout(() => {
+            setScale(1);
+        }, 500);
+        setTimeout(() => {
+            setOpacity(1);
+        }, 1200);
+    }, []);
+
     return (
         <div className={styles.heroContainer}>
             <picture className={styles.imageContainer} aria-hidden="true">
@@ -28,7 +41,25 @@ const HeroImage = ({ srcBig, srcSmall, alt, heroTitle }: HeroImageProps) => {
                     decoding="async"
                 />
             </picture>
-            {heroTitle && <div className={styles.title}>{heroTitle}</div>}
+            {heroTitle && (
+                <div
+                    className={styles.title}
+                    style={{
+                        transform: `scaleX(${scale}) translate(-50%, -50%)`,
+                        transition: "transform 0.5s ease-in-out",
+                        transformOrigin: "left center",
+                    }}
+                >
+                    <span
+                        style={{
+                            opacity: `${opacity}`,
+                            transition: "opacity 0.5s ease-in-out",
+                        }}
+                    >
+                        {heroTitle}
+                    </span>
+                </div>
+            )}
         </div>
     );
 };

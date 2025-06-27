@@ -21,7 +21,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--kita-color-white);
     padding: 1rem 2rem;
     text-transform: uppercase;

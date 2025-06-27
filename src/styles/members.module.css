@@ -1,6 +1,5 @@
 .mitgliederWrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     margin-top: var(--kita-space-xxl);
     gap: var(--kita-space-l);
 }
@@ -13,10 +12,6 @@
 @media screen and (min-width: 641px) {
     .mitgliederWrapper {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (min-width: 1024px) {
-    .mitgliederWrapper {
-        grid-template-columns: repeat(3, 1fr);
+        gap: var(--kita-space-3xl);
     }
 }
