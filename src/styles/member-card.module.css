@@ -28,8 +28,21 @@
     margin-block: var(--kita-space-xs);
 }
 
+.position {
+    font-weight: 400;
+}
+
 .name {
     font-size: var(--kita-font-size-xl);
+}
+
+.organisation {
+    font-size: var(--kita-font-size-l);
+}
+
+.street {
+    font-size: var(--kita-font-size-l);
+    font-weight: 400;
 }
 
 .btnWebsite {
