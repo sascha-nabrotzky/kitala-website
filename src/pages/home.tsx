@@ -118,7 +118,7 @@ const Home = () => {
                         <strong>&bdquo;Step&rdquo;.</strong> <br /> <br />
                         Sie können den Verein per E-Mail oder telefonisch, aber
                         auch jedes Mitglied einzeln über den{" "}
-                        <Link to="/mitglieder">Mitgliederbereich</Link> direkt
+                        <Link to="/mitglieder">Vorstellungsbereich</Link> direkt
                         kontaktieren.
                     </p>
 

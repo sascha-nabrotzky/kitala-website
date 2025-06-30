@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--kita-color-black);
-    height: 30rem;
+    height: 23rem;
 }
 
 .image {
@@ -23,6 +23,7 @@
     left: 50%;
     background-color: var(--kita-color-white);
     padding: 1rem 2rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;

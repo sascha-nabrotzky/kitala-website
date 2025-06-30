@@ -24,10 +24,10 @@ const Members = () => {
     return (
         <>
             <Helmet>
-                <title>Mitglieder | KiTaLa e.V.</title>
+                <title>Ansprechpartnerinnen | KiTaLa e.V.</title>
                 <meta
                     name="description"
-                    content="Die Members von KiTaLa e.V. stellen sind vor"
+                    content="Die Ansprechpartnerinnen von KiTaLa e.V. stellen sich vor"
                 />
                 <meta
                     name="image"
@@ -37,21 +37,24 @@ const Members = () => {
                     name="twitter:image"
                     content={`https://kitala-ladbergen.de${socialMediaImg}`}
                 />
-                <meta property="og:position" content="Members | KiTaLa e.V." />
+                <meta
+                    property="og:position"
+                    content="Ansprechpartnerinnen | KiTaLa e.V."
+                />
                 <meta
                     property="og:image"
                     content={`https://kitala-ladbergen.de${socialMediaImg}`}
                 />
                 <meta
                     property="og:description"
-                    content="Gemeinsam sind wir stärker! Zusammenschluss der Tagesmütter in Ladbergen für Öffentlichkeitsarbeit und Kooperation"
+                    content="Die Ansprechpartnerinnen von KiTaLa e.V. stellen sich vor"
                 />
             </Helmet>
 
             <Layout
                 heroSrcBig={ChildminderImg}
                 heroSrcSmall={ChildminderImgSmall}
-                heroTitle="Mitglieder von KiTaLa e.V."
+                heroTitle="Ansprechpartnerinnen"
             >
                 <div>
                     <h1>Gesichter des Vertrauens</h1>
