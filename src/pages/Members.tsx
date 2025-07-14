@@ -93,7 +93,7 @@ const Members = () => {
                             name="Tatjana Nabrotzky"
                             organisation="Inklusive Großtagespflege &bdquo;Waldschnecken&rdquo;"
                             address="Auf Stieneckers 52"
-                            phone="+49 176 43848013"
+                            phone="+49 155 63984744"
                             imgSrc={NabrotzkyImg}
                             imgAlt="Profilbild von Tatjana Nabrotzky"
                             website="waldschnecken-ladbergen.de"
@@ -106,7 +106,7 @@ const Members = () => {
                             name="Oksana Welk"
                             organisation="Inklusive Großtagespflege &bdquo;Waldschnecken&rdquo;"
                             address="Auf Stieneckers 52"
-                            phone="+49 162 1366853"
+                            phone="+49 155 63984744"
                             imgSrc={WelkImg}
                             imgAlt="Profilbild von Oksana Welk"
                             website="waldschnecken-ladbergen.de"
