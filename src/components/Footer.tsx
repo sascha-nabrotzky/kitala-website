@@ -12,16 +12,6 @@ const Footer = () => {
                 <li className={styles.footerLink}>
                     <NavLink to="/datenschutz">Datenschutz</NavLink>
                 </li>
-                <li>|</li>
-                <li className={styles.footerLinkSelfPromo}>
-                    <a
-                        href="https://sascha-nabrotzky.de"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        Webdesign & Entwicklung - Sascha Nabrotzky
-                    </a>
-                </li>
             </ul>
             <div className={styles.waveBottom}>
                 <img src={WaveBottom} alt="" loading="lazy" />
